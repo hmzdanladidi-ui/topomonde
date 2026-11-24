@@ -1,0 +1,2784 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Module 01 — Introduction générale à la topographie — TOPOMONDE
+    </title>
+    <meta
+      name="description"
+      content="Module 01 : définition, histoire, rôle, domaines d'application de la topographie, différences avec la géodésie et la cartographie, métiers et débouchés. Exercices corrigés inclus."
+    />
+    <meta name="theme-color" content="#10243B" />
+
+    <!-- Feuille de style principale du site (chemin relatif depuis PAGES/COURS/) -->
+    <link rel="stylesheet" href="../../CSS/STYLE.CSS" />
+  </head>
+  <body>
+    <div class="module-01-page">
+      <a class="module-01-skip" href="#module-01-contenu">Aller au contenu</a>
+
+      <!-- ============ EN-TÊTE ET NAVIGATION ============ -->
+      <header class="module-01-header">
+        <div class="module-01-container module-01-header__inner">
+          <a
+            class="module-01-logo"
+            href="../../INDEX.HTML"
+            aria-label="TOPOMONDE — retour à l'accueil"
+          >
+            <svg
+              viewBox="0 0 40 40"
+              width="36"
+              height="36"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle
+                cx="20"
+                cy="20"
+                r="17"
+                fill="none"
+                stroke="#12B8B0"
+                stroke-width="2.5"
+              />
+              <path
+                d="M3 20h34M20 3v34"
+                stroke="#E8B44A"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="20" cy="20" r="4" fill="#E8B44A" />
+            </svg>
+            <span class="module-01-logo__text">TOPOMONDE</span>
+          </a>
+          <nav class="module-01-nav" aria-label="Navigation principale">
+            <ul class="module-01-nav__list">
+              <li><a href="../../INDEX.HTML">Accueil</a></li>
+              <li>
+                <a href="../COURS.HTML" class="is-active" aria-current="true"
+                  >Cours</a
+                >
+              </li>
+              <li><a href="../INSTRUMENTS.HTML">Instruments</a></li>
+              <li><a href="../METHODES.HTML">Méthodes</a></li>
+              <li><a href="../EXERCICES.HTML">Exercices</a></li>
+              <li><a href="../APROPOS.HTML">À propos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="module-01-contenu">
+        <!-- ============ TITRE ET PRÉSENTATION DU MODULE ============ -->
+        <section class="module-01-hero" aria-labelledby="module-01-titre">
+          <div class="module-01-container">
+            <nav class="module-01-breadcrumb" aria-label="Fil d'Ariane">
+              <ol>
+                <li><a href="../../INDEX.HTML">Accueil</a></li>
+                <li><a href="../COURS.HTML">Cours</a></li>
+                <li aria-current="page">Module 01</li>
+              </ol>
+            </nav>
+
+            <p class="module-01-hero__tag">
+              Module 01 · Débutant · 6 chapitres
+            </p>
+            <h1 id="module-01-titre" class="module-01-hero__title">
+              Introduction générale à la topographie
+            </h1>
+            <p class="module-01-hero__lead">
+              Ce premier module répond à une question simple : que fait-on quand
+              on « fait de la topographie » ? Vous y découvrirez ce que mesure
+              un topographe, d'où viennent ses méthodes, à quoi elles servent,
+              dans quels secteurs elles sont utilisées, comment la topographie
+              se distingue de la géodésie et de la cartographie, et quels
+              métiers y mènent. Aucun prérequis n'est nécessaire.
+            </p>
+            <p class="module-01-hero__lead">
+              Chaque chapitre contient des définitions, des explications
+              progressives, des exemples de terrain, des schémas, un résumé « À
+              retenir » et des exercices avec correction.
+            </p>
+            <div class="module-01-hero__actions">
+              <a class="module-01-btn module-01-btn--gold" href="#ch1"
+                >Commencer le chapitre 1</a
+              >
+              <a class="module-01-btn module-01-btn--ghost" href="../COURS.HTML"
+                >Retour aux cours</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <div class="module-01-container module-01-layout">
+          <!-- ============ PROGRESSION ============ -->
+          <nav class="module-01-progress" aria-label="Progression du module">
+            <ol>
+              <li>
+                <a href="#ch1"><span>1</span>Définition</a>
+              </li>
+              <li>
+                <a href="#ch2"><span>2</span>Histoire</a>
+              </li>
+              <li>
+                <a href="#ch3"><span>3</span>Rôle</a>
+              </li>
+              <li>
+                <a href="#ch4"><span>4</span>Domaines</a>
+              </li>
+              <li>
+                <a href="#ch5"><span>5</span>Disciplines</a>
+              </li>
+              <li>
+                <a href="#ch6"><span>6</span>Métiers</a>
+              </li>
+            </ol>
+          </nav>
+
+          <!-- ============ SOMMAIRE CLIQUABLE ============ -->
+          <nav
+            id="module-01-sommaire"
+            class="module-01-toc"
+            aria-labelledby="module-01-toc-titre"
+          >
+            <h2 id="module-01-toc-titre">Sommaire</h2>
+            <ol class="module-01-toc__list">
+              <li>
+                <a href="#ch1">Chapitre 1 — Définition de la topographie</a>
+                <ul>
+                  <li><a href="#c1-1">Définition générale</a></li>
+                  <li><a href="#c1-2">Objet de la topographie</a></li>
+                  <li><a href="#c1-3">Éléments étudiés sur le terrain</a></li>
+                  <li><a href="#c1-4">Principes fondamentaux</a></li>
+                  <li>
+                    <a href="#c1-5">Exemple pratique : levé d'une parcelle</a>
+                  </li>
+                  <li><a href="#c1-6">Importance de la topographie</a></li>
+                  <li><a href="#c1-resume">Résumé et exercices</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#ch2">Chapitre 2 — Historique et évolution</a>
+                <ul>
+                  <li><a href="#c2-1">Origines de la topographie</a></li>
+                  <li><a href="#c2-2">Méthodes anciennes de mesure</a></li>
+                  <li><a href="#c2-3">Évolution des instruments</a></li>
+                  <li>
+                    <a href="#c2-4"
+                      >Apparition des technologies électroniques</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#c2-5"
+                      >GNSS, drones, scanners 3D et outils modernes</a
+                    >
+                  </li>
+                  <li><a href="#c2-resume">Résumé et exercices</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#ch3"
+                  >Chapitre 3 — Objectifs et rôle de la topographie</a
+                >
+                <ul>
+                  <li>
+                    <a href="#c3-1">Mesurer et déterminer les positions</a>
+                  </li>
+                  <li><a href="#c3-2">Représenter le terrain</a></li>
+                  <li><a href="#c3-3">Réaliser des levés topographiques</a></li>
+                  <li><a href="#c3-4">Implanter des ouvrages</a></li>
+                  <li><a href="#c3-5">Contrôler les travaux</a></li>
+                  <li><a href="#c3-6">Exemples concrets</a></li>
+                  <li><a href="#c3-resume">Résumé et exercices</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#ch4">Chapitre 4 — Domaines d'application</a>
+                <ul>
+                  <li><a href="#c4-1">Construction et bâtiment</a></li>
+                  <li><a href="#c4-2">Routes et infrastructures</a></li>
+                  <li><a href="#c4-3">Urbanisme et aménagement</a></li>
+                  <li><a href="#c4-4">Agriculture</a></li>
+                  <li><a href="#c4-5">Mines et carrières</a></li>
+                  <li><a href="#c4-6">Environnement et autres domaines</a></li>
+                  <li><a href="#c4-resume">Résumé et exercices</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#ch5"
+                  >Chapitre 5 — Topographie, géodésie et cartographie</a
+                >
+                <ul>
+                  <li><a href="#c5-1">Définition de chaque discipline</a></li>
+                  <li>
+                    <a href="#c5-2">Objectifs et domaines d'intervention</a>
+                  </li>
+                  <li><a href="#c5-3">Différences fondamentales</a></li>
+                  <li><a href="#c5-4">Relations et complémentarités</a></li>
+                  <li><a href="#c5-5">Exemples pratiques comparatifs</a></li>
+                  <li><a href="#c5-resume">Résumé et exercices</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#ch6">Chapitre 6 — Métiers et débouchés</a>
+                <ul>
+                  <li><a href="#c6-1">Technicien géomètre-topographe</a></li>
+                  <li><a href="#c6-2">Géomètre-topographe</a></li>
+                  <li><a href="#c6-3">Ingénieur géomètre-topographe</a></li>
+                  <li><a href="#c6-4">Domaines professionnels</a></li>
+                  <li><a href="#c6-5">Compétences nécessaires</a></li>
+                  <li>
+                    <a href="#c6-6">Perspectives d'évolution professionnelle</a>
+                  </li>
+                  <li><a href="#c6-resume">Résumé et exercices</a></li>
+                </ul>
+              </li>
+            </ol>
+          </nav>
+
+          <!-- ======================================================== -->
+          <!-- CHAPITRE 1                                               -->
+          <!-- ======================================================== -->
+          <article
+            id="ch1"
+            class="module-01-chapter"
+            aria-labelledby="ch1-titre"
+          >
+            <header class="module-01-chapter__head">
+              <p class="module-01-chapter__label">Chapitre 1 sur 6</p>
+              <h2 id="ch1-titre">Chapitre 1 — Définition de la topographie</h2>
+              <p class="module-01-chapter__goal">
+                À la fin de ce chapitre, vous saurez définir la topographie,
+                dire ce qu'elle étudie, citer ses principes de base et décrire
+                les grandes étapes d'un levé de parcelle.
+              </p>
+            </header>
+
+            <h3 id="c1-1">1.1 Définition générale</h3>
+            <div class="module-01-box module-01-box--definition">
+              <h4>Définition</h4>
+              <p>
+                La <strong>topographie</strong> est la science et la technique
+                qui permettent de <strong>mesurer</strong>, de
+                <strong>calculer</strong> et de <strong>représenter</strong> la
+                forme et les détails d'une portion de la surface terrestre : le
+                relief, les éléments naturels et les ouvrages construits par
+                l'homme.
+              </p>
+            </div>
+            <p>
+              Le mot vient du grec : <em>topos</em> (« lieu ») et
+              <em>graphein</em> (« décrire »). La topographie est donc,
+              littéralement, la <em>description d'un lieu</em>. Cette
+              description n'est pas un simple dessin : elle repose sur des
+              mesures, sur des calculs et sur des méthodes qui permettent de
+              savoir avec quelle précision on a décrit le terrain.
+            </p>
+            <p>
+              On parle à la fois de <strong>science</strong> (elle s'appuie sur
+              la géométrie, la trigonométrie et les statistiques) et de
+              <strong>technique</strong> (elle utilise des instruments et des
+              procédures de terrain). Les trois verbes de la définition
+              correspondent aux trois temps du travail : mesurer sur le terrain,
+              calculer au bureau, représenter sous forme de plan ou de modèle
+              numérique.
+            </p>
+
+            <h3 id="c1-2">1.2 Objet de la topographie</h3>
+            <p>
+              L'objet de la topographie est de
+              <strong>déterminer la position de points dans l'espace</strong>,
+              puis de s'en servir pour décrire le terrain. Le
+              <strong>point</strong> est l'élément de base : un angle de
+              bâtiment, une borne, un regard d'égout, un point du sol. Les
+              lignes (limites, bords de route) et les surfaces (parcelles,
+              bâtiments) se déduisent de points reliés entre eux.
+            </p>
+            <p>
+              La position d'un point s'exprime par des
+              <strong>coordonnées</strong>, que l'on sépare en deux familles :
+            </p>
+            <ul>
+              <li>
+                la <strong>planimétrie</strong> : la position du point sur un
+                plan horizontal, notée par exemple (X ; Y) ;
+              </li>
+              <li>
+                l'<strong>altimétrie</strong> : la hauteur du point par rapport
+                à une surface de référence, notée Z (on parle d'altitude).
+              </li>
+            </ul>
+
+            <figure class="module-01-figure">
+              <svg
+                viewBox="0 0 360 230"
+                role="img"
+                aria-labelledby="f1b-t f1b-d"
+              >
+                <title id="f1b-t">Planimétrie et altimétrie d'un point</title>
+                <desc id="f1b-d">
+                  Un point P situé au-dessus d'un plan horizontal. Sa projection
+                  p sur ce plan donne sa position planimétrique (X ; Y). La
+                  distance verticale entre p et P représente l'altitude Z.
+                </desc>
+                <polygon
+                  points="40,190 250,190 330,140 120,140"
+                  fill="#E6F7F6"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                />
+                <line
+                  x1="185"
+                  y1="165"
+                  x2="185"
+                  y2="52"
+                  stroke="#E8B44A"
+                  stroke-width="2.5"
+                  stroke-dasharray="6 4"
+                />
+                <circle cx="185" cy="165" r="4.5" fill="#173D5C" />
+                <circle
+                  cx="185"
+                  cy="48"
+                  r="7"
+                  fill="#E8B44A"
+                  stroke="#10243B"
+                  stroke-width="2"
+                />
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  font-size="13"
+                  fill="#10243B"
+                >
+                  <text x="198" y="52" font-weight="700">P</text>
+                  <text x="196" y="108">Z (altitude)</text>
+                  <text x="196" y="170">p : position (X ; Y)</text>
+                  <text x="48" y="212">Plan horizontal de référence</text>
+                </g>
+              </svg>
+              <figcaption>
+                Figure 1.1 — Un point est défini par sa position planimétrique
+                (X ; Y) et par son altitude Z.
+              </figcaption>
+            </figure>
+
+            <aside class="module-01-box module-01-box--important">
+              <h4>Points importants</h4>
+              <ul>
+                <li>
+                  Planimétrie = « où est le point sur le plan ? » ; altimétrie =
+                  « à quelle hauteur ? ».
+                </li>
+                <li>
+                  Sur des étendues limitées, on assimile la surface terrestre à
+                  un plan. La taille admissible de cette zone dépend de la
+                  précision recherchée ; le module 03 (géodésie) expliquera
+                  cette limite.
+                </li>
+                <li>
+                  Ordre de grandeur utile : à 1 km de distance, la courbure de
+                  la Terre provoque environ 8 cm d'écart sur une altitude
+                  (formule approchée : d² / 2R, avec R ≈ 6 371 km). C'est
+                  pourquoi l'altimétrie demande des méthodes particulières
+                  (modules 04 et 05).
+                </li>
+              </ul>
+            </aside>
+
+            <h3 id="c1-3">1.3 Éléments étudiés sur le terrain</h3>
+            <p>
+              Un levé topographique enregistre les éléments dont le futur
+              utilisateur du plan a besoin. Ils se classent en trois grandes
+              catégories.
+            </p>
+            <div class="module-01-table-wrap">
+              <table class="module-01-table">
+                <caption>
+                  Les éléments étudiés sur le terrain
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Catégorie</th>
+                    <th scope="col">Exemples</th>
+                    <th scope="col">Représentation sur le plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Relief</th>
+                    <td>
+                      Sommets, crêtes, thalwegs (fonds de vallée), talus,
+                      pentes, dépressions
+                    </td>
+                    <td>
+                      Points cotés, courbes de niveau, lignes de rupture de
+                      pente
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Éléments naturels</th>
+                    <td>
+                      Cours d'eau, berges, limites de boisement, arbres isolés,
+                      rochers
+                    </td>
+                    <td>Lignes, surfaces, symboles</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Éléments artificiels</th>
+                    <td>
+                      Bâtiments, routes, trottoirs et bordures, murs, clôtures,
+                      poteaux, regards, bouches d'égout, canalisations visibles
+                    </td>
+                    <td>Polygones (emprises), lignes, symboles</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Limites</th>
+                    <td>
+                      Bornes, repères de limite de propriété, haies, murs
+                      mitoyens
+                    </td>
+                    <td>Lignes avec points matérialisés</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 id="c1-4">1.4 Principes fondamentaux</h3>
+            <ol class="module-01-steps">
+              <li>
+                <strong>Aller du général au particulier.</strong> On commence
+                par établir un petit nombre de points de référence bien
+                déterminés (le canevas), puis on y rattache les détails. Un
+                détail mesuré à partir d'une base fragile est fragile à son
+                tour.
+              </li>
+              <li>
+                <strong>Un point est défini par ses coordonnées</strong> dans un
+                système de référence précisé. Des coordonnées sans système de
+                référence n'ont pas de sens.
+              </li>
+              <li>
+                <strong>Contrôler.</strong> On effectue toujours plus de mesures
+                que le strict minimum (mesures redondantes, vérification par une
+                autre voie), afin de détecter les erreurs.
+              </li>
+              <li>
+                <strong>Adapter la précision au but.</strong> Une précision
+                insuffisante rend le travail inutilisable ; une précision
+                excessive coûte du temps et de l'argent sans bénéfice. La
+                tolérance dépend de l'usage du plan.
+              </li>
+              <li>
+                <strong>Garder la trace.</strong> Croquis, carnet ou fichier
+                d'observations, description des points, instrument utilisé, date
+                et conditions : un levé non documenté ne peut pas être vérifié.
+              </li>
+            </ol>
+            <aside class="module-01-box module-01-box--warning">
+              <h4>Erreurs à éviter</h4>
+              <ul>
+                <li>
+                  Confondre <em>altitude</em> (par rapport à une surface de
+                  référence) et <em>hauteur</em> (par exemple celle d'un mur).
+                </li>
+                <li>
+                  Penser qu'un instrument très précis garantit un résultat juste
+                  : sans contrôle, une erreur de lecture ou de station passe
+                  inaperçue.
+                </li>
+                <li>
+                  Lever des points sans croquis ni description : au bureau, on
+                  ne saura plus ce que représentent les points.
+                </li>
+              </ul>
+            </aside>
+
+            <h3 id="c1-5">1.5 Exemple pratique : levé d'une parcelle</h3>
+            <p>
+              Une parcelle ABCD doit être levée pour établir son plan. Voici les
+              étapes d'un travail réel, présentées de façon simplifiée.
+            </p>
+            <ol class="module-01-steps">
+              <li>
+                <strong>Reconnaissance.</strong> On parcourt le terrain, on
+                repère les bornes, les limites et les obstacles, et on fait un
+                croquis.
+              </li>
+              <li>
+                <strong>Choix des stations.</strong> On choisit un ou plusieurs
+                points d'où tous les sommets sont visibles (ici une station S à
+                l'intérieur de la parcelle).
+              </li>
+              <li>
+                <strong>Observations.</strong> Depuis S, avec une station
+                totale, on mesure pour chaque sommet l'angle horizontal et la
+                distance (méthode du rayonnement). Un récepteur GNSS permet
+                aussi de positionner les sommets directement.
+              </li>
+              <li>
+                <strong>Calcul.</strong> On calcule les coordonnées de A, B, C
+                et D dans un repère local.
+              </li>
+              <li>
+                <strong>Contrôle.</strong> On mesure une distance qui n'a pas
+                servi au calcul (par exemple la diagonale ou un côté) et on la
+                compare à la valeur déduite des coordonnées.
+              </li>
+              <li>
+                <strong>Dessin et surface.</strong> On dessine le plan à
+                l'échelle et on calcule la superficie.
+              </li>
+            </ol>
+
+            <figure class="module-01-figure">
+              <svg
+                viewBox="0 0 400 270"
+                role="img"
+                aria-labelledby="f1a-t f1a-d"
+              >
+                <title id="f1a-t">
+                  Plan de la parcelle ABCD levée depuis la station S
+                </title>
+                <desc id="f1a-d">
+                  Quadrilatère ABCD avec une station S à l'intérieur. Des lignes
+                  en pointillés relient S à chacun des sommets A, B, C et D.
+                </desc>
+                <polygon
+                  points="40,220 340,220 280,40 40,40"
+                  fill="#E6F7F6"
+                  stroke="#10243B"
+                  stroke-width="2.5"
+                />
+                <g stroke="#12B8B0" stroke-width="1.6" stroke-dasharray="5 4">
+                  <line x1="190" y1="130" x2="40" y2="220" />
+                  <line x1="190" y1="130" x2="340" y2="220" />
+                  <line x1="190" y1="130" x2="280" y2="40" />
+                  <line x1="190" y1="130" x2="40" y2="40" />
+                </g>
+                <g fill="#10243B">
+                  <circle cx="40" cy="220" r="4.5" />
+                  <circle cx="340" cy="220" r="4.5" />
+                  <circle cx="280" cy="40" r="4.5" />
+                  <circle cx="40" cy="40" r="4.5" />
+                </g>
+                <circle
+                  cx="190"
+                  cy="130"
+                  r="7"
+                  fill="#E8B44A"
+                  stroke="#10243B"
+                  stroke-width="2"
+                />
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  font-size="14"
+                  fill="#10243B"
+                >
+                  <text x="20" y="238" font-weight="700">A</text>
+                  <text x="346" y="238" font-weight="700">B</text>
+                  <text x="286" y="36" font-weight="700">C</text>
+                  <text x="20" y="34" font-weight="700">D</text>
+                  <text x="200" y="124" font-weight="700">S</text>
+                </g>
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  font-size="12"
+                  fill="#173D5C"
+                >
+                  <text x="190" y="248" text-anchor="middle">AB = 50 m</text>
+                  <text x="160" y="28" text-anchor="middle">DC = 40 m</text>
+                  <text x="4" y="135">30 m</text>
+                  <text x="318" y="128">BC ≈ 31,62 m</text>
+                  <text x="200" y="266" text-anchor="middle">
+                    Repère local : A est l'origine (0 ; 0)
+                  </text>
+                </g>
+              </svg>
+              <figcaption>
+                Figure 1.2 — Levé par rayonnement depuis la station S : les
+                lignes pointillées représentent les visées vers chaque sommet.
+              </figcaption>
+            </figure>
+
+            <p>
+              Après calcul, on obtient les coordonnées suivantes dans le repère
+              local (en mètres) :
+            </p>
+            <div class="module-01-table-wrap">
+              <table class="module-01-table">
+                <caption>
+                  Coordonnées des sommets de la parcelle
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Point</th>
+                    <th scope="col">X (m)</th>
+                    <th scope="col">Y (m)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">A</th>
+                    <td>0,00</td>
+                    <td>0,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">B</th>
+                    <td>50,00</td>
+                    <td>0,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">C</th>
+                    <td>40,00</td>
+                    <td>30,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D</th>
+                    <td>0,00</td>
+                    <td>30,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="module-01-box module-01-box--example">
+              <h4>Exemple : contrôle et surface</h4>
+              <p>
+                <strong>Contrôle.</strong> La distance BC se déduit des
+                coordonnées : BC = √[(50 − 40)² + (0 − 30)²] = √1 000 ≈ 31,62 m.
+                Si l'on mesure BC directement et que l'on trouve 31,60 m,
+                l'écart est de 2 cm : on le compare à la tolérance du travail
+                demandé.
+              </p>
+              <p>
+                <strong>Surface.</strong> ABCD est un trapèze dont les côtés
+                parallèles AB et DC mesurent 50 m et 40 m, pour une hauteur de
+                30 m : S = (50 + 40) / 2 × 30 = <strong>1 350 m²</strong>. (Le
+                calcul des superficies à partir des coordonnées est étudié au
+                module 06.)
+              </p>
+            </div>
+
+            <h3 id="c1-6">1.6 Importance de la topographie</h3>
+            <ul>
+              <li>
+                <strong>Sécurité juridique :</strong> les limites de propriété,
+                les superficies et les bornages reposent sur des mesures
+                fiables.
+              </li>
+              <li>
+                <strong>Base de tous les projets :</strong> aucun bâtiment,
+                route ou réseau ne se conçoit sans un plan du terrain existant.
+              </li>
+              <li>
+                <strong>Économie :</strong> une erreur de position ou d'altitude
+                découverte tardivement sur un chantier coûte cher à corriger.
+              </li>
+              <li>
+                <strong>Sécurité des ouvrages :</strong> le suivi des
+                déformations d'un barrage, d'un pont ou d'un talus s'appuie sur
+                des mesures topographiques répétées.
+              </li>
+              <li>
+                <strong>Gestion du territoire :</strong> plans, cadastre, cartes
+                et modèles de terrain servent aux collectivités et à
+                l'aménagement.
+              </li>
+            </ul>
+
+            <section
+              id="c1-resume"
+              class="module-01-box module-01-box--summary"
+              aria-labelledby="c1-resume-t"
+            >
+              <h3 id="c1-resume-t">À retenir — Chapitre 1</h3>
+              <ul>
+                <li>
+                  La topographie mesure, calcule et représente la forme et les
+                  détails d'une portion de la surface terrestre.
+                </li>
+                <li>
+                  Un point est défini par des coordonnées : (X ; Y) pour la
+                  planimétrie, Z pour l'altimétrie.
+                </li>
+                <li>
+                  On étudie le relief, les éléments naturels, les éléments
+                  artificiels et les limites.
+                </li>
+                <li>
+                  Principes : du général au particulier, coordonnées dans un
+                  système de référence, contrôle, précision adaptée,
+                  documentation.
+                </li>
+                <li>
+                  Un levé suit une suite d'étapes : reconnaissance, stations,
+                  observations, calculs, contrôle, dessin.
+                </li>
+              </ul>
+            </section>
+
+            <section class="module-01-exercises" aria-labelledby="c1-ex-t">
+              <h3 id="c1-ex-t">Exercices d'application — Chapitre 1</h3>
+              <ol>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 1.</strong> Classez chaque information
+                    comme <em>planimétrique</em> ou <em>altimétrique</em> : (a)
+                    la position d'une borne sur le plan ; (b) l'altitude d'un
+                    sommet ; (c) la distance horizontale entre deux poteaux ;
+                    (d) la hauteur d'un seuil de porte par rapport à un repère
+                    de niveau.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) planimétrique ; (b) altimétrique ; (c) planimétrique
+                        ; (d) altimétrique. Une distance horizontale ou une
+                        position sur le plan relève de la planimétrie ; tout ce
+                        qui concerne une hauteur ou une altitude relève de
+                        l'altimétrie.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 2.</strong> Une parcelle rectangulaire
+                    mesure 32 m sur 18 m. Calculez sa superficie, son périmètre
+                    et la longueur théorique de sa diagonale.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Superficie = 32 × 18 = <strong>576 m²</strong>.
+                        Périmètre = 2 × (32 + 18) = <strong>100 m</strong>.
+                        Diagonale = √(32² + 18²) = √1 348 ≈
+                        <strong>36,72 m</strong>.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 3.</strong> Sur le terrain de l'exercice 2,
+                    on mesure la diagonale et l'on trouve 36,75 m. Quel est
+                    l'écart avec la valeur théorique ? Que faut-il faire ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Écart = 36,75 − 36,72 =
+                        <strong>0,03 m, soit 3 cm</strong>. Il faut le comparer
+                        à la tolérance du travail. S'il la dépasse, on cherche
+                        l'origine de l'écart (lecture erronée, point mal repéré,
+                        ruban mal tendu) et l'on refait la mesure. C'est le
+                        principe du contrôle.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 4.</strong> Vrai ou faux ? (a) La
+                    topographie sert uniquement à dessiner des cartes. (b)
+                    Mesurer plus que le strict nécessaire est un gaspillage. (c)
+                    La précision doit être adaptée à l'objectif du travail. (d)
+                    Un point est défini par ses coordonnées.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) Faux : elle mesure, calcule, représente, mais sert
+                        aussi à implanter et à contrôler. (b) Faux : les mesures
+                        redondantes permettent de contrôler. (c) Vrai. (d) Vrai.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ol>
+            </section>
+
+            <nav
+              class="module-01-chapnav"
+              aria-label="Navigation entre les chapitres"
+            >
+              <a href="#module-01-sommaire">Retour au sommaire</a>
+              <a class="module-01-chapnav__next" href="#ch2"
+                >Chapitre 2 : Historique et évolution</a
+              >
+            </nav>
+          </article>
+
+          <!-- ======================================================== -->
+          <!-- CHAPITRE 2                                               -->
+          <!-- ======================================================== -->
+          <article
+            id="ch2"
+            class="module-01-chapter"
+            aria-labelledby="ch2-titre"
+          >
+            <header class="module-01-chapter__head">
+              <p class="module-01-chapter__label">Chapitre 2 sur 6</p>
+              <h2 id="ch2-titre">Chapitre 2 — Historique et évolution</h2>
+              <p class="module-01-chapter__goal">
+                À la fin de ce chapitre, vous saurez situer les grandes étapes
+                de l'histoire de la topographie, nommer les instruments anciens
+                et modernes, et expliquer ce que les technologies actuelles ont
+                changé.
+              </p>
+            </header>
+
+            <h3 id="c2-1">2.1 Origines de la topographie</h3>
+            <p>
+              La topographie est née de besoins très concrets : délimiter des
+              champs, partager des terres, construire des édifices, tracer des
+              routes et des canaux. Dès l'Antiquité, les sociétés qui
+              cultivaient et bâtissaient à grande échelle ont eu besoin de
+              mesurer le terrain.
+            </p>
+            <p>
+              En Égypte ancienne, la tradition rapportée par des auteurs
+              antiques, dont Hérodote, associe la mesure des terres à la
+              nécessité de retrouver les limites des champs après les crues du
+              Nil. Les arpenteurs utilisaient notamment des cordes à nœuds
+              régulièrement espacés. Les Romains organisèrent ensuite un
+              véritable corps d'arpenteurs, les <em>agrimensores</em>, chargés
+              de mesurer et de répartir les terres.
+            </p>
+
+            <h3 id="c2-2">2.2 Méthodes anciennes de mesure</h3>
+            <ul>
+              <li>
+                <strong>Distances :</strong> cordes, perches, chaînes ; on
+                mesurait directement sur le sol, en suivant le terrain.
+              </li>
+              <li>
+                <strong>Alignements et angles droits :</strong> la
+                <em>groma</em> romaine, formée de deux traverses
+                perpendiculaires portant des fils à plomb, permettait de tracer
+                des alignements et des angles droits. Le dioptre, décrit par
+                Héron d'Alexandrie (Ier siècle), servait à viser et à mesurer
+                des angles.
+              </li>
+              <li>
+                <strong>Altitudes :</strong> le <em>chorobates</em>, long banc
+                muni de fils à plomb et d'un canal rempli d'eau, décrit par
+                l'architecte romain Vitruve, servait à niveler le terrain,
+                notamment pour les aqueducs.
+              </li>
+              <li>
+                <strong>Forme de la Terre :</strong> Ératosthène (IIIe siècle
+                avant notre ère) estima la circonférence terrestre à partir de
+                la longueur des ombres à deux endroits différents. C'est un
+                exemple célèbre de mesure indirecte.
+              </li>
+            </ul>
+
+            <h3 id="c2-3">2.3 Évolution des instruments</h3>
+            <p>
+              Les principales étapes, présentées dans l'ordre chronologique,
+              sont les suivantes.
+            </p>
+            <ol class="module-01-timeline">
+              <li>
+                <strong>Moyen Âge.</strong> Les savoirs de mesure se
+                transmettent et se perfectionnent, notamment dans le monde arabe
+                : le savant al-Bīrūnī estima le rayon terrestre autour de l'an
+                1000.
+              </li>
+              <li>
+                <strong>1533 — 1617.</strong> Gemma Frisius propose le principe
+                de la <em>triangulation</em> (1533) : au lieu de mesurer toutes
+                les distances, on mesure une base puis des angles dans un réseau
+                de triangles. Snellius l'applique aux Pays-Bas (publication en
+                1617).
+              </li>
+              <li>
+                <strong>XVIIe siècle.</strong> La lunette est adaptée aux
+                instruments de visée, ce qui améliore la précision des pointés.
+                Pierre Vernier invente le vernier (1631), qui permet de lire des
+                fractions de graduation.
+              </li>
+              <li>
+                <strong>XVIIIe siècle.</strong> La triangulation de la France
+                conduit à la carte de Cassini. À la fin du siècle, Jesse Ramsden
+                construit un théodolite de grande précision (1787). Delambre et
+                Méchain mesurent l'arc de méridien Dunkerque–Barcelone
+                (1792–1798), qui sert à définir le mètre.
+              </li>
+              <li>
+                <strong>XIXe siècle.</strong> Les cadastres modernes se
+                développent (en France, le cadastre dit « napoléonien » à partir
+                de 1807). Les théodolites, les niveaux à lunette et les chaînes
+                d'arpenteur sont d'usage courant.
+              </li>
+              <li>
+                <strong>XXe siècle.</strong> Les rubans d'acier, les théodolites
+                optiques et les niveaux optiques se généralisent, et la
+                photographie aérienne et la photogrammétrie se développent.
+              </li>
+            </ol>
+
+            <div class="module-01-table-wrap">
+              <table class="module-01-table">
+                <caption>
+                  Évolution des moyens de mesure
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Période</th>
+                    <th scope="col">Distances</th>
+                    <th scope="col">Angles</th>
+                    <th scope="col">Altitudes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Antiquité</th>
+                    <td>Cordes, perches</td>
+                    <td>Groma, dioptre</td>
+                    <td>Chorobates, niveau d'eau</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">XVIIe – XXe siècle</th>
+                    <td>Chaînes, rubans d'acier</td>
+                    <td>Graphomètre, théodolite</td>
+                    <td>Niveau à lunette</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fin du XXe siècle</th>
+                    <td>Distancemètre électronique</td>
+                    <td>Station totale</td>
+                    <td>Niveau numérique</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Aujourd'hui</th>
+                    <td colspan="3">
+                      GNSS, station totale robotisée, scanner laser 3D, drone
+                      avec photogrammétrie ou lidar
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 id="c2-4">2.4 Apparition des technologies électroniques</h3>
+            <p>
+              À partir des années 1950, les premiers
+              <strong>distancemètres électroniques</strong> (à ondes lumineuses
+              ou à micro-ondes, comme le Geodimeter et le Tellurometer)
+              permettent de mesurer des distances par le temps de parcours d'une
+              onde, au lieu de dérouler un ruban. Dans les années 1970-1980
+              apparaissent les <strong>tachéomètres électroniques</strong>, puis
+              les <strong>stations totales</strong>, qui réunissent dans un seul
+              appareil la mesure des angles, la mesure des distances et
+              l'enregistrement des données. Dans les années 1990, les
+              <strong>niveaux numériques</strong> lisent automatiquement des
+              mires à code-barres.
+            </p>
+            <p>
+              Ces appareils ont supprimé les lectures à l'œil et les recopies
+              manuelles, source d'erreurs, et ont accéléré le calcul.
+            </p>
+
+            <h3 id="c2-5">2.5 GNSS, drones, scanners 3D et outils modernes</h3>
+            <ul>
+              <li>
+                <strong>GNSS</strong> (<em
+                  >Global Navigation Satellite System</em
+                >) : terme général désignant les systèmes de positionnement par
+                satellites. Il comprend le <strong>GPS</strong> (États-Unis),
+                mais aussi GLONASS (Russie), Galileo (Union européenne) et
+                BeiDou (Chine). Le premier satellite GPS a été lancé en 1978 ;
+                le système a été déclaré pleinement opérationnel en 1995. Avec
+                des techniques comme le RTK (positionnement en temps réel avec
+                correction), on obtient couramment une précision de l'ordre du
+                centimètre dans de bonnes conditions.
+              </li>
+              <li>
+                <strong>Drones :</strong> équipés d'un appareil photo ou d'un
+                lidar, ils couvrent rapidement de grandes zones et produisent
+                des orthophotos et des modèles numériques de terrain.
+              </li>
+              <li>
+                <strong>Scanners laser 3D :</strong> ils enregistrent des
+                millions de points par seconde et forment un « nuage de points »
+                représentant façades, structures ou terrains.
+              </li>
+              <li>
+                <strong>SIG et logiciels :</strong> les données sont traitées et
+                gérées dans des logiciels de calcul, de dessin et de systèmes
+                d'information géographique (module 08).
+              </li>
+            </ul>
+            <aside class="module-01-box module-01-box--important">
+              <h4>Points importants</h4>
+              <ul>
+                <li>
+                  Les principes anciens (triangulation, nivellement, mesure
+                  d'angles et de distances) sont toujours utilisés ; seuls les
+                  moyens ont changé.
+                </li>
+                <li>
+                  Les technologies modernes gagnent du temps, mais ne dispensent
+                  ni de la méthode, ni du contrôle, ni de la compétence de
+                  l'opérateur.
+                </li>
+              </ul>
+            </aside>
+            <aside class="module-01-box module-01-box--warning">
+              <h4>Erreurs à éviter</h4>
+              <ul>
+                <li>
+                  Confondre GNSS et GPS : le GPS n'est qu'un des systèmes GNSS.
+                </li>
+                <li>
+                  Croire que le GNSS remplace tous les instruments : il
+                  fonctionne mal sous un couvert végétal dense, entre des
+                  immeubles élevés ou dans un tunnel, où la station totale reste
+                  indispensable.
+                </li>
+                <li>
+                  Croire qu'un drone dispense de toute mesure au sol : des
+                  points d'appui et de contrôle mesurés précisément restent
+                  nécessaires pour obtenir un résultat fiable.
+                </li>
+              </ul>
+            </aside>
+
+            <section
+              id="c2-resume"
+              class="module-01-box module-01-box--summary"
+              aria-labelledby="c2-resume-t"
+            >
+              <h3 id="c2-resume-t">À retenir — Chapitre 2</h3>
+              <ul>
+                <li>
+                  La topographie répond depuis l'Antiquité à des besoins de
+                  délimitation, de construction et d'aménagement.
+                </li>
+                <li>
+                  Instruments anciens : cordes, groma, dioptre, chorobates.
+                  Principe clé : la triangulation (1533, 1617).
+                </li>
+                <li>
+                  XVIIIe – XXe siècle : théodolite, niveau à lunette, ruban
+                  d'acier, photogrammétrie.
+                </li>
+                <li>
+                  Électronique : distancemètres (années 1950), stations totales,
+                  niveaux numériques.
+                </li>
+                <li>
+                  Aujourd'hui : GNSS, drones, scanners 3D, logiciels et SIG. Les
+                  principes restent, les moyens évoluent.
+                </li>
+              </ul>
+            </section>
+
+            <section class="module-01-exercises" aria-labelledby="c2-ex-t">
+              <h3 id="c2-ex-t">Exercices d'application — Chapitre 2</h3>
+              <ol>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 1.</strong> Associez chaque instrument à
+                    son usage : groma, chorobates, station totale, récepteur
+                    GNSS. Usages : (1) positionnement par satellites ; (2) tracé
+                    d'alignements et d'angles droits ; (3) mesure électronique
+                    des angles et des distances ; (4) nivellement.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Groma → (2) ; chorobates → (4) ; station totale → (3) ;
+                        récepteur GNSS → (1).
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 2.</strong> Classez dans leur ordre général
+                    d'apparition : station totale, groma, récepteur GNSS,
+                    théodolite optique.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Groma (Antiquité) → théodolite optique → station totale
+                        (fin du XXe siècle) → récepteur GNSS (positionnement de
+                        précision courant à partir de la fin du XXe siècle).
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 3.</strong> Vrai ou faux ? (a) GNSS et GPS
+                    sont strictement synonymes. (b) La triangulation consiste à
+                    mesurer une base et des angles dans un réseau de triangles.
+                    (c) Les drones suppriment tout besoin de mesures au sol.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) Faux : le GPS est un système GNSS parmi d'autres.
+                        (b) Vrai. (c) Faux : il faut des points d'appui et de
+                        contrôle mesurés au sol.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 4.</strong> Pour lever une grande carrière
+                    à ciel ouvert, quel est l'avantage d'un drone par rapport à
+                    une station totale ? Quelle précaution faut-il prendre ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Le drone couvre rapidement une grande zone difficile
+                        d'accès et produit un modèle 3D complet, avec peu de
+                        présence humaine dans les zones dangereuses. Précaution
+                        : mesurer des points d'appui et de contrôle au sol (GNSS
+                        ou station totale) pour caler et vérifier le modèle.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ol>
+            </section>
+
+            <nav
+              class="module-01-chapnav"
+              aria-label="Navigation entre les chapitres"
+            >
+              <a href="#ch1">Chapitre 1 : Définition</a>
+              <a href="#module-01-sommaire">Sommaire</a>
+              <a class="module-01-chapnav__next" href="#ch3"
+                >Chapitre 3 : Objectifs et rôle</a
+              >
+            </nav>
+          </article>
+
+          <!-- ======================================================== -->
+          <!-- CHAPITRE 3                                               -->
+          <!-- ======================================================== -->
+          <article
+            id="ch3"
+            class="module-01-chapter"
+            aria-labelledby="ch3-titre"
+          >
+            <header class="module-01-chapter__head">
+              <p class="module-01-chapter__label">Chapitre 3 sur 6</p>
+              <h2 id="ch3-titre">
+                Chapitre 3 — Objectifs et rôle de la topographie
+              </h2>
+              <p class="module-01-chapter__goal">
+                À la fin de ce chapitre, vous saurez distinguer les cinq grandes
+                missions de la topographie (mesurer, représenter, lever,
+                implanter, contrôler) et les reconnaître dans des situations de
+                chantier.
+              </p>
+            </header>
+
+            <figure class="module-01-figure">
+              <svg viewBox="0 0 540 250" role="img" aria-labelledby="f3-t f3-d">
+                <title id="f3-t">Levé, implantation et contrôle</title>
+                <desc id="f3-d">
+                  Deux flèches relient le terrain et le plan. Le levé va du
+                  terrain vers le plan, l'implantation va du plan vers le
+                  terrain. Le contrôle compare ce qui est réalisé au projet.
+                </desc>
+                <defs>
+                  <marker
+                    id="m1-fleche-t"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                  >
+                    <path d="M0 0L10 5L0 10z" fill="#12B8B0" />
+                  </marker>
+                  <marker
+                    id="m1-fleche-o"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                  >
+                    <path d="M0 0L10 5L0 10z" fill="#E8B44A" />
+                  </marker>
+                </defs>
+                <rect
+                  x="10"
+                  y="70"
+                  width="140"
+                  height="80"
+                  rx="10"
+                  fill="#10243B"
+                />
+                <rect
+                  x="390"
+                  y="70"
+                  width="140"
+                  height="80"
+                  rx="10"
+                  fill="#173D5C"
+                />
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  font-size="15"
+                  font-weight="700"
+                  fill="#FFFFFF"
+                  text-anchor="middle"
+                >
+                  <text x="80" y="115">TERRAIN</text>
+                  <text x="460" y="115">PLAN / PROJET</text>
+                </g>
+                <line
+                  x1="152"
+                  y1="95"
+                  x2="386"
+                  y2="95"
+                  stroke="#12B8B0"
+                  stroke-width="3"
+                  marker-end="url(#m1-fleche-t)"
+                />
+                <line
+                  x1="388"
+                  y1="125"
+                  x2="154"
+                  y2="125"
+                  stroke="#E8B44A"
+                  stroke-width="3"
+                  marker-end="url(#m1-fleche-o)"
+                />
+                <path
+                  d="M80 156 V200 H460 V156"
+                  fill="none"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                  stroke-dasharray="6 4"
+                />
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  font-size="13"
+                  fill="#10243B"
+                  text-anchor="middle"
+                >
+                  <text x="270" y="82">Levé : mesurer puis représenter</text>
+                  <text x="270" y="148">Implantation : reporter le projet</text>
+                  <text x="270" y="222">
+                    Contrôle : comparer le réalisé au projet
+                  </text>
+                </g>
+              </svg>
+              <figcaption>
+                Figure 3.1 — Le levé va du terrain au plan ; l'implantation va
+                du plan au terrain ; le contrôle vérifie la concordance.
+              </figcaption>
+            </figure>
+
+            <h3 id="c3-1">3.1 Mesurer et déterminer les positions</h3>
+            <p>
+              La première mission est de
+              <strong>déterminer la position</strong> de points existants
+              (bornes, angles de bâtiments, repères) en coordonnées, avec une
+              précision connue. Pour cela, on mesure des angles, des distances
+              et des différences de niveau, ou l'on utilise le positionnement
+              par satellites. Ces mesures sont ensuite calculées et compensées
+              pour fournir des coordonnées fiables.
+            </p>
+
+            <h3 id="c3-2">3.2 Représenter le terrain</h3>
+            <p>
+              Les résultats sont traduits sous une forme utilisable :
+              <strong>plan topographique</strong>, plan de situation, profils en
+              long et en travers,
+              <strong>modèle numérique de terrain</strong> (MNT), plan 3D. Le
+              plan est dessiné à une <strong>échelle</strong> choisie selon
+              l'usage, avec des symboles et des conventions qui permettent à
+              n'importe quel lecteur de comprendre le document (module 07).
+            </p>
+
+            <h3 id="c3-3">3.3 Réaliser des levés topographiques</h3>
+            <p>
+              Le <strong>levé</strong> consiste à mesurer sur le terrain les
+              points nécessaires à la description d'un site. On distingue
+              notamment :
+            </p>
+            <ul>
+              <li>
+                le <strong>levé planimétrique</strong> (positions sur le plan) ;
+              </li>
+              <li>
+                le <strong>levé altimétrique</strong> ou nivellement (altitudes)
+                ;
+              </li>
+              <li>
+                le <strong>levé de détail</strong> d'un site (bâtiments, voirie,
+                réseaux visibles, relief) ;
+              </li>
+              <li>
+                le <strong>plan de récolement</strong> : plan des ouvrages tels
+                qu'ils ont été réellement exécutés, établi à la fin des travaux.
+              </li>
+            </ul>
+
+            <h3 id="c3-4">3.4 Implanter des ouvrages</h3>
+            <div class="module-01-box module-01-box--definition">
+              <h4>Définition</h4>
+              <p>
+                L'<strong>implantation</strong> consiste à reporter sur le
+                terrain, à partir de coordonnées calculées, la position (et, si
+                besoin, l'altitude) d'éléments d'un projet défini sur plan :
+                angles d'un bâtiment, axe d'une route, emplacement de poteaux ou
+                de fondations.
+              </p>
+            </div>
+            <p>
+              C'est l'opération inverse du levé : on part des coordonnées du
+              plan pour matérialiser des points sur le sol, par des piquets, des
+              repères peints ou des chaises (planches horizontales servant à
+              reporter les axes d'un bâtiment).
+            </p>
+
+            <h3 id="c3-5">3.5 Contrôler les travaux</h3>
+            <p>
+              Pendant et après les travaux, le topographe
+              <strong>vérifie</strong> que l'ouvrage respecte le projet :
+              position, altitude, alignement, verticalité, volumes. On parle
+              aussi d'<strong>auscultation</strong> lorsqu'on mesure, à
+              intervalles réguliers, les déplacements ou déformations d'un
+              ouvrage (barrage, pont, talus) pour surveiller son comportement.
+            </p>
+
+            <h3 id="c3-6">3.6 Exemples concrets</h3>
+            <div class="module-01-cards">
+              <div class="module-01-card">
+                <h4>Construire une maison</h4>
+                <p>
+                  <strong>Levé</strong> du terrain existant pour concevoir le
+                  projet ; <strong>implantation</strong> des angles de la maison
+                  ; <strong>contrôle</strong> de l'altitude de la dalle ;
+                  <strong>récolement</strong> final.
+                </p>
+              </div>
+              <div class="module-01-card">
+                <h4>Aménager une route</h4>
+                <p>
+                  Levé du terrain naturel ; implantation de l'axe et des bords
+                  de la plateforme ; contrôle des altitudes de chaque couche de
+                  chaussée.
+                </p>
+              </div>
+              <div class="module-01-card">
+                <h4>Surveiller un barrage</h4>
+                <p>
+                  Mesures répétées, à intervalles réguliers, de points repères
+                  placés sur l'ouvrage, pour détecter d'éventuels déplacements
+                  (auscultation).
+                </p>
+              </div>
+            </div>
+            <aside class="module-01-box module-01-box--important">
+              <h4>Points importants</h4>
+              <ul>
+                <li>
+                  Levé : du terrain vers le plan. Implantation : du plan vers le
+                  terrain. Contrôle : comparaison entre le réalisé et le prévu.
+                </li>
+                <li>
+                  La précision exigée dépend de la mission et du cahier des
+                  charges, jamais d'un chiffre unique.
+                </li>
+              </ul>
+            </aside>
+            <aside class="module-01-box module-01-box--warning">
+              <h4>Erreurs à éviter</h4>
+              <ul>
+                <li>
+                  Confondre levé et implantation (une erreur d'implantation se
+                  voit sur le chantier, pas sur le plan).
+                </li>
+                <li>
+                  Implanter à partir d'un plan non vérifié ou d'une version
+                  périmée du projet.
+                </li>
+                <li>
+                  Oublier le contrôle final : sans lui, rien ne prouve que
+                  l'ouvrage respecte le projet.
+                </li>
+              </ul>
+            </aside>
+
+            <section
+              id="c3-resume"
+              class="module-01-box module-01-box--summary"
+              aria-labelledby="c3-resume-t"
+            >
+              <h3 id="c3-resume-t">À retenir — Chapitre 3</h3>
+              <ul>
+                <li>
+                  Mesurer : déterminer les positions de points avec une
+                  précision connue.
+                </li>
+                <li>
+                  Représenter : produire plans, profils et modèles numériques.
+                </li>
+                <li>
+                  Lever : décrire un site existant. Implanter : matérialiser un
+                  projet. Contrôler : vérifier le réalisé.
+                </li>
+                <li>
+                  Le plan de récolement fixe l'état réel des ouvrages ;
+                  l'auscultation suit leur comportement dans le temps.
+                </li>
+              </ul>
+            </section>
+
+            <section class="module-01-exercises" aria-labelledby="c3-ex-t">
+              <h3 id="c3-ex-t">Exercices d'application — Chapitre 3</h3>
+              <ol>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 1.</strong> Classez : (a) mesurer
+                    l'emplacement des arbres et des bâtiments existants avant un
+                    projet ; (b) matérialiser par des piquets les angles d'une
+                    future maison ; (c) vérifier après coulage que la dalle est
+                    à l'altitude prévue ; (d) dessiner au bureau le plan du
+                    terrain levé.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) levé ; (b) implantation ; (c) contrôle ; (d)
+                        représentation.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 2.</strong> Expliquez en deux phrases la
+                    différence entre un levé et une implantation.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Le levé mesure ce qui existe sur le terrain pour le
+                        représenter sur un plan. L'implantation fait l'inverse :
+                        elle part des coordonnées du projet pour matérialiser
+                        les points sur le terrain.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 3.</strong> Le projet prévoit une
+                    plateforme à l'altitude 100,800 m. Un repère R a pour
+                    altitude 100,000 m. Le niveau étant en place, la lecture
+                    arrière sur la mire posée en R est 1,350 m. Quelle lecture
+                    doit-on obtenir sur la mire posée au sommet d'un piquet pour
+                    que celui-ci soit à 100,800 m ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Altitude du plan de visée = 100,000 + 1,350 = 101,350 m.
+                        Lecture à obtenir = 101,350 − 100,800 =
+                        <strong>0,550 m</strong>. On enfonce ou on relève le
+                        piquet jusqu'à lire 0,550 m. (Le nivellement est
+                        détaillé au module 05.)
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 4.</strong> Citez trois exemples de
+                    contrôles topographiques sur un chantier de bâtiment.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Exemples : contrôle de l'altitude de la dalle ou des
+                        planchers ; contrôle de la position des axes après
+                        coulage des fondations ; contrôle de la verticalité des
+                        poteaux ou des murs ; plan de récolement final.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ol>
+            </section>
+
+            <nav
+              class="module-01-chapnav"
+              aria-label="Navigation entre les chapitres"
+            >
+              <a href="#ch2">Chapitre 2 : Historique</a>
+              <a href="#module-01-sommaire">Sommaire</a>
+              <a class="module-01-chapnav__next" href="#ch4"
+                >Chapitre 4 : Domaines d'application</a
+              >
+            </nav>
+          </article>
+
+          <!-- ======================================================== -->
+          <!-- CHAPITRE 4                                               -->
+          <!-- ======================================================== -->
+          <article
+            id="ch4"
+            class="module-01-chapter"
+            aria-labelledby="ch4-titre"
+          >
+            <header class="module-01-chapter__head">
+              <p class="module-01-chapter__label">Chapitre 4 sur 6</p>
+              <h2 id="ch4-titre">Chapitre 4 — Domaines d'application</h2>
+              <p class="module-01-chapter__goal">
+                À la fin de ce chapitre, vous saurez citer les principaux
+                secteurs qui font appel à la topographie et décrire ce que le
+                topographe y réalise concrètement.
+              </p>
+            </header>
+
+            <p>
+              La topographie intervient partout où l'on a besoin de connaître ou
+              de modifier la forme du terrain. Chaque secteur a ses exigences,
+              mais les missions de base (lever, implanter, contrôler) restent
+              les mêmes.
+            </p>
+
+            <h3 id="c4-1">4.1 Construction et bâtiment</h3>
+            <ul>
+              <li>Levé topographique du terrain avant projet.</li>
+              <li>
+                Implantation des axes et des angles des fondations, des murs et
+                des poteaux.
+              </li>
+              <li>
+                Contrôle des altitudes des dalles et des planchers, et de
+                l'aplomb (verticalité) des ouvrages.
+              </li>
+              <li>
+                Plan de récolement et, selon la réglementation locale, relevé
+                des superficies.
+              </li>
+            </ul>
+
+            <h3 id="c4-2">4.2 Routes et infrastructures</h3>
+            <p>
+              Pour une route, une voie ferrée, un canal ou un pont, on lève une
+              large bande de terrain, on implante l'axe et les limites des
+              travaux, puis on suit les terrassements. Deux documents sont
+              essentiels : le <strong>profil en long</strong> (coupe le long de
+              l'axe) et les <strong>profils en travers</strong> (coupes
+              perpendiculaires à l'axe), qui permettent de calculer les volumes
+              de terre à déplacer.
+            </p>
+            <figure class="module-01-figure">
+              <svg viewBox="0 0 520 190" role="img" aria-labelledby="f4-t f4-d">
+                <title id="f4-t">Déblai et remblai</title>
+                <desc id="f4-d">
+                  Coupe d'un terrain naturel et d'un niveau de projet
+                  horizontal. Là où le terrain est au-dessus du projet, on
+                  creuse (déblai) ; là où il est en dessous, on ajoute de la
+                  terre (remblai).
+                </desc>
+                <polygon
+                  points="60,100 100,90 180,70 260,100"
+                  fill="#12B8B0"
+                  fill-opacity=".45"
+                />
+                <polygon
+                  points="20,100 20,110 60,100"
+                  fill="#E8B44A"
+                  fill-opacity=".6"
+                />
+                <polygon
+                  points="260,100 340,130 420,120 500,110 500,100"
+                  fill="#E8B44A"
+                  fill-opacity=".6"
+                />
+                <polyline
+                  points="20,110 100,90 180,70 260,100 340,130 420,120 500,110"
+                  fill="none"
+                  stroke="#10243B"
+                  stroke-width="3"
+                />
+                <line
+                  x1="20"
+                  y1="100"
+                  x2="500"
+                  y2="100"
+                  stroke="#B88A1E"
+                  stroke-width="2.5"
+                  stroke-dasharray="8 5"
+                />
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  font-size="13"
+                  fill="#10243B"
+                >
+                  <text x="146" y="93" font-weight="700">Déblai</text>
+                  <text x="350" y="116" font-weight="700">Remblai</text>
+                  <line
+                    x1="30"
+                    y1="165"
+                    x2="70"
+                    y2="165"
+                    stroke="#10243B"
+                    stroke-width="3"
+                  />
+                  <text x="78" y="169">Terrain naturel</text>
+                  <line
+                    x1="220"
+                    y1="165"
+                    x2="260"
+                    y2="165"
+                    stroke="#B88A1E"
+                    stroke-width="2.5"
+                    stroke-dasharray="8 5"
+                  />
+                  <text x="268" y="169">Niveau du projet (plateforme)</text>
+                </g>
+              </svg>
+              <figcaption>
+                Figure 4.1 — Comparer le terrain naturel et le niveau du projet
+                permet de calculer les volumes de déblai (à enlever) et de
+                remblai (à apporter).
+              </figcaption>
+            </figure>
+
+            <h3 id="c4-3">4.3 Urbanisme et aménagement</h3>
+            <ul>
+              <li>
+                Plans topographiques de base pour concevoir un quartier, un
+                lotissement ou un espace public.
+              </li>
+              <li>Division de terrains, bornage et implantation des lots.</li>
+              <li>
+                Levés des réseaux (eau, assainissement, électricité) et des
+                voiries existantes.
+              </li>
+              <li>Plans cadastraux et plans fonciers.</li>
+            </ul>
+
+            <h3 id="c4-4">4.4 Agriculture</h3>
+            <ul>
+              <li>Mesure des superficies des parcelles agricoles.</li>
+              <li>
+                Étude des pentes pour l'irrigation et le drainage, et
+                nivellement des parcelles.
+              </li>
+              <li>
+                Guidage des machines par GNSS (agriculture de précision) pour le
+                travail du sol, le semis et les traitements.
+              </li>
+            </ul>
+
+            <h3 id="c4-5">4.5 Mines et carrières</h3>
+            <ul>
+              <li>
+                Levés réguliers des fronts d'extraction et des zones de
+                stockage.
+              </li>
+              <li>
+                Calcul des <strong>volumes</strong> extraits ou stockés par
+                comparaison de modèles de terrain à des dates différentes.
+              </li>
+              <li>
+                Implantation des points de forage et des limites d'exploitation.
+              </li>
+              <li>
+                Surveillance de la stabilité des talus et des fronts de taille.
+              </li>
+            </ul>
+
+            <h3 id="c4-6">4.6 Environnement et autres domaines</h3>
+            <ul>
+              <li>
+                <strong>Environnement :</strong> suivi de l'érosion du littoral,
+                des glissements de terrain et des cours d'eau ; modèles de
+                terrain pour l'étude des zones inondables.
+              </li>
+              <li>
+                <strong>Énergie :</strong> implantation de lignes électriques,
+                de parcs solaires ou d'éoliennes.
+              </li>
+              <li>
+                <strong>Patrimoine et archéologie :</strong> relevé de monuments
+                et de sites, modélisation 3D.
+              </li>
+              <li>
+                <strong>Hydrographie :</strong> mesure des fonds de rivières, de
+                lacs et de ports.
+              </li>
+              <li>
+                <strong>Tunnels et ouvrages souterrains :</strong> guidage et
+                contrôle du creusement.
+              </li>
+            </ul>
+            <aside class="module-01-box module-01-box--important">
+              <h4>Points importants</h4>
+              <ul>
+                <li>
+                  Les missions sont communes (lever, implanter, contrôler), mais
+                  les précisions, les outils et les documents varient selon le
+                  secteur.
+                </li>
+                <li>
+                  Les calculs de volumes (déblai, remblai, stocks) sont au cœur
+                  des routes, des carrières et des terrassements.
+                </li>
+              </ul>
+            </aside>
+            <aside class="module-01-box module-01-box--warning">
+              <h4>Erreurs à éviter</h4>
+              <ul>
+                <li>
+                  Croire que la topographie ne concerne que le bâtiment : elle
+                  sert aussi l'agriculture, l'environnement, l'énergie, le
+                  patrimoine, etc.
+                </li>
+                <li>
+                  Appliquer partout la même précision : le travail d'un
+                  agriculteur et celui d'un chantier de précision n'ont pas les
+                  mêmes tolérances.
+                </li>
+              </ul>
+            </aside>
+
+            <section
+              id="c4-resume"
+              class="module-01-box module-01-box--summary"
+              aria-labelledby="c4-resume-t"
+            >
+              <h3 id="c4-resume-t">À retenir — Chapitre 4</h3>
+              <ul>
+                <li>
+                  Bâtiment : levé, implantation, contrôle des altitudes et des
+                  aplombs.
+                </li>
+                <li>
+                  Routes et infrastructures : axe, profils en long et en
+                  travers, volumes.
+                </li>
+                <li>Urbanisme : plans de base, bornage, réseaux, cadastre.</li>
+                <li>
+                  Agriculture : superficies, pentes, drainage, guidage GNSS.
+                </li>
+                <li>Mines et carrières : fronts, volumes, stabilité.</li>
+                <li>
+                  Environnement et autres : suivi de l'érosion, énergie,
+                  patrimoine, hydrographie, tunnels.
+                </li>
+              </ul>
+            </section>
+
+            <section class="module-01-exercises" aria-labelledby="c4-ex-t">
+              <h3 id="c4-ex-t">Exercices d'application — Chapitre 4</h3>
+              <ol>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 1.</strong> Associez chaque mission à un
+                    domaine : (a) calcul du volume d'un tas de granulats ; (b)
+                    implantation de l'axe d'une route ; (c) étude des pentes
+                    pour l'irrigation ; (d) contrôle de l'aplomb d'un poteau de
+                    bâtiment.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) mines et carrières ; (b) routes et infrastructures ;
+                        (c) agriculture ; (d) construction et bâtiment.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 2.</strong> En trois points, l'altitude du
+                    terrain naturel et celle du projet sont : P1 = 102,40 m
+                    (terrain) et 101,90 m (projet) ; P2 = 99,80 m (terrain) et
+                    100,40 m (projet) ; P3 = 101,00 m (terrain) et 101,00 m
+                    (projet). Indiquez pour chacun s'il faut déblayer ou
+                    remblayer, et de combien.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        P1 : terrain au-dessus du projet →
+                        <strong>déblai de 0,50 m</strong>. P2 : terrain en
+                        dessous du projet → <strong>remblai de 0,60 m</strong>.
+                        P3 : terrain à la même altitude que le projet → aucun
+                        mouvement de terre.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 3.</strong> Une tranchée mesure 20 m de
+                    long, 0,80 m de large et 1,20 m de profondeur. Quel est le
+                    volume de terre à extraire ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Volume = longueur × largeur × profondeur = 20 × 0,80 ×
+                        1,20 = <strong>19,2 m³</strong>.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 4.</strong> Pourquoi la précision demandée
+                    peut-elle différer entre un travail agricole et
+                    l'implantation d'une structure en béton ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        La tolérance dépend de l'usage : un petit écart de
+                        position n'a pas de conséquence sur un champ, alors
+                        qu'un écart sur une structure en béton peut empêcher
+                        l'assemblage des éléments ou compromettre la sécurité.
+                        La précision se choisit en fonction du risque et du
+                        cahier des charges.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ol>
+            </section>
+
+            <nav
+              class="module-01-chapnav"
+              aria-label="Navigation entre les chapitres"
+            >
+              <a href="#ch3">Chapitre 3 : Objectifs et rôle</a>
+              <a href="#module-01-sommaire">Sommaire</a>
+              <a class="module-01-chapnav__next" href="#ch5"
+                >Chapitre 5 : Topographie, géodésie, cartographie</a
+              >
+            </nav>
+          </article>
+
+          <!-- ======================================================== -->
+          <!-- CHAPITRE 5                                               -->
+          <!-- ======================================================== -->
+          <article
+            id="ch5"
+            class="module-01-chapter"
+            aria-labelledby="ch5-titre"
+          >
+            <header class="module-01-chapter__head">
+              <p class="module-01-chapter__label">Chapitre 5 sur 6</p>
+              <h2 id="ch5-titre">
+                Chapitre 5 — Différence entre topographie, géodésie et
+                cartographie
+              </h2>
+              <p class="module-01-chapter__goal">
+                À la fin de ce chapitre, vous saurez définir les trois
+                disciplines, les distinguer par leur objet et leur échelle de
+                travail, et expliquer comment elles se complètent.
+              </p>
+            </header>
+
+            <h3 id="c5-1">5.1 Définition de chaque discipline</h3>
+            <div class="module-01-box module-01-box--definition">
+              <h4>Topographie</h4>
+              <p>
+                Mesure et représentation détaillée d'une
+                <strong>portion limitée</strong> de la surface terrestre :
+                relief, éléments naturels et artificiels.
+              </p>
+            </div>
+            <div class="module-01-box module-01-box--definition">
+              <h4>Géodésie</h4>
+              <p>
+                Science qui étudie la
+                <strong>forme et les dimensions de la Terre</strong> ainsi que
+                son champ de pesanteur, et qui détermine avec une grande
+                précision la position de points sur de
+                <strong>vastes étendues</strong>. Elle fournit les systèmes de
+                référence.
+              </p>
+            </div>
+            <div class="module-01-box module-01-box--definition">
+              <h4>Cartographie</h4>
+              <p>
+                Ensemble des études et des opérations de
+                <strong
+                  >conception, d'élaboration, de dessin et de diffusion des
+                  cartes</strong
+                >
+                : choix de la projection, de l'échelle, des symboles et de la
+                généralisation des informations.
+              </p>
+            </div>
+
+            <figure class="module-01-figure">
+              <svg viewBox="0 0 600 210" role="img" aria-labelledby="f5-t f5-d">
+                <title id="f5-t">Géodésie, topographie et cartographie</title>
+                <desc id="f5-d">
+                  Trois étapes : la Terre entière étudiée par la géodésie, un
+                  site local mesuré par la topographie, une carte produite par
+                  la cartographie.
+                </desc>
+                <defs>
+                  <marker
+                    id="m1-fleche-5"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                  >
+                    <path d="M0 0L10 5L0 10z" fill="#173D5C" />
+                  </marker>
+                </defs>
+                <circle
+                  cx="90"
+                  cy="90"
+                  r="55"
+                  fill="#E6F7F6"
+                  stroke="#10243B"
+                  stroke-width="2.5"
+                />
+                <ellipse
+                  cx="90"
+                  cy="90"
+                  rx="22"
+                  ry="55"
+                  fill="none"
+                  stroke="#173D5C"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="35"
+                  y1="90"
+                  x2="145"
+                  y2="90"
+                  stroke="#173D5C"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="112"
+                  y="58"
+                  width="14"
+                  height="14"
+                  fill="#E8B44A"
+                  stroke="#10243B"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="150"
+                  y1="90"
+                  x2="212"
+                  y2="90"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                  marker-end="url(#m1-fleche-5)"
+                />
+                <polygon
+                  points="250,130 350,130 335,60 255,65"
+                  fill="#E6F7F6"
+                  stroke="#10243B"
+                  stroke-width="2.5"
+                />
+                <g fill="#10243B">
+                  <circle cx="250" cy="130" r="4" />
+                  <circle cx="350" cy="130" r="4" />
+                  <circle cx="335" cy="60" r="4" />
+                  <circle cx="255" cy="65" r="4" />
+                </g>
+                <circle
+                  cx="298"
+                  cy="98"
+                  r="6"
+                  fill="#E8B44A"
+                  stroke="#10243B"
+                  stroke-width="2"
+                />
+                <line
+                  x1="365"
+                  y1="90"
+                  x2="412"
+                  y2="90"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                  marker-end="url(#m1-fleche-5)"
+                />
+                <rect
+                  x="420"
+                  y="40"
+                  width="150"
+                  height="100"
+                  fill="#FFFFFF"
+                  stroke="#10243B"
+                  stroke-width="2.5"
+                />
+                <g fill="none" stroke="#12B8B0" stroke-width="2">
+                  <path d="M430 112 C460 70 505 70 560 104" />
+                  <path d="M430 128 C470 92 510 92 560 122" />
+                </g>
+                <path
+                  d="M432 60 L500 85 L560 55"
+                  fill="none"
+                  stroke="#10243B"
+                  stroke-width="1.5"
+                />
+                <g
+                  font-family="Segoe UI, Arial, sans-serif"
+                  fill="#10243B"
+                  text-anchor="middle"
+                >
+                  <text x="90" y="172" font-size="15" font-weight="700">
+                    Géodésie
+                  </text>
+                  <text x="90" y="190" font-size="12">La Terre entière</text>
+                  <text x="300" y="172" font-size="15" font-weight="700">
+                    Topographie
+                  </text>
+                  <text x="300" y="190" font-size="12">
+                    Un site, avec ses détails
+                  </text>
+                  <text x="495" y="172" font-size="15" font-weight="700">
+                    Cartographie
+                  </text>
+                  <text x="495" y="190" font-size="12">
+                    La carte ou le plan
+                  </text>
+                </g>
+              </svg>
+              <figcaption>
+                Figure 5.1 — Des trois disciplines, la géodésie travaille sur la
+                Terre entière, la topographie sur un site, la cartographie sur
+                la représentation.
+              </figcaption>
+            </figure>
+
+            <h3 id="c5-2">5.2 Objectifs et domaines d'intervention</h3>
+            <ul>
+              <li>
+                <strong>Géodésie :</strong> déterminer la forme de la Terre,
+                établir des réseaux de points de référence à l'échelle d'un pays
+                ou du globe, définir des systèmes de coordonnées. Elle
+                intervient dans les grands réseaux nationaux, le positionnement
+                par satellites et la surveillance des déformations de la Terre.
+              </li>
+              <li>
+                <strong>Topographie :</strong> décrire en détail un site précis,
+                implanter et contrôler des ouvrages. Elle intervient dans le
+                bâtiment, les travaux publics, le foncier, les mines, etc.
+              </li>
+              <li>
+                <strong>Cartographie :</strong> concevoir des cartes lisibles,
+                choisir la projection, sélectionner et simplifier les
+                informations. Elle intervient dans les cartes routières, les
+                atlas, les cartes thématiques et les cartes numériques.
+              </li>
+            </ul>
+
+            <h3 id="c5-3">5.3 Différences fondamentales</h3>
+            <div class="module-01-table-wrap">
+              <table class="module-01-table">
+                <caption>
+                  Comparaison des trois disciplines
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Critère</th>
+                    <th scope="col">Topographie</th>
+                    <th scope="col">Géodésie</th>
+                    <th scope="col">Cartographie</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Objet</th>
+                    <td>Décrire en détail un terrain</td>
+                    <td>
+                      Étudier la forme de la Terre et fournir un cadre de
+                      référence
+                    </td>
+                    <td>Concevoir et produire des cartes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Étendue</th>
+                    <td>Zone limitée</td>
+                    <td>Pays, continent, globe</td>
+                    <td>Variable, de la ville au monde entier</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Surface de référence</th>
+                    <td>
+                      Plan local ou projection (la Terre est assimilée à un
+                      plan)
+                    </td>
+                    <td>Ellipsoïde et géoïde (module 03)</td>
+                    <td>Surface projetée sur un plan (projection)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Niveau de détail</th>
+                    <td>Très détaillé</td>
+                    <td>Peu de points, très précis</td>
+                    <td>Détail choisi selon l'échelle (généralisation)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Résultat</th>
+                    <td>Plan topographique, coordonnées, implantation</td>
+                    <td>Réseau de points, système de référence</td>
+                    <td>Carte, atlas, document numérique</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              La Terre n'est pas une sphère parfaite : elle est légèrement
+              aplatie aux pôles, avec un rayon d'environ 6 378 km à l'équateur
+              et 6 357 km aux pôles. Sur de petites étendues, cet aplatissement
+              est négligeable, mais sur un pays entier il ne l'est plus : c'est
+              la raison d'être de la géodésie.
+            </p>
+            <aside class="module-01-box module-01-box--important">
+              <h4>Plan ou carte ?</h4>
+              <p>
+                Dans l'usage courant, on parle de <strong>plan</strong> pour une
+                représentation à grande échelle d'une zone restreinte, fidèle
+                dans les détails, et de <strong>carte</strong> pour une
+                représentation à plus petite échelle d'une zone étendue, où l'on
+                simplifie (on généralise).
+              </p>
+            </aside>
+
+            <h3 id="c5-4">5.4 Relations et complémentarités</h3>
+            <p>Les trois disciplines forment une chaîne :</p>
+            <ol class="module-01-steps">
+              <li>
+                la <strong>géodésie</strong> fournit le cadre de référence :
+                systèmes de coordonnées et réseaux de points précis ;
+              </li>
+              <li>
+                la <strong>topographie</strong> se rattache à ce cadre (on parle
+                de <em>rattachement</em>), puis lève et implante les détails du
+                terrain ;
+              </li>
+              <li>
+                la <strong>cartographie</strong> utilise ces données pour
+                produire des plans et des cartes lisibles.
+              </li>
+            </ol>
+            <p>
+              Avec le GNSS, les SIG et les outils numériques, les frontières
+              entre ces disciplines se rapprochent : un même opérateur peut
+              passer de la mesure à la production de cartes. On regroupe souvent
+              ces savoirs sous le nom de <strong>géomatique</strong> (module
+              08).
+            </p>
+
+            <h3 id="c5-5">5.5 Exemples pratiques comparatifs</h3>
+            <div class="module-01-cards">
+              <div class="module-01-card">
+                <h4>Construire un pont</h4>
+                <p>
+                  <strong>Géodésie :</strong> fournit le système de coordonnées
+                  et les points de référence.
+                  <strong>Topographie :</strong> lève le site, implante les
+                  piles, contrôle la structure.
+                  <strong>Cartographie :</strong> produit le plan de situation
+                  et la carte de la région.
+                </p>
+              </div>
+              <div class="module-01-card">
+                <h4>Faire une carte nationale</h4>
+                <p>
+                  La géodésie établit le réseau de référence, la topographie ou
+                  la photogrammétrie fournit les détails, et la cartographie les
+                  met en forme à l'échelle voulue.
+                </p>
+              </div>
+              <div class="module-01-card">
+                <h4>Borner un terrain</h4>
+                <p>
+                  La topographie réalise les mesures. Elle s'appuie sur un
+                  système de coordonnées défini par la géodésie et produit un
+                  plan qui relève de la cartographie à grande échelle.
+                </p>
+              </div>
+            </div>
+            <aside class="module-01-box module-01-box--warning">
+              <h4>Erreurs à éviter</h4>
+              <ul>
+                <li>
+                  Penser que la cartographie se limite à « dessiner » : elle
+                  suppose des choix (projection, échelle, généralisation).
+                </li>
+                <li>
+                  Croire que la géodésie est « une topographie en plus grand » :
+                  elle étudie la Terre dans son ensemble et fournit les
+                  références.
+                </li>
+                <li>
+                  Utiliser un plan local comme s'il était valable pour un grand
+                  territoire.
+                </li>
+              </ul>
+            </aside>
+
+            <section
+              id="c5-resume"
+              class="module-01-box module-01-box--summary"
+              aria-labelledby="c5-resume-t"
+            >
+              <h3 id="c5-resume-t">À retenir — Chapitre 5</h3>
+              <ul>
+                <li>
+                  Topographie : zone limitée, détail, implantation et contrôle.
+                </li>
+                <li>
+                  Géodésie : forme de la Terre, grands réseaux, systèmes de
+                  référence.
+                </li>
+                <li>
+                  Cartographie : conception et production de cartes (projection,
+                  échelle, généralisation).
+                </li>
+                <li>
+                  Les trois sont complémentaires : cadre de référence → mesures
+                  de terrain → représentation.
+                </li>
+              </ul>
+            </section>
+
+            <section class="module-01-exercises" aria-labelledby="c5-ex-t">
+              <h3 id="c5-ex-t">Exercices d'application — Chapitre 5</h3>
+              <ol>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 1.</strong> Attribuez à chaque tâche la
+                    discipline qui lui correspond : (a) lever les détails d'un
+                    lotissement ; (b) calculer les dimensions de l'ellipsoïde
+                    terrestre ; (c) dessiner une carte routière avec symboles et
+                    légende ; (d) établir le réseau de points de référence d'un
+                    pays.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) topographie ; (b) géodésie ; (c) cartographie ; (d)
+                        géodésie.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 2.</strong> Vrai ou faux ? (a) La
+                    topographie travaille généralement sur une étendue limitée.
+                    (b) La géodésie fournit les systèmes de référence. (c) La
+                    cartographie ne concerne que le dessin à la main.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) Vrai. (b) Vrai. (c) Faux : la cartographie moderne
+                        est largement numérique et suppose des choix de
+                        projection, d'échelle et de généralisation.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 3.</strong> Un technicien veut que son levé
+                    local soit cohérent avec le système de coordonnées national.
+                    Quelle discipline fournit les points de référence, et que
+                    doit-il faire ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        La géodésie fournit les points de référence. Le
+                        technicien doit <strong>rattacher</strong> son levé à
+                        ces points (mesures depuis ou vers eux) afin d'exprimer
+                        ses coordonnées dans le système national.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 4.</strong> Quelle différence faites-vous
+                    entre un plan et une carte ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Un plan représente une zone restreinte à grande échelle,
+                        avec un haut niveau de détail ; une carte représente une
+                        zone plus étendue à plus petite échelle, avec
+                        simplification des informations.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ol>
+            </section>
+
+            <nav
+              class="module-01-chapnav"
+              aria-label="Navigation entre les chapitres"
+            >
+              <a href="#ch4">Chapitre 4 : Domaines d'application</a>
+              <a href="#module-01-sommaire">Sommaire</a>
+              <a class="module-01-chapnav__next" href="#ch6"
+                >Chapitre 6 : Métiers et débouchés</a
+              >
+            </nav>
+          </article>
+
+          <!-- ======================================================== -->
+          <!-- CHAPITRE 6                                               -->
+          <!-- ======================================================== -->
+          <article
+            id="ch6"
+            class="module-01-chapter"
+            aria-labelledby="ch6-titre"
+          >
+            <header class="module-01-chapter__head">
+              <p class="module-01-chapter__label">Chapitre 6 sur 6</p>
+              <h2 id="ch6-titre">Chapitre 6 — Métiers et débouchés</h2>
+              <p class="module-01-chapter__goal">
+                À la fin de ce chapitre, vous saurez distinguer les trois grands
+                niveaux de métiers de la topographie, citer les secteurs qui
+                recrutent, les compétences attendues et les évolutions de
+                carrière possibles.
+              </p>
+            </header>
+
+            <aside class="module-01-box module-01-box--important">
+              <h4>À savoir avant de lire</h4>
+              <p>
+                Les intitulés, les durées de formation et les règles d'exercice
+                de la profession varient selon les pays. Ce chapitre décrit les
+                grandes lignes ; pour un projet d'études ou de carrière,
+                renseignez-vous auprès des établissements de formation et des
+                autorités de votre pays.
+              </p>
+            </aside>
+
+            <h3 id="c6-1">6.1 Technicien géomètre-topographe</h3>
+            <p>
+              C'est le métier de <strong>terrain et de calcul</strong>. Le
+              technicien travaille le plus souvent en équipe, sous la
+              responsabilité d'un géomètre ou d'un chef d'équipe.
+            </p>
+            <ul>
+              <li>Réaliser des levés avec station totale, niveau et GNSS.</li>
+              <li>Implanter des points et des axes sur les chantiers.</li>
+              <li>
+                Effectuer les calculs de base et dessiner les plans (logiciels
+                de dessin et de topographie).
+              </li>
+              <li>Tenir les carnets de terrain et contrôler les mesures.</li>
+            </ul>
+
+            <h3 id="c6-2">6.2 Géomètre-topographe</h3>
+            <p>
+              Le géomètre-topographe a un rôle de
+              <strong>responsable de mission</strong>. Il organise le travail,
+              choisit les méthodes, vérifie la qualité et signe les documents
+              produits.
+            </p>
+            <ul>
+              <li>
+                Préparer et diriger des opérations de levé, d'implantation et de
+                contrôle.
+              </li>
+              <li>
+                Réaliser des plans de bornage, de division et de récolement.
+              </li>
+              <li>
+                Traiter et compenser les observations, et valider la précision
+                obtenue.
+              </li>
+              <li>
+                Encadrer des techniciens et dialoguer avec les clients,
+                architectes, entreprises.
+              </li>
+            </ul>
+            <p>
+              Dans certains pays, une partie de ces missions (bornage, plans
+              fonciers) est réservée à des professionnels agréés ou inscrits à
+              un ordre ou à un registre.
+            </p>
+
+            <h3 id="c6-3">6.3 Ingénieur géomètre-topographe</h3>
+            <p>
+              L'ingénieur intervient sur les
+              <strong>projets complexes</strong> et sur la conception des
+              méthodes. Il peut diriger un bureau d'études ou un service,
+              concevoir des réseaux de mesure, traiter des données avancées
+              (géodésie, photogrammétrie, SIG) et gérer des projets de grande
+              taille.
+            </p>
+            <ul>
+              <li>
+                Concevoir et optimiser des réseaux de points de précision.
+              </li>
+              <li>
+                Mettre en œuvre la géodésie, le GNSS de haute précision, la
+                photogrammétrie et le lidar.
+              </li>
+              <li>Piloter des projets, des équipes et des budgets.</li>
+              <li>
+                Assurer des expertises, de la recherche et du développement.
+              </li>
+            </ul>
+
+            <div class="module-01-table-wrap">
+              <table class="module-01-table">
+                <caption>
+                  Les trois niveaux de métiers (indicatif)
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Niveau</th>
+                    <th scope="col">Formation (indicative)</th>
+                    <th scope="col">Rôle principal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Technicien géomètre-topographe</th>
+                    <td>Formation de technicien, souvent de niveau bac+2</td>
+                    <td>Terrain, calculs de base, dessin</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Géomètre-topographe</th>
+                    <td>Formation supérieure et expérience selon le pays</td>
+                    <td>Responsable de mission, validation, relation client</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ingénieur géomètre-topographe</th>
+                    <td>Formation d'ingénieur, en général de niveau bac+5</td>
+                    <td>
+                      Conception, projets complexes, expertise, management
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 id="c6-4">6.4 Domaines professionnels</h3>
+            <ul>
+              <li>
+                <strong>Cabinets de géomètres et bureaux d'études</strong> :
+                bornage, plans fonciers, études d'aménagement.
+              </li>
+              <li>
+                <strong>Entreprises de bâtiment et de travaux publics</strong> :
+                implantation et contrôle sur chantier.
+              </li>
+              <li>
+                <strong>Administrations et collectivités</strong> : cadastre,
+                conservation foncière, urbanisme, voirie, instituts nationaux de
+                cartographie.
+              </li>
+              <li>
+                <strong>Mines, carrières et énergie</strong> : levés, volumes,
+                implantation, surveillance.
+              </li>
+              <li>
+                <strong
+                  >Entreprises de géomatique, de photogrammétrie et de
+                  drones</strong
+                >
+                : acquisition et traitement de données.
+              </li>
+              <li><strong>Enseignement, formation et recherche</strong>.</li>
+            </ul>
+
+            <h3 id="c6-5">6.5 Compétences nécessaires</h3>
+            <div class="module-01-cards">
+              <div class="module-01-card">
+                <h4>Compétences techniques</h4>
+                <ul>
+                  <li>Géométrie, trigonométrie, calcul numérique.</li>
+                  <li>
+                    Utilisation des instruments (station totale, niveau, GNSS).
+                  </li>
+                  <li>Logiciels de calcul, de dessin (DAO/CAO) et de SIG.</li>
+                  <li>Lecture et rédaction de plans et de rapports.</li>
+                </ul>
+              </div>
+              <div class="module-01-card">
+                <h4>Qualités personnelles</h4>
+                <ul>
+                  <li>Rigueur et sens du contrôle.</li>
+                  <li>Organisation et autonomie.</li>
+                  <li>Travail en équipe et communication.</li>
+                  <li>
+                    Respect des règles de sécurité sur chantier et endurance
+                    physique.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <aside class="module-01-box module-01-box--warning">
+              <h4>Erreurs à éviter</h4>
+              <ul>
+                <li>
+                  Croire que le métier se résume à « manipuler un appareil » :
+                  le calcul, la vérification et la rédaction en sont une part
+                  essentielle.
+                </li>
+                <li>
+                  Négliger les mathématiques de base : elles servent chaque
+                  jour.
+                </li>
+                <li>
+                  Penser que le travail est toujours en extérieur ou toujours au
+                  bureau : les deux sont indissociables.
+                </li>
+              </ul>
+            </aside>
+
+            <h3 id="c6-6">6.6 Perspectives d'évolution professionnelle</h3>
+            <ol class="module-01-ladder">
+              <li>
+                <strong>Technicien</strong> : acquisition de l'expérience du
+                terrain et du calcul.
+              </li>
+              <li>
+                <strong>Chef d'équipe</strong> ou technicien confirmé :
+                encadrement d'une équipe de terrain.
+              </li>
+              <li>
+                <strong>Géomètre-topographe</strong> ou responsable de bureau
+                d'études : responsabilité des missions et de la qualité.
+              </li>
+              <li>
+                <strong>Ingénieur, chef de projet ou directeur</strong> :
+                projets complexes, conception, gestion d'équipes et de budgets.
+              </li>
+            </ol>
+            <p>
+              D'autres voies existent :
+              <strong>spécialisation</strong> (géodésie, photogrammétrie,
+              drones, scan 3D, SIG, hydrographie),
+              <strong>poursuite d'études</strong> et formation continue,
+              <strong>enseignement</strong> et recherche, ou
+              <strong>création d'une entreprise</strong> dans le respect de la
+              réglementation de son pays.
+            </p>
+
+            <section
+              id="c6-resume"
+              class="module-01-box module-01-box--summary"
+              aria-labelledby="c6-resume-t"
+            >
+              <h3 id="c6-resume-t">À retenir — Chapitre 6</h3>
+              <ul>
+                <li>
+                  Trois niveaux : technicien (terrain et calcul),
+                  géomètre-topographe (responsable de mission), ingénieur
+                  (conception et projets complexes).
+                </li>
+                <li>
+                  Les débouchés vont du privé (cabinets, BTP, mines, géomatique)
+                  au public (cadastre, collectivités, instituts de
+                  cartographie).
+                </li>
+                <li>
+                  Compétences : mathématiques, instruments, logiciels, rigueur,
+                  organisation, travail en équipe.
+                </li>
+                <li>
+                  L'évolution se fait par l'expérience, la formation continue et
+                  la spécialisation.
+                </li>
+              </ul>
+            </section>
+
+            <section class="module-01-exercises" aria-labelledby="c6-ex-t">
+              <h3 id="c6-ex-t">Exercices d'application — Chapitre 6</h3>
+              <ol>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 1.</strong> Associez chaque tâche au niveau
+                    de métier le plus probable : (a) réaliser le levé et
+                    l'implantation sur un chantier ; (b) concevoir le réseau de
+                    points d'un grand projet et piloter l'équipe ; (c) diriger
+                    une mission de bornage et signer le plan.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        (a) technicien ; (b) ingénieur ; (c)
+                        géomètre-topographe.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 2.</strong> Citez cinq compétences utiles à
+                    un technicien géomètre-topographe.
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Par exemple : trigonométrie et calcul ; manipulation de
+                        la station totale, du niveau et du GNSS ; dessin sur
+                        logiciel ; rigueur et contrôle ; travail en équipe ;
+                        respect des règles de sécurité.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 3.</strong> Un technicien souhaite devenir
+                    ingénieur. Quelles voies peut-il envisager ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Poursuite d'études vers une formation d'ingénieur
+                        lorsque le système éducatif de son pays le permet
+                        (passerelles, concours, formation continue ou en
+                        alternance), tout en acquérant de l'expérience de
+                        terrain. Il doit se renseigner auprès des établissements
+                        concernés.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+                <li class="module-01-exercise">
+                  <p>
+                    <strong>Exercice 4.</strong> Pourquoi la rigueur est-elle
+                    une qualité essentielle dans ce métier ?
+                  </p>
+                  <details>
+                    <summary>Voir la correction</summary>
+                    <div class="module-01-correction">
+                      <p>
+                        Parce qu'une erreur de mesure ou de calcul peut se
+                        répercuter sur tout un chantier (ouvrage mal positionné,
+                        surfaces erronées, litiges fonciers) et coûter cher à
+                        corriger. La rigueur et le contrôle systématique
+                        limitent ce risque.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+              </ol>
+            </section>
+
+            <nav
+              class="module-01-chapnav"
+              aria-label="Navigation entre les chapitres"
+            >
+              <a href="#ch5"
+                >Chapitre 5 : Topographie, géodésie, cartographie</a
+              >
+              <a href="#module-01-sommaire">Sommaire</a>
+            </nav>
+          </article>
+
+          <!-- ============ FIN DU MODULE ============ -->
+          <section class="module-01-end" aria-labelledby="module-01-fin-t">
+            <h2 id="module-01-fin-t">Module 01 terminé</h2>
+            <p>
+              Vous connaissez maintenant le cadre général de la topographie : ce
+              qu'elle mesure, son histoire, ses missions, ses secteurs
+              d'application, ses voisines que sont la géodésie et la
+              cartographie, et les métiers qui y mènent. Le module 02 introduit
+              les notions fondamentales : planimétrie et altimétrie, distances,
+              angles, échelles et coordonnées.
+            </p>
+            <div class="module-01-end__actions">
+              <a class="module-01-btn module-01-btn--navy" href="../COURS.HTML"
+                >Retour aux cours</a
+              >
+              <a class="module-01-btn module-01-btn--gold" href="module-02.html"
+                >Module suivant : Notions fondamentales</a
+              >
+            </div>
+          </section>
+        </div>
+        <!-- /.module-01-layout -->
+      </main>
+
+      <!-- ============ PIED DE PAGE ============ -->
+      <footer class="module-01-footer">
+        <div class="module-01-container module-01-footer__inner">
+          <div class="module-01-footer__brand">
+            <a
+              class="module-01-logo"
+              href="../../INDEX.HTML"
+              aria-label="TOPOMONDE — retour à l'accueil"
+            >
+              <span class="module-01-logo__text">TOPOMONDE</span>
+            </a>
+            <p>
+              Plateforme pédagogique dédiée à la topographie, à la géomatique et
+              aux technologies de mesure.
+            </p>
+          </div>
+          <nav aria-label="Navigation du pied de page">
+            <ul class="module-01-footer__links">
+              <li><a href="../../INDEX.HTML">Accueil</a></li>
+              <li><a href="../COURS.HTML">Cours</a></li>
+              <li><a href="../INSTRUMENTS.HTML">Instruments</a></li>
+              <li><a href="../METHODES.HTML">Méthodes</a></li>
+              <li><a href="../EXERCICES.HTML">Exercices</a></li>
+              <li><a href="../APROPOS.HTML">À propos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="module-01-footer__copy">
+          © 2026 TOPOMONDE. Tous droits réservés.
+        </p>
+      </footer>
+    </div>
+    <!-- /.module-01-page -->
+  </body>
+</html>

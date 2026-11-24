@@ -1,0 +1,1263 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Module 03 TOPOMONDE : géodésie et systèmes de coordonnées."
+    />
+    <title>Module 03 — Géodésie et systèmes de coordonnées | TOPOMONDE</title>
+    <link rel="stylesheet" href="../../CSS/STYLE.CSS" />
+  </head>
+
+  <body>
+    <div class="module-03-page">
+      <header class="m03-header">
+        <a class="m03-logo" href="../../INDEX.HTML">TOPOMONDE</a>
+        <nav class="m03-nav">
+          <a href="../../INDEX.HTML">Accueil</a>
+          <a href="../COURS.HTML">Cours</a>
+          <a href="../INSTRUMENTS.HTML">Instruments</a>
+          <a href="../METHODES.HTML">Méthodes</a>
+          <a href="../EXERCICES.HTML">Exercices</a>
+          <a href="../APROPOS.HTML">À propos</a>
+        </nav>
+      </header>
+
+      <main class="m03-main">
+        <div class="m03-breadcrumb">
+          <a href="../../INDEX.HTML">Accueil</a> /
+          <a href="../COURS.HTML">Cours</a> / Module 03
+        </div>
+
+        <section class="m03-hero">
+          <span class="m03-label">FORMATION EN TOPOGRAPHIE</span>
+          <h1>Géodésie et systèmes de coordonnées</h1>
+          <p>
+            Comprendre la forme de la Terre, les références géodésiques et les
+            systèmes qui permettent de positionner précisément les objets à sa
+            surface.
+          </p>
+          <div class="m03-hero-meta">
+            <span>06 chapitres</span>
+            <span>Notions théoriques et pratiques</span>
+            <span>Niveau débutant à intermédiaire</span>
+          </div>
+        </section>
+
+        <section class="m03-objectives">
+          <h2>Objectifs pédagogiques</h2>
+          <p>À la fin de ce module, l'apprenant devra être capable de :</p>
+          <ul>
+            <li>
+              Expliquer le rôle de la géodésie dans les sciences de la Terre.
+            </li>
+            <li>
+              Distinguer le géoïde, l'ellipsoïde et la surface physique
+              terrestre.
+            </li>
+            <li>Comprendre la notion de système de référence géodésique.</li>
+            <li>Lire et interpréter des coordonnées géographiques.</li>
+            <li>Comprendre les coordonnées projetées et le système UTM.</li>
+            <li>
+              Identifier les précautions nécessaires lors d'une transformation
+              de coordonnées.
+            </li>
+          </ul>
+        </section>
+
+        <section class="m03-toc">
+          <h2>Programme du module</h2>
+          <p>Choisissez un chapitre pour accéder directement à son contenu.</p>
+          <div class="m03-toc-grid">
+            <a href="#chapitre-1"
+              ><span>01</span><strong>Introduction à la géodésie</strong></a
+            >
+            <a href="#chapitre-2"
+              ><span>02</span
+              ><strong>La forme de la Terre en géodésie</strong></a
+            >
+            <a href="#chapitre-3"
+              ><span>03</span
+              ><strong>Les systèmes de référence géodésiques</strong></a
+            >
+            <a href="#chapitre-4"
+              ><span>04</span><strong>Les coordonnées géographiques</strong></a
+            >
+            <a href="#chapitre-5"
+              ><span>05</span
+              ><strong>Les systèmes de coordonnées projetées</strong></a
+            >
+            <a href="#chapitre-6"
+              ><span>06</span
+              ><strong>Le passage entre les systèmes de coordonnées</strong></a
+            >
+          </div>
+        </section>
+
+        <!-- CHAPITRE 1 -->
+        <section class="m03-chapter" id="chapitre-1">
+          <div class="m03-chapter-heading">
+            <span>CHAPITRE 01</span>
+            <h2>Introduction à la géodésie</h2>
+          </div>
+
+          <h3>1.1. Définition de la géodésie</h3>
+          <p>
+            La <strong>géodésie</strong> est la science qui étudie la forme, les
+            dimensions et le champ de gravité de la Terre. Elle permet notamment
+            de déterminer la position de points à sa surface en utilisant des
+            systèmes de référence précis.
+          </p>
+          <p>
+            Elle constitue une discipline fondamentale pour la topographie, la
+            cartographie, la navigation, les systèmes de positionnement par
+            satellites et les travaux d'aménagement du territoire.
+          </p>
+
+          <div class="m03-info">
+            <strong>À retenir</strong>
+            La géodésie fournit le cadre de référence permettant de situer les
+            points sur la Terre de manière cohérente à grande échelle.
+          </div>
+
+          <h3>1.2. Les principaux objectifs</h3>
+          <ul>
+            <li>Déterminer la forme et les dimensions de la Terre.</li>
+            <li>Établir des systèmes de référence géodésiques.</li>
+            <li>Déterminer les coordonnées des points terrestres.</li>
+            <li>
+              Étudier le champ de gravité terrestre et les surfaces de niveau.
+            </li>
+            <li>Suivre les déplacements de la croûte terrestre.</li>
+            <li>
+              Contribuer à la réalisation de cartes et de réseaux géodésiques.
+            </li>
+          </ul>
+
+          <h3>1.3. Géodésie et topographie : quelle différence ?</h3>
+          <p>
+            La topographie s'intéresse principalement au levé et à la
+            représentation d'une portion limitée du terrain. Dans de nombreux
+            travaux courants, elle peut assimiler localement la surface
+            terrestre à un plan, lorsque la précision et l'étendue du chantier
+            le permettent.
+          </p>
+          <p>
+            La géodésie prend en compte la courbure terrestre et définit des
+            références adaptées au positionnement à grande échelle. Elle permet
+            ainsi de rattacher les travaux topographiques à un cadre
+            géographique commun.
+          </p>
+
+          <div class="m03-example">
+            <strong>Exemple pratique</strong>
+            Pour implanter les fondations d'un bâtiment, le géomètre travaille
+            généralement dans un système de coordonnées adapté au chantier. Pour
+            établir un réseau de référence couvrant plusieurs régions, les
+            principes géodésiques deviennent essentiels.
+          </div>
+
+          <h3>1.4. Les domaines d'application</h3>
+          <ul>
+            <li>Topographie et travaux publics.</li>
+            <li>Cartographie et systèmes d'information géographique.</li>
+            <li>Positionnement GNSS et navigation.</li>
+            <li>Construction et aménagement du territoire.</li>
+            <li>Surveillance des mouvements du sol.</li>
+            <li>Études scientifiques de la Terre.</li>
+          </ul>
+
+          <h3>1.5. Les techniques utilisées</h3>
+          <p>La géodésie utilise plusieurs familles de techniques :</p>
+          <ul>
+            <li><strong>GNSS :</strong> positionnement par satellites.</li>
+            <li>
+              <strong>Géodésie terrestre :</strong> mesures d'angles et de
+              distances entre points.
+            </li>
+            <li>
+              <strong>Gravimétrie :</strong> mesure et étude du champ de
+              gravité.
+            </li>
+            <li>
+              <strong>Télédétection spatiale :</strong> observation de la Terre
+              depuis des satellites.
+            </li>
+          </ul>
+
+          <div class="m03-summary">
+            <strong>Résumé du chapitre</strong>
+            La géodésie étudie la forme, les dimensions et le champ de gravité
+            de la Terre. Elle établit les références nécessaires au
+            positionnement précis des points et complète le travail du
+            topographe.
+          </div>
+
+          <details class="m03-exercise">
+            <summary>Exercices d'application — Chapitre 1</summary>
+            <ol>
+              <li>Définir la géodésie.</li>
+              <li>Citer trois objectifs de la géodésie.</li>
+              <li>Expliquer une différence entre géodésie et topographie.</li>
+              <li>Citer trois domaines d'application de la géodésie.</li>
+            </ol>
+            <div class="m03-correction">
+              <strong>Correction</strong>
+              <ol>
+                <li>
+                  Science qui étudie la forme, les dimensions et le champ de
+                  gravité de la Terre.
+                </li>
+                <li>
+                  Déterminer la forme terrestre, établir des références et
+                  déterminer des coordonnées.
+                </li>
+                <li>
+                  La géodésie tient compte de la courbure terrestre à grande
+                  échelle, tandis que la topographie représente des portions
+                  limitées du terrain.
+                </li>
+                <li>Cartographie, GNSS et travaux publics, par exemple.</li>
+              </ol>
+            </div>
+          </details>
+        </section>
+
+        <!-- CHAPITRE 2 -->
+        <section class="m03-chapter" id="chapitre-2">
+          <div class="m03-chapter-heading">
+            <span>CHAPITRE 02</span>
+            <h2>La forme de la Terre en géodésie</h2>
+          </div>
+
+          <h3>2.1. Pourquoi représenter la Terre ?</h3>
+          <p>
+            La surface terrestre est irrégulière : elle comporte des montagnes,
+            des vallées, des océans et des plaines. Pour effectuer des calculs
+            de positionnement et représenter la Terre, il est nécessaire
+            d'utiliser des modèles mathématiques simplifiés.
+          </p>
+          <p>
+            En géodésie, trois notions sont particulièrement importantes : la
+            surface physique, le géoïde et l'ellipsoïde de référence.
+          </p>
+
+          <div class="m03-diagram">
+            <svg
+              viewBox="0 0 620 300"
+              role="img"
+              aria-label="Schéma conceptuel des modèles de la Terre"
+            >
+              <circle
+                cx="170"
+                cy="145"
+                r="105"
+                fill="#D9EAF3"
+                stroke="#173D5C"
+                stroke-width="3"
+              />
+              <path
+                d="M65 145 Q90 95 120 120 T180 110 T240 125 T275 145"
+                fill="none"
+                stroke="#12B8B0"
+                stroke-width="5"
+              />
+              <path
+                d="M65 145 Q90 195 120 170 T180 180 T240 165 T275 145"
+                fill="none"
+                stroke="#12B8B0"
+                stroke-width="5"
+              />
+              <path
+                d="M65 145 Q90 85 120 110 T180 100 T240 115 T275 145 Q240 175 180 190 T65 145"
+                fill="none"
+                stroke="#E8B44A"
+                stroke-width="2"
+                stroke-dasharray="5 4"
+              />
+              <ellipse
+                cx="170"
+                cy="145"
+                rx="105"
+                ry="101"
+                fill="none"
+                stroke="#173D5C"
+                stroke-width="2"
+                stroke-dasharray="7 5"
+              />
+              <text
+                x="330"
+                y="76"
+                font-size="16"
+                fill="#173D5C"
+                font-weight="bold"
+              >
+                Surface physique
+              </text>
+              <text x="330" y="99" font-size="13" fill="#40556A">
+                Relief réel de la Terre
+              </text>
+              <path d="M280 120 L320 85" stroke="#12B8B0" stroke-width="2" />
+              <text
+                x="330"
+                y="155"
+                font-size="16"
+                fill="#173D5C"
+                font-weight="bold"
+              >
+                Géoïde
+              </text>
+              <text x="330" y="178" font-size="13" fill="#40556A">
+                Surface équipotentielle
+              </text>
+              <path d="M275 145 L320 160" stroke="#E8B44A" stroke-width="2" />
+              <text
+                x="330"
+                y="230"
+                font-size="16"
+                fill="#173D5C"
+                font-weight="bold"
+              >
+                Ellipsoïde
+              </text>
+              <text x="330" y="253" font-size="13" fill="#40556A">
+                Modèle mathématique régulier
+              </text>
+              <path d="M270 190 L320 235" stroke="#173D5C" stroke-width="2" />
+            </svg>
+            <small
+              >Schéma conceptuel simplifié : les surfaces sont représentées
+              séparément pour faciliter leur compréhension.</small
+            >
+          </div>
+
+          <h3>2.2. La surface physique terrestre</h3>
+          <p>
+            La surface physique correspond à la surface réelle de la Terre :
+            continents, reliefs, fonds marins et océans. Elle est irrégulière et
+            ne peut pas être décrite par une simple équation géométrique.
+          </p>
+
+          <h3>2.3. La sphère</h3>
+          <p>
+            La sphère est un modèle géométrique dont tous les points de la
+            surface sont situés à la même distance du centre. Elle peut être
+            utilisée pour certaines approximations et explications élémentaires.
+          </p>
+          <div class="m03-formula">
+            <strong>Surface d'une sphère :</strong>
+            <p>S = 4πR²</p>
+            <strong>Volume d'une sphère :</strong>
+            <p>V = (4/3)πR³</p>
+            <small>R : rayon de la sphère.</small>
+          </div>
+
+          <h3>2.4. Le géoïde</h3>
+          <p>
+            Le géoïde est une surface équipotentielle du champ de gravité
+            terrestre, choisie de manière à correspondre approximativement au
+            niveau moyen des mers prolongé sous les continents.
+          </p>
+          <p>
+            Il est particulièrement important en altimétrie, car il sert de
+            référence pour les hauteurs orthométriques dans les systèmes qui
+            utilisent ce modèle.
+          </p>
+
+          <div class="m03-info">
+            <strong>Notion importante</strong>
+            Le géoïde n'est pas une surface géométrique régulière. Il tient
+            compte des variations du champ de gravité terrestre.
+          </div>
+
+          <h3>2.5. L'ellipsoïde de révolution</h3>
+          <p>
+            L'ellipsoïde de révolution est un modèle mathématique obtenu par
+            rotation d'une ellipse autour de son petit axe. Il permet de
+            représenter la Terre de manière régulière et d'effectuer des calculs
+            géodésiques.
+          </p>
+          <p>Il est défini notamment par :</p>
+          <ul>
+            <li><strong>a :</strong> demi-grand axe.</li>
+            <li><strong>b :</strong> demi-petit axe.</li>
+            <li><strong>f :</strong> aplatissement.</li>
+          </ul>
+
+          <div class="m03-formula">
+            <strong>Formule de l'aplatissement :</strong>
+            <p>f = (a - b) / a</p>
+            <small>a et b doivent être exprimés dans la même unité.</small>
+          </div>
+
+          <h3>2.6. Exemple : l'ellipsoïde WGS84</h3>
+          <p>
+            Le WGS84 est un système géodésique mondial largement utilisé par les
+            récepteurs GNSS et les applications de positionnement. Son
+            ellipsoïde possède les paramètres suivants :
+          </p>
+          <div class="m03-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Paramètre</th>
+                  <th>Valeur approximative</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Demi-grand axe a</td>
+                  <td>6 378 137 m</td>
+                </tr>
+                <tr>
+                  <td>Aplatissement inverse 1/f</td>
+                  <td>298,257223563</td>
+                </tr>
+                <tr>
+                  <td>Demi-petit axe b</td>
+                  <td>6 356 752,314 m</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="m03-example">
+            <strong>Exemple de calcul</strong>
+            En utilisant les valeurs arrondies ci-dessus :
+            <p>f = (6 378 137 - 6 356 752,314) / 6 378 137</p>
+            <p>f ≈ 0,00335281</p>
+            L'aplatissement est faible, mais il doit être pris en compte dans
+            les calculs géodésiques précis.
+          </div>
+
+          <h3>2.7. Différence entre les trois modèles</h3>
+          <div class="m03-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Modèle</th>
+                  <th>Caractéristique</th>
+                  <th>Utilisation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Surface physique</td>
+                  <td>Surface réelle et irrégulière</td>
+                  <td>Relief et terrain</td>
+                </tr>
+                <tr>
+                  <td>Géoïde</td>
+                  <td>Surface équipotentielle du champ de gravité</td>
+                  <td>Référence des hauteurs</td>
+                </tr>
+                <tr>
+                  <td>Ellipsoïde</td>
+                  <td>Modèle mathématique régulier</td>
+                  <td>Calculs géodésiques et coordonnées</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="m03-summary">
+            <strong>Résumé du chapitre</strong>
+            La surface physique représente la Terre réelle, le géoïde est lié au
+            champ de gravité et l'ellipsoïde est un modèle mathématique utilisé
+            pour les calculs géodésiques.
+          </div>
+
+          <details class="m03-exercise">
+            <summary>Exercices d'application — Chapitre 2</summary>
+            <ol>
+              <li>
+                Quelle est la différence entre le géoïde et l'ellipsoïde ?
+              </li>
+              <li>Quel modèle représente le relief réel ?</li>
+              <li>Que représente l'aplatissement f ?</li>
+              <li>Citer deux paramètres de l'ellipsoïde.</li>
+            </ol>
+            <div class="m03-correction">
+              <strong>Correction</strong>
+              <ol>
+                <li>
+                  Le géoïde est une surface équipotentielle liée à la gravité ;
+                  l'ellipsoïde est un modèle mathématique régulier.
+                </li>
+                <li>La surface physique terrestre.</li>
+                <li>
+                  Il exprime l'écart relatif entre les deux demi-axes de
+                  l'ellipsoïde.
+                </li>
+                <li>Le demi-grand axe a et le demi-petit axe b.</li>
+              </ol>
+            </div>
+          </details>
+        </section>
+
+        <!-- CHAPITRE 3 -->
+        <section class="m03-chapter" id="chapitre-3">
+          <div class="m03-chapter-heading">
+            <span>CHAPITRE 03</span>
+            <h2>Les systèmes de référence géodésiques</h2>
+          </div>
+
+          <h3>3.1. Pourquoi utiliser un système de référence ?</h3>
+          <p>
+            Pour déterminer la position d'un point sur la Terre, il ne suffit
+            pas de donner trois nombres. Il faut également savoir par rapport à
+            quelle référence ces nombres ont été calculés.
+          </p>
+          <p>
+            Un système de référence géodésique définit les conventions et les
+            paramètres nécessaires pour exprimer les positions de manière
+            cohérente.
+          </p>
+
+          <h3>3.2. Les éléments d'un système de référence</h3>
+          <p>Un système de référence géodésique peut notamment préciser :</p>
+          <ul>
+            <li>L'origine et l'orientation du repère.</li>
+            <li>L'ellipsoïde associé.</li>
+            <li>Les conventions de coordonnées.</li>
+            <li>L'époque de référence, lorsque le système est dynamique.</li>
+            <li>Les méthodes de réalisation et de maintien du référentiel.</li>
+          </ul>
+
+          <h3>3.3. Système de référence et référentiel</h3>
+          <p>
+            Le <strong>système de référence</strong> correspond à la définition
+            théorique et conventionnelle du cadre géodésique. Le
+            <strong>référentiel</strong> désigne sa réalisation pratique par des
+            coordonnées attribuées à des points ou des stations de référence.
+          </p>
+          <div class="m03-info">
+            <strong>Attention</strong>
+            Les termes sont parfois employés de manière différente selon les
+            documents techniques. Il faut toujours consulter la définition et la
+            documentation du système utilisé.
+          </div>
+
+          <h3>3.4. Le WGS84</h3>
+          <p>
+            Le WGS84 (World Geodetic System 1984) est un système géodésique
+            mondial utilisé notamment pour le positionnement par GNSS. Il permet
+            d'exprimer des positions géographiques par rapport à un cadre
+            terrestre global.
+          </p>
+          <p>
+            Les coordonnées obtenues avec un récepteur GNSS sont souvent
+            affichées en latitude, longitude et hauteur ellipsoïdale, mais le
+            format dépend de la configuration de l'appareil.
+          </p>
+
+          <h3>3.5. Les systèmes de référence locaux et nationaux</h3>
+          <p>
+            Certains pays utilisent des systèmes géodésiques nationaux adaptés à
+            leur territoire, à leurs réseaux de référence et à leurs besoins
+            cartographiques.
+          </p>
+          <p>
+            Un chantier peut également utiliser un système local défini pour un
+            projet. Ce système peut avoir une origine et une orientation
+            choisies pour faciliter les opérations.
+          </p>
+
+          <h3>3.6. Pourquoi les références sont-elles importantes ?</h3>
+          <p>
+            Deux coordonnées numériques identiques ne désignent pas
+            nécessairement le même emplacement si elles sont exprimées dans des
+            systèmes différents.
+          </p>
+          <div class="m03-example">
+            <strong>Exemple pratique</strong>
+            Un plan de chantier utilise des coordonnées projetées dans un
+            système local. Un récepteur GNSS affiche une position en WGS84.
+            Avant de comparer directement ces positions, le géomètre doit
+            vérifier les systèmes utilisés et déterminer si une transformation
+            est nécessaire.
+          </div>
+
+          <div class="m03-summary">
+            <strong>Résumé du chapitre</strong>
+            Un système de référence permet d'exprimer les positions dans un
+            cadre commun. Le choix du système, de l'ellipsoïde et des
+            conventions doit toujours être connu avant d'utiliser ou de comparer
+            des coordonnées.
+          </div>
+
+          <details class="m03-exercise">
+            <summary>Exercices d'application — Chapitre 3</summary>
+            <ol>
+              <li>
+                Pourquoi faut-il connaître le système de référence d'un point ?
+              </li>
+              <li>Que signifie WGS84 ?</li>
+              <li>Un système local peut-il être utilisé pour un chantier ?</li>
+              <li>
+                Peut-on comparer directement deux coordonnées issues de systèmes
+                différents ?
+              </li>
+            </ol>
+            <div class="m03-correction">
+              <strong>Correction</strong>
+              <ol>
+                <li>Pour interpréter correctement sa position.</li>
+                <li>World Geodetic System 1984.</li>
+                <li>Oui, s'il est correctement défini et adapté au projet.</li>
+                <li>
+                  Non, il faut d'abord vérifier les références et, si
+                  nécessaire, effectuer une transformation appropriée.
+                </li>
+              </ol>
+            </div>
+          </details>
+        </section>
+
+        <!-- CHAPITRE 4 -->
+        <section class="m03-chapter" id="chapitre-4">
+          <div class="m03-chapter-heading">
+            <span>CHAPITRE 04</span>
+            <h2>Les coordonnées géographiques</h2>
+          </div>
+
+          <h3>4.1. Définition</h3>
+          <p>
+            Les coordonnées géographiques permettent de localiser un point sur
+            la surface de référence terrestre à l'aide de la latitude et de la
+            longitude. Une troisième valeur, la hauteur, peut être associée à
+            cette position.
+          </p>
+
+          <h3>4.2. Les méridiens</h3>
+          <p>
+            Les méridiens sont des demi-cercles imaginaires reliant les pôles
+            Nord et Sud. Ils servent à mesurer la longitude. Le méridien de
+            Greenwich constitue la référence conventionnelle de longitude zéro.
+          </p>
+
+          <h3>4.3. Les parallèles</h3>
+          <p>
+            Les parallèles sont des cercles imaginaires parallèles à l'équateur.
+            L'équateur correspond à la latitude zéro. Les parallèles permettent
+            de mesurer la latitude.
+          </p>
+
+          <div class="m03-diagram">
+            <svg
+              viewBox="0 0 620 330"
+              role="img"
+              aria-label="Schéma des méridiens et parallèles"
+            >
+              <circle
+                cx="190"
+                cy="155"
+                r="120"
+                fill="#DCECF3"
+                stroke="#173D5C"
+                stroke-width="3"
+              />
+              <ellipse
+                cx="190"
+                cy="155"
+                rx="120"
+                ry="34"
+                fill="none"
+                stroke="#12B8B0"
+                stroke-width="3"
+              />
+              <ellipse
+                cx="190"
+                cy="155"
+                rx="120"
+                ry="78"
+                fill="none"
+                stroke="#12B8B0"
+                stroke-width="2"
+              />
+              <ellipse
+                cx="190"
+                cy="155"
+                rx="45"
+                ry="120"
+                fill="none"
+                stroke="#E8B44A"
+                stroke-width="3"
+              />
+              <ellipse
+                cx="190"
+                cy="155"
+                rx="90"
+                ry="120"
+                fill="none"
+                stroke="#E8B44A"
+                stroke-width="2"
+              />
+              <path d="M70 155 H310" stroke="#173D5C" stroke-width="2" />
+              <path d="M190 35 V275" stroke="#173D5C" stroke-width="2" />
+              <text
+                x="340"
+                y="90"
+                font-size="16"
+                fill="#173D5C"
+                font-weight="bold"
+              >
+                Parallèles
+              </text>
+              <text x="340" y="113" font-size="13" fill="#40556A">
+                Mesure de la latitude
+              </text>
+              <path d="M285 115 L340 100" stroke="#12B8B0" stroke-width="2" />
+              <text
+                x="340"
+                y="185"
+                font-size="16"
+                fill="#173D5C"
+                font-weight="bold"
+              >
+                Méridiens
+              </text>
+              <text x="340" y="208" font-size="13" fill="#40556A">
+                Mesure de la longitude
+              </text>
+              <path d="M245 220 L340 195" stroke="#E8B44A" stroke-width="2" />
+              <text x="340" y="265" font-size="14" fill="#173D5C">
+                Équateur : latitude 0°
+              </text>
+            </svg>
+            <small
+              >Représentation pédagogique simplifiée du quadrillage
+              géographique.</small
+            >
+          </div>
+
+          <h3>4.4. La latitude</h3>
+          <p>
+            La latitude est l'angle entre le plan de l'équateur et la direction
+            normale à l'ellipsoïde au point considéré. Elle varie de 0° à 90°
+            vers le Nord ou vers le Sud.
+          </p>
+          <ul>
+            <li>Latitude Nord : hémisphère Nord.</li>
+            <li>Latitude Sud : hémisphère Sud.</li>
+            <li>Équateur : latitude 0°.</li>
+          </ul>
+
+          <h3>4.5. La longitude</h3>
+          <p>
+            La longitude est l'angle dièdre entre le plan du méridien de
+            référence et celui du méridien passant par le point. Elle varie de
+            0° à 180° Est ou Ouest.
+          </p>
+          <ul>
+            <li>Longitude Est : à l'est de Greenwich.</li>
+            <li>Longitude Ouest : à l'ouest de Greenwich.</li>
+          </ul>
+
+          <h3>4.6. Les formats de coordonnées</h3>
+          <p>
+            Les coordonnées géographiques peuvent être écrites sous plusieurs
+            formes.
+          </p>
+          <div class="m03-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Format</th>
+                  <th>Exemple de latitude</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Degrés décimaux</td>
+                  <td>34,0209° N</td>
+                </tr>
+                <tr>
+                  <td>Degrés, minutes, secondes</td>
+                  <td>34° 01' 15,2" N</td>
+                </tr>
+                <tr>
+                  <td>Degrés et minutes décimales</td>
+                  <td>34° 01,253' N</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>4.7. Conversion des degrés, minutes et secondes</h3>
+          <div class="m03-formula">
+            <strong>Formule :</strong>
+            <p>Degrés décimaux = D + M/60 + S/3600</p>
+            <small>D : degrés ; M : minutes ; S : secondes.</small>
+          </div>
+
+          <div class="m03-example">
+            <strong>Exemple de conversion</strong>
+            Convertir 34° 15' 30" en degrés décimaux :
+            <p>34 + 15/60 + 30/3600</p>
+            <p>= 34 + 0,25 + 0,008333</p>
+            <p><strong>Résultat ≈ 34,258333°</strong></p>
+          </div>
+
+          <h3>4.8. La hauteur associée aux coordonnées</h3>
+          <p>
+            Un point peut également être défini par une hauteur. Il est
+            important de distinguer :
+          </p>
+          <ul>
+            <li>
+              <strong>Hauteur ellipsoïdale (h) :</strong> distance mesurée
+              suivant la normale à l'ellipsoïde entre l'ellipsoïde et le point.
+            </li>
+            <li>
+              <strong>Hauteur orthométrique (H) :</strong> hauteur liée au
+              géoïde, approximativement mesurée le long de la ligne de force de
+              pesanteur.
+            </li>
+          </ul>
+          <div class="m03-formula">
+            <strong>Relation usuelle :</strong>
+            <p>h = H + N</p>
+            <small
+              >h : hauteur ellipsoïdale ; H : hauteur orthométrique ; N :
+              ondulation du géoïde. Les valeurs doivent être exprimées dans une
+              même convention de référence.</small
+            >
+          </div>
+
+          <div class="m03-warning">
+            <strong>Erreur fréquente</strong>
+            Ne pas confondre latitude avec longitude, ni hauteur ellipsoïdale
+            avec altitude orthométrique. Ces valeurs ne sont pas
+            interchangeables.
+          </div>
+
+          <div class="m03-summary">
+            <strong>Résumé du chapitre</strong>
+            La latitude et la longitude permettent de localiser un point sur un
+            ellipsoïde de référence. La hauteur complète la position en trois
+            dimensions, mais sa nature doit être précisée.
+          </div>
+
+          <details class="m03-exercise">
+            <summary>Exercices d'application — Chapitre 4</summary>
+            <ol>
+              <li>Quelle coordonnée est mesurée à partir de l'équateur ?</li>
+              <li>
+                Quelle coordonnée utilise le méridien de Greenwich comme
+                référence ?
+              </li>
+              <li>Convertir 20° 30' 00" en degrés décimaux.</li>
+              <li>
+                Quelle est la différence entre hauteur ellipsoïdale et hauteur
+                orthométrique ?
+              </li>
+            </ol>
+            <div class="m03-correction">
+              <strong>Correction</strong>
+              <ol>
+                <li>La latitude.</li>
+                <li>La longitude.</li>
+                <li>20 + 30/60 = 20,5°.</li>
+                <li>
+                  La première est référencée à l'ellipsoïde ; la seconde au
+                  géoïde, selon le système altimétrique utilisé.
+                </li>
+              </ol>
+            </div>
+          </details>
+        </section>
+
+        <!-- CHAPITRE 5 -->
+        <section class="m03-chapter" id="chapitre-5">
+          <div class="m03-chapter-heading">
+            <span>CHAPITRE 05</span>
+            <h2>Les systèmes de coordonnées projetées</h2>
+          </div>
+
+          <h3>5.1. Pourquoi projeter la Terre ?</h3>
+          <p>
+            La Terre étant courbe, il est impossible de représenter toute sa
+            surface sur une feuille plane sans déformation. Une projection
+            cartographique permet de transformer des positions géographiques en
+            coordonnées planes.
+          </p>
+          <p>
+            Les coordonnées projetées sont particulièrement utiles en
+            topographie, en cartographie, en travaux publics et dans les
+            systèmes d'information géographique.
+          </p>
+
+          <h3>5.2. Coordonnées géographiques et coordonnées projetées</h3>
+          <div class="m03-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Coordonnées géographiques</th>
+                  <th>Coordonnées projetées</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Latitude et longitude</td>
+                  <td>Est et Nord (E, N)</td>
+                </tr>
+                <tr>
+                  <td>Angles</td>
+                  <td>Généralement des distances</td>
+                </tr>
+                <tr>
+                  <td>Référencées à un modèle terrestre</td>
+                  <td>Référencées à une projection et un système précis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>5.3. Les projections cartographiques</h3>
+          <p>
+            Une projection cartographique est une méthode mathématique
+            permettant de représenter une partie ou la totalité de la surface
+            terrestre sur un plan.
+          </p>
+          <p>On distingue notamment :</p>
+          <ul>
+            <li>
+              <strong>Projections cylindriques :</strong> projection sur un
+              cylindre.
+            </li>
+            <li>
+              <strong>Projections coniques :</strong> projection sur un cône.
+            </li>
+            <li>
+              <strong>Projections azimutales :</strong> projection sur un plan.
+            </li>
+          </ul>
+
+          <div class="m03-info">
+            <strong>À retenir</strong>
+            Toute projection cartographique entraîne des déformations. Leur
+            nature et leur importance dépendent de la projection, de la zone
+            géographique et de l'échelle.
+          </div>
+
+          <h3>5.4. La projection UTM</h3>
+          <p>
+            UTM signifie <strong>Universal Transverse Mercator</strong>. Il
+            s'agit d'un système de coordonnées projetées fondé sur la projection
+            de Mercator transverse. Le globe est divisé en 60 zones
+            longitudinales de 6° chacune.
+          </p>
+          <ul>
+            <li>Chaque zone possède un numéro de 1 à 60.</li>
+            <li>
+              Les zones sont numérotées d'ouest en est à partir de
+              l'antiméridien.
+            </li>
+            <li>Le système utilise des coordonnées Est et Nord.</li>
+            <li>Chaque zone possède un méridien central.</li>
+          </ul>
+
+          <h3>5.5. Les coordonnées Est et Nord</h3>
+          <p>
+            Dans le système UTM, les coordonnées sont généralement exprimées en
+            mètres :
+          </p>
+          <ul>
+            <li>
+              <strong>Easting (E) :</strong> coordonnée Est, mesurée selon l'axe
+              horizontal de la grille.
+            </li>
+            <li>
+              <strong>Northing (N) :</strong> coordonnée Nord, mesurée selon
+              l'axe vertical de la grille.
+            </li>
+          </ul>
+          <p>
+            Pour éviter des valeurs négatives dans les zones courantes, le
+            système UTM utilise une fausse origine : 500 000 m à l'Est du
+            méridien central et, dans l'hémisphère Sud, une valeur de fausse
+            origine Nord de 10 000 000 m à l'équateur.
+          </p>
+
+          <h3>5.6. Le facteur d'échelle et les déformations</h3>
+          <p>
+            Une projection peut modifier légèrement les distances et les
+            surfaces. Le facteur d'échelle exprime le rapport entre une distance
+            sur la grille projetée et la distance correspondante sur la surface
+            de référence, selon la convention retenue.
+          </p>
+          <p>
+            En UTM, le facteur d'échelle au méridien central est égal à 0,9996.
+            Il varie ensuite selon la position à l'intérieur de la zone.
+          </p>
+
+          <h3>5.7. Comment identifier une coordonnée UTM ?</h3>
+          <div class="m03-example">
+            <strong>Exemple fictif de présentation</strong>
+            <p>Zone : 30N</p>
+            <p>Est (E) : 500 000 m</p>
+            <p>Nord (N) : 3 760 000 m</p>
+            Ces valeurs illustrent la structure d'une coordonnée UTM. Elles ne
+            constituent pas un point de terrain vérifié.
+          </div>
+
+          <h3>5.8. Les précautions à prendre</h3>
+          <ul>
+            <li>Vérifier le numéro de zone UTM.</li>
+            <li>Vérifier l'hémisphère Nord ou Sud.</li>
+            <li>Vérifier le système géodésique de référence.</li>
+            <li>Vérifier l'unité des coordonnées.</li>
+            <li>Ne pas confondre coordonnées de grille et distances au sol.</li>
+          </ul>
+
+          <div class="m03-warning">
+            <strong>Erreur fréquente</strong>
+            Une paire de coordonnées Est/Nord sans indication du système de
+            référence et de la zone peut être insuffisante pour identifier
+            correctement un emplacement.
+          </div>
+
+          <div class="m03-summary">
+            <strong>Résumé du chapitre</strong>
+            Les systèmes projetés transforment les coordonnées géographiques en
+            coordonnées planes. Le système UTM divise le globe en 60 zones de 6°
+            et exprime les positions par des coordonnées Est et Nord,
+            généralement en mètres.
+          </div>
+
+          <details class="m03-exercise">
+            <summary>Exercices d'application — Chapitre 5</summary>
+            <ol>
+              <li>Pourquoi utilise-t-on une projection cartographique ?</li>
+              <li>Que signifie UTM ?</li>
+              <li>Combien de zones UTM existent-elles ?</li>
+              <li>Quelle est la largeur angulaire d'une zone UTM ?</li>
+              <li>Que représentent Easting et Northing ?</li>
+            </ol>
+            <div class="m03-correction">
+              <strong>Correction</strong>
+              <ol>
+                <li>
+                  Pour représenter sur un plan des positions situées sur une
+                  surface terrestre courbe.
+                </li>
+                <li>Universal Transverse Mercator.</li>
+                <li>60 zones.</li>
+                <li>6° de longitude.</li>
+                <li>Les coordonnées Est et Nord de la grille projetée.</li>
+              </ol>
+            </div>
+          </details>
+        </section>
+
+        <!-- CHAPITRE 6 -->
+        <section class="m03-chapter" id="chapitre-6">
+          <div class="m03-chapter-heading">
+            <span>CHAPITRE 06</span>
+            <h2>Le passage entre les systèmes de coordonnées</h2>
+          </div>
+
+          <h3>6.1. Définition d'une transformation de coordonnées</h3>
+          <p>
+            Une transformation de coordonnées consiste à exprimer la position
+            d'un point dans un autre système de coordonnées ou dans un autre
+            référentiel.
+          </p>
+          <p>
+            Elle est nécessaire lorsque les données provenant de différentes
+            sources ne sont pas exprimées dans le même système.
+          </p>
+
+          <h3>6.2. Pourquoi transformer les coordonnées ?</h3>
+          <ul>
+            <li>Intégrer des données GNSS dans un plan de projet.</li>
+            <li>Combiner des cartes produites dans différents systèmes.</li>
+            <li>
+              Utiliser des données d'un système national dans un logiciel SIG.
+            </li>
+            <li>
+              Rattacher des levés topographiques à un réseau de référence.
+            </li>
+            <li>Adapter les coordonnées aux exigences d'un chantier.</li>
+          </ul>
+
+          <h3>6.3. Les principales opérations</h3>
+          <p>Il existe plusieurs types de transformations :</p>
+          <ul>
+            <li>
+              <strong>Conversion de format :</strong> passage des degrés,
+              minutes et secondes aux degrés décimaux, par exemple.
+            </li>
+            <li>
+              <strong>Changement de projection :</strong> passage d'une
+              projection cartographique à une autre.
+            </li>
+            <li>
+              <strong>Transformation géodésique :</strong> passage d'un
+              référentiel géodésique à un autre.
+            </li>
+            <li>
+              <strong>Transformation locale :</strong> adaptation des
+              coordonnées à un système de chantier.
+            </li>
+          </ul>
+
+          <h3>6.4. La transformation de Helmert</h3>
+          <p>
+            La transformation de Helmert à sept paramètres est une méthode
+            couramment utilisée pour relier deux référentiels tridimensionnels.
+            Elle utilise :
+          </p>
+          <ul>
+            <li>Trois translations : Tx, Ty, Tz.</li>
+            <li>Trois rotations : Rx, Ry, Rz.</li>
+            <li>Un facteur d'échelle : s.</li>
+          </ul>
+          <p>
+            Selon la convention retenue, les signes, les unités et l'ordre des
+            opérations peuvent différer. Les paramètres doivent donc être
+            utilisés avec leur documentation.
+          </p>
+
+          <div class="m03-info">
+            <strong>Attention</strong>
+            Une transformation à sept paramètres ne doit pas être appliquée
+            automatiquement à toutes les données. Le modèle, les paramètres et
+            les conventions doivent correspondre aux référentiels concernés.
+          </div>
+
+          <h3>6.5. Transformation locale de chantier</h3>
+          <p>
+            Dans certains projets, le géomètre utilise un système de coordonnées
+            local. Des points communs connus dans les deux systèmes permettent
+            d'établir une relation entre le système de référence et le système
+            local.
+          </p>
+          <p>
+            Une transformation plane peut notamment utiliser une translation,
+            une rotation et un facteur d'échelle. Le modèle retenu dépend des
+            besoins et des caractéristiques du projet.
+          </p>
+
+          <h3>6.6. Les points communs et le contrôle</h3>
+          <p>
+            Pour réaliser et vérifier une transformation, il est nécessaire de
+            disposer de points communs correctement identifiés dans les deux
+            systèmes.
+          </p>
+          <p>Le contrôle consiste notamment à :</p>
+          <ul>
+            <li>Vérifier la qualité des coordonnées d'origine.</li>
+            <li>Contrôler la répartition des points communs.</li>
+            <li>
+              Calculer les écarts entre positions transformées et positions
+              connues.
+            </li>
+            <li>Évaluer si les écarts respectent la tolérance du projet.</li>
+            <li>Documenter le système de départ et le système d'arrivée.</li>
+          </ul>
+
+          <h3>6.7. Les erreurs fréquentes</h3>
+          <ul>
+            <li>Oublier de vérifier le système géodésique d'origine.</li>
+            <li>Confondre latitude/longitude avec Est/Nord.</li>
+            <li>Utiliser une mauvaise zone UTM.</li>
+            <li>Confondre hauteur ellipsoïdale et hauteur orthométrique.</li>
+            <li>Utiliser des paramètres de transformation inadaptés.</li>
+            <li>Ne pas contrôler les résultats sur des points indépendants.</li>
+          </ul>
+
+          <div class="m03-example">
+            <strong>Exemple de situation professionnelle</strong>
+            Un géomètre reçoit un fichier de coordonnées GNSS et un plan de
+            projet. Avant de commencer l'implantation, il vérifie le système de
+            référence de chaque fichier, la projection, la zone, les unités et
+            les éventuelles transformations nécessaires. Il contrôle ensuite la
+            cohérence des points communs avant de travailler.
+          </div>
+
+          <div class="m03-warning">
+            <strong>Règle professionnelle</strong>
+            Ne jamais transformer des coordonnées sans connaître le système de
+            départ, le système d'arrivée et la méthode de transformation
+            appropriée.
+          </div>
+
+          <div class="m03-summary">
+            <strong>Résumé du chapitre</strong>
+            Les transformations permettent de rendre compatibles des coordonnées
+            exprimées dans différents systèmes. Leur réussite dépend de la
+            qualité des données, du choix de la méthode et du contrôle des
+            résultats.
+          </div>
+
+          <details class="m03-exercise">
+            <summary>Exercices d'application — Chapitre 6</summary>
+            <ol>
+              <li>Qu'est-ce qu'une transformation de coordonnées ?</li>
+              <li>Citer trois situations nécessitant une transformation.</li>
+              <li>
+                Quels sont les sept paramètres d'une transformation de Helmert ?
+              </li>
+              <li>Pourquoi faut-il utiliser des points communs ?</li>
+              <li>Pourquoi contrôler les résultats après transformation ?</li>
+            </ol>
+            <div class="m03-correction">
+              <strong>Correction</strong>
+              <ol>
+                <li>
+                  Une opération permettant d'exprimer une position dans un autre
+                  système.
+                </li>
+                <li>
+                  Combiner des cartes, intégrer des données GNSS à un projet ou
+                  changer de référentiel.
+                </li>
+                <li>
+                  Trois translations, trois rotations et un facteur d'échelle.
+                </li>
+                <li>
+                  Pour établir et vérifier la relation entre les systèmes.
+                </li>
+                <li>
+                  Pour détecter les erreurs et vérifier le respect des
+                  tolérances du projet.
+                </li>
+              </ol>
+            </div>
+          </details>
+        </section>
+
+        <!-- CONCLUSION -->
+        <section class="m03-conclusion">
+          <span>FIN DU MODULE 03</span>
+          <h2>Vous avez terminé ce module !</h2>
+          <p>
+            Vous connaissez maintenant les notions essentielles de géodésie, les
+            modèles de la Terre, les références géodésiques et les principaux
+            systèmes de coordonnées. Ces connaissances constituent une base
+            importante pour comprendre le positionnement GNSS et les travaux
+            topographiques.
+          </p>
+          <div class="m03-navigation">
+            <a href="module-02.html">← Module précédent</a>
+            <a href="../COURS.HTML">Retour aux cours</a>
+            <a href="module-04.html">Module suivant →</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="m03-footer">
+        <strong>TOPOMONDE</strong>
+        <p>La topographie, comprendre le monde autrement.</p>
+        <small
+          >© TOPOMONDE — Plateforme pédagogique de topographie et
+          géomatique.</small
+        >
+      </footer>
+    </div>
+  </body>
+</html>

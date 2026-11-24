@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cours complet d'introduction à la géomatique : SIG, données géographiques, GNSS, télédétection et applications topographiques."
+    />
+    <title>Module 08 - Introduction à la géomatique | TOPOMONDE</title>
+    <link rel="stylesheet" href="../../CSS/STYLE.CSS" />
+  </head>
+
+  <body class="module-08-page">
+    <header class="m08-header">
+      <div class="m08-header-inner">
+        <a href="../../INDEX.HTML" class="m08-logo">TOPO<span>MONDE</span></a>
+        <nav class="m08-nav">
+          <a href="../../INDEX.HTML">Accueil</a>
+          <a href="../COURS.HTML" class="active">Cours</a>
+          <a href="../INSTRUMENTS.HTML">Instruments</a>
+          <a href="../METHODES.HTML">Méthodes</a>
+          <a href="../EXERCICES.HTML">Exercices</a>
+          <a href="../APROPOS.HTML">À propos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="m08-container">
+      <div class="m08-breadcrumb">
+        <a href="../../INDEX.HTML">Accueil</a> /
+        <a href="../COURS.HTML">Cours</a> /
+        <span>Module 08</span>
+      </div>
+
+      <section class="m08-hero">
+        <div class="m08-hero-content">
+          <span class="m08-label">MODULE 08 · GÉOMATIQUE</span>
+          <h1>Introduction à la géomatique</h1>
+          <p>
+            Découvrez les technologies qui permettent d'acquérir, de traiter,
+            d'analyser et de représenter les informations géographiques.
+          </p>
+          <div class="m08-hero-meta">
+            <span>7 chapitres</span>
+            <span>·</span>
+            <span>Niveau débutant</span>
+            <span>·</span>
+            <span>Topographie et géomatique</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="m08-layout">
+        <aside class="m08-sidebar">
+          <div class="m08-sidebar-card">
+            <h3>Contenu du module</h3>
+            <a href="#chapitre-1">01. Définition et concepts</a>
+            <a href="#chapitre-2">02. Les systèmes SIG</a>
+            <a href="#chapitre-3">03. Les données géographiques</a>
+            <a href="#chapitre-4">04. Les systèmes GNSS</a>
+            <a href="#chapitre-5">05. La télédétection</a>
+            <a href="#chapitre-6">06. Outils et logiciels</a>
+            <a href="#chapitre-7">07. Applications pratiques</a>
+            <a href="#evaluation">Évaluation finale</a>
+          </div>
+        </aside>
+
+        <div class="m08-content">
+          <section class="m08-introduction">
+            <h2>Présentation du module</h2>
+            <p>
+              La géomatique est un domaine qui rassemble plusieurs disciplines
+              et technologies permettant de gérer l'information géographique.
+              Elle associe notamment la topographie, la géodésie, la
+              cartographie, les systèmes d'information géographique (SIG), le
+              positionnement par satellite et la télédétection.
+            </p>
+            <p>
+              Aujourd'hui, les données géographiques sont utilisées dans
+              l'aménagement du territoire, les travaux publics, l'urbanisme,
+              l'environnement, l'agriculture et de nombreux autres secteurs.
+            </p>
+
+            <div class="m08-objectives">
+              <h3>Objectifs pédagogiques</h3>
+              <ul>
+                <li>Comprendre la définition et le rôle de la géomatique.</li>
+                <li>
+                  Découvrir les principes des systèmes d'information
+                  géographique.
+                </li>
+                <li>
+                  Identifier les différents types de données géographiques.
+                </li>
+                <li>Comprendre le fonctionnement général des systèmes GNSS.</li>
+                <li>Découvrir les principes de la télédétection.</li>
+                <li>
+                  Identifier les principaux logiciels utilisés en géomatique.
+                </li>
+                <li>
+                  Connaître les applications de la géomatique en topographie.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 1 -->
+          <section class="m08-chapter" id="chapitre-1">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 01</span>
+              <h2>Définition et concepts de la géomatique</h2>
+            </div>
+
+            <h3>1.1 Définition de la géomatique</h3>
+            <p>
+              La géomatique est un ensemble de méthodes, de techniques et de
+              technologies permettant de collecter, stocker, traiter, analyser
+              et représenter des données ayant une référence géographique.
+            </p>
+            <p>
+              Une information géographique est une information associée à une
+              position sur la surface terrestre ou dans un espace géographique
+              défini.
+            </p>
+
+            <div class="m08-info">
+              <strong>À retenir :</strong>
+              La géomatique permet de répondre à une question essentielle : où
+              se trouve un phénomène, un objet ou un élément, et quelles sont
+              ses relations avec son environnement ?
+            </div>
+
+            <h3>1.2 Les principales disciplines de la géomatique</h3>
+            <div class="m08-grid">
+              <article class="m08-card">
+                <h4>Topographie</h4>
+                <p>
+                  Mesure et représentation des détails naturels et artificiels
+                  d'une portion de terrain.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Géodésie</h4>
+                <p>
+                  Étude de la forme, des dimensions et du champ de pesanteur de
+                  la Terre.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Cartographie</h4>
+                <p>
+                  Conception et réalisation de cartes et de documents
+                  représentant l'espace géographique.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>SIG</h4>
+                <p>
+                  Gestion, organisation, analyse et représentation des données
+                  géographiques.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>GNSS</h4>
+                <p>
+                  Positionnement à l'aide de systèmes mondiaux de navigation par
+                  satellite.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Télédétection</h4>
+                <p>
+                  Acquisition d'informations sur des objets ou des territoires à
+                  distance.
+                </p>
+              </article>
+            </div>
+
+            <h3>1.3 Le cycle de traitement de l'information géographique</h3>
+            <div class="m08-diagram">
+              <div class="m08-flow">
+                <div>Acquisition des données</div>
+                <span>↓</span>
+                <div>Stockage et organisation</div>
+                <span>↓</span>
+                <div>Traitement et analyse</div>
+                <span>↓</span>
+                <div>Représentation et diffusion</div>
+              </div>
+              <p class="m08-caption">
+                Schéma simplifié du traitement de l'information géographique.
+              </p>
+            </div>
+
+            <h3>1.4 Exemple pratique</h3>
+            <p>
+              Pour préparer un projet de construction, un géomètre topographe
+              peut réaliser un levé de terrain. Les points mesurés sont ensuite
+              organisés dans un logiciel, analysés et représentés sur un plan.
+              Ces informations peuvent également être intégrées dans un SIG afin
+              d'être comparées avec d'autres données du territoire.
+            </p>
+
+            <div class="m08-vigilance">
+              <strong>Point de vigilance :</strong>
+              La géomatique ne se limite pas à l'utilisation d'un logiciel. Elle
+              comprend toute la chaîne de production et d'exploitation de
+              l'information géographique.
+            </div>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                La géomatique rassemble les disciplines et les outils qui
+                permettent de gérer et d'exploiter l'information géographique.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 2 -->
+          <section class="m08-chapter" id="chapitre-2">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 02</span>
+              <h2>Les systèmes d'information géographique (SIG)</h2>
+            </div>
+
+            <h3>2.1 Définition d'un SIG</h3>
+            <p>
+              Un système d'information géographique, appelé SIG, est un ensemble
+              organisé de matériels, de logiciels, de données, de méthodes et de
+              personnes permettant de collecter, gérer, analyser et représenter
+              des informations géographiques.
+            </p>
+            <p>
+              Un SIG permet notamment de superposer plusieurs couches
+              d'informations afin de comprendre l'organisation d'un territoire.
+            </p>
+
+            <h3>2.2 Les composantes d'un SIG</h3>
+            <div class="m08-table-wrap">
+              <table class="m08-table">
+                <thead>
+                  <tr>
+                    <th>Composante</th>
+                    <th>Rôle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Matériel</td>
+                    <td>
+                      Ordinateurs, serveurs, récepteurs GNSS et périphériques.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Logiciels</td>
+                    <td>
+                      Programmes permettant de gérer et d'analyser les données.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Données</td>
+                    <td>Informations géographiques et attributaires.</td>
+                  </tr>
+                  <tr>
+                    <td>Méthodes</td>
+                    <td>Procédures de collecte, de traitement et d'analyse.</td>
+                  </tr>
+                  <tr>
+                    <td>Personnes</td>
+                    <td>Utilisateurs, techniciens, analystes et décideurs.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>2.3 Le principe des couches géographiques</h3>
+            <p>
+              Dans un SIG, les informations peuvent être organisées en
+              différentes couches thématiques. Chaque couche représente une
+              catégorie d'objets géographiques.
+            </p>
+
+            <div class="m08-layer-demo">
+              <div class="m08-layer m08-layer-1">Couche des bâtiments</div>
+              <div class="m08-layer m08-layer-2">Couche des routes</div>
+              <div class="m08-layer m08-layer-3">Couche hydrographique</div>
+              <div class="m08-layer m08-layer-4">
+                Couche des limites administratives
+              </div>
+            </div>
+            <p class="m08-caption">
+              Illustration pédagogique de plusieurs couches pouvant être
+              superposées dans un SIG.
+            </p>
+
+            <h3>2.4 Les principales fonctions d'un SIG</h3>
+            <ul>
+              <li>
+                <strong>Acquisition :</strong> intégrer des données provenant de
+                différentes sources.
+              </li>
+              <li>
+                <strong>Stockage :</strong> organiser les informations dans des
+                fichiers ou des bases de données.
+              </li>
+              <li>
+                <strong>Consultation :</strong> afficher et rechercher des
+                objets géographiques.
+              </li>
+              <li>
+                <strong>Analyse :</strong> mesurer, comparer et étudier les
+                relations spatiales.
+              </li>
+              <li>
+                <strong>Représentation :</strong> produire des cartes et des
+                documents thématiques.
+              </li>
+            </ul>
+
+            <h3>2.5 Exemple d'utilisation</h3>
+            <p>
+              Une commune peut utiliser un SIG pour localiser les routes, les
+              bâtiments, les réseaux d'eau, les équipements publics et les
+              limites de ses quartiers. En superposant ces informations, elle
+              peut mieux préparer ses projets d'aménagement.
+            </p>
+
+            <div class="m08-example">
+              <strong>Exemple topographique :</strong>
+              Un plan de levé réalisé par un géomètre peut être intégré dans un
+              SIG pour être comparé aux parcelles, aux routes et aux autres
+              éléments du territoire.
+            </div>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                Un SIG organise les données géographiques en couches et permet
+                de les consulter, de les analyser et de les représenter.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 3 -->
+          <section class="m08-chapter" id="chapitre-3">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 03</span>
+              <h2>Les données géographiques</h2>
+            </div>
+
+            <h3>3.1 Définition</h3>
+            <p>
+              Une donnée géographique est une information qui possède une
+              localisation dans l'espace. Elle décrit un objet, un phénomène ou
+              un élément du territoire.
+            </p>
+            <p>
+              Elle peut indiquer la position d'un bâtiment, le tracé d'une
+              route, la limite d'une parcelle ou encore l'altitude d'un point.
+            </p>
+
+            <h3>3.2 Les deux grandes familles de données spatiales</h3>
+            <div class="m08-grid">
+              <article class="m08-card">
+                <h4>Données vectorielles</h4>
+                <p>
+                  Elles représentent les objets géographiques à l'aide de
+                  points, de lignes et de polygones.
+                </p>
+                <ul>
+                  <li>Point : borne, arbre, regard.</li>
+                  <li>Ligne : route, canalisation, limite linéaire.</li>
+                  <li>Polygone : parcelle, bâtiment, lac.</li>
+                </ul>
+              </article>
+              <article class="m08-card">
+                <h4>Données raster</h4>
+                <p>
+                  Elles représentent l'espace sous forme d'une grille composée
+                  de cellules appelées pixels.
+                </p>
+                <ul>
+                  <li>Images satellitaires.</li>
+                  <li>Photographies aériennes.</li>
+                  <li>Modèles numériques de terrain.</li>
+                </ul>
+              </article>
+            </div>
+
+            <h3>3.3 Illustration des données vectorielles</h3>
+            <div class="m08-visual">
+              <svg
+                viewBox="0 0 600 245"
+                role="img"
+                aria-label="Illustration des points, lignes et polygones"
+              >
+                <rect
+                  x="8"
+                  y="8"
+                  width="584"
+                  height="229"
+                  rx="12"
+                  fill="#f2f6fa"
+                />
+                <circle cx="95" cy="85" r="9" fill="#12b8b0" />
+                <circle cx="155" cy="145" r="9" fill="#12b8b0" />
+                <text
+                  x="95"
+                  y="190"
+                  text-anchor="middle"
+                  fill="#10243b"
+                  font-size="16"
+                >
+                  Point
+                </text>
+                <line
+                  x1="245"
+                  y1="70"
+                  x2="345"
+                  y2="155"
+                  stroke="#173d5c"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                />
+                <text
+                  x="295"
+                  y="190"
+                  text-anchor="middle"
+                  fill="#10243b"
+                  font-size="16"
+                >
+                  Ligne
+                </text>
+                <polygon
+                  points="430,65 530,65 550,150 450,165"
+                  fill="#12b8b0"
+                  fill-opacity=".35"
+                  stroke="#173d5c"
+                  stroke-width="3"
+                />
+                <text
+                  x="490"
+                  y="190"
+                  text-anchor="middle"
+                  fill="#10243b"
+                  font-size="16"
+                >
+                  Polygone
+                </text>
+              </svg>
+            </div>
+
+            <h3>3.4 Les données attributaires</h3>
+            <p>
+              Les données attributaires décrivent les caractéristiques des
+              objets géographiques. Elles sont généralement organisées sous
+              forme de tableaux.
+            </p>
+
+            <div class="m08-table-wrap">
+              <table class="m08-table">
+                <thead>
+                  <tr>
+                    <th>Identifiant</th>
+                    <th>Objet</th>
+                    <th>Type</th>
+                    <th>Matériau</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>B001</td>
+                    <td>Bâtiment A</td>
+                    <td>Bâtiment</td>
+                    <td>Béton</td>
+                  </tr>
+                  <tr>
+                    <td>R001</td>
+                    <td>Route principale</td>
+                    <td>Route</td>
+                    <td>Revêtement bitumineux</td>
+                  </tr>
+                  <tr>
+                    <td>P001</td>
+                    <td>Parcelle 01</td>
+                    <td>Parcelle</td>
+                    <td>Non applicable</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="m08-caption">
+                Exemple fictif de table attributaire à but pédagogique.
+              </p>
+            </div>
+
+            <h3>3.5 Les métadonnées</h3>
+            <p>
+              Les métadonnées sont des informations qui décrivent les données
+              elles-mêmes. Elles peuvent préciser leur origine, leur date de
+              production, leur système de coordonnées, leur précision et leur
+              responsable.
+            </p>
+
+            <div class="m08-vigilance">
+              <strong>Attention :</strong>
+              Deux données géographiques ne doivent pas être superposées sans
+              vérifier notamment leurs systèmes de référence et leurs
+              caractéristiques.
+            </div>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                Les données géographiques peuvent être vectorielles ou raster.
+                Elles sont souvent accompagnées d'attributs et de métadonnées.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 4 -->
+          <section class="m08-chapter" id="chapitre-4">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 04</span>
+              <h2>Les systèmes de positionnement par satellite (GNSS)</h2>
+            </div>
+
+            <h3>4.1 Définition du GNSS</h3>
+            <p>
+              GNSS signifie <strong>Global Navigation Satellite System</strong>,
+              ou système mondial de navigation par satellite. Il désigne
+              l'ensemble des systèmes satellitaires permettant notamment de
+              déterminer une position à partir de signaux reçus par un
+              récepteur.
+            </p>
+
+            <h3>4.2 Les principales constellations</h3>
+            <div class="m08-table-wrap">
+              <table class="m08-table">
+                <thead>
+                  <tr>
+                    <th>Constellation</th>
+                    <th>Origine</th>
+                    <th>Présentation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>GPS</td>
+                    <td>États-Unis</td>
+                    <td>Système mondial de positionnement par satellite.</td>
+                  </tr>
+                  <tr>
+                    <td>GLONASS</td>
+                    <td>Russie</td>
+                    <td>Système mondial de navigation par satellite.</td>
+                  </tr>
+                  <tr>
+                    <td>Galileo</td>
+                    <td>Union européenne</td>
+                    <td>Système européen de navigation par satellite.</td>
+                  </tr>
+                  <tr>
+                    <td>BeiDou</td>
+                    <td>Chine</td>
+                    <td>Système chinois de navigation par satellite.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>4.3 Principe général du positionnement</h3>
+            <p>
+              Les satellites transmettent des signaux contenant des informations
+              permettant au récepteur d'estimer les distances qui le séparent de
+              plusieurs satellites. Le récepteur utilise ces mesures pour
+              déterminer sa position.
+            </p>
+
+            <div class="m08-diagram">
+              <div class="m08-satellite">
+                <span>🛰️</span>
+                <span>🛰️</span>
+                <span>🛰️</span>
+              </div>
+              <div class="m08-signal">Signaux satellitaires ↓</div>
+              <div class="m08-receiver">Récepteur GNSS</div>
+              <div class="m08-signal">↓</div>
+              <div class="m08-result">Position calculée</div>
+              <p class="m08-caption">
+                Schéma simplifié du principe de positionnement GNSS.
+              </p>
+            </div>
+
+            <h3>4.4 Les méthodes de positionnement</h3>
+            <div class="m08-grid">
+              <article class="m08-card">
+                <h4>Positionnement autonome</h4>
+                <p>
+                  Le récepteur détermine sa position à partir des signaux
+                  satellitaires reçus, sans correction externe.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Positionnement différentiel</h4>
+                <p>
+                  Des corrections issues d'une station de référence ou d'un
+                  service adapté sont utilisées pour améliorer la position.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>RTK</h4>
+                <p>
+                  La méthode Real Time Kinematic utilise des observations GNSS
+                  et des corrections transmises en temps réel afin d'obtenir un
+                  positionnement précis.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>PPK</h4>
+                <p>
+                  La méthode Post-Processed Kinematic consiste à traiter les
+                  observations GNSS après leur acquisition.
+                </p>
+              </article>
+            </div>
+
+            <h3>4.5 Utilisation du GNSS en topographie</h3>
+            <ul>
+              <li>Rattachement de levés à un système de référence.</li>
+              <li>Levés de points topographiques.</li>
+              <li>Implantation de points sur le terrain.</li>
+              <li>Contrôle de positions.</li>
+              <li>Acquisition de données pour les projets d'aménagement.</li>
+            </ul>
+
+            <div class="m08-vigilance">
+              <strong>Point de vigilance :</strong>
+              La qualité du positionnement dépend notamment de la géométrie des
+              satellites, de l'environnement, des conditions de réception, du
+              matériel, de la méthode utilisée et de la qualité des corrections.
+            </div>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                Les systèmes GNSS permettent de déterminer des positions à
+                partir de signaux satellitaires. Ils sont devenus des outils
+                importants en topographie.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 5 -->
+          <section class="m08-chapter" id="chapitre-5">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 05</span>
+              <h2>La télédétection et les images satellitaires</h2>
+            </div>
+
+            <h3>5.1 Définition de la télédétection</h3>
+            <p>
+              La télédétection est l'ensemble des techniques permettant
+              d'obtenir des informations sur des objets, des surfaces ou des
+              phénomènes sans contact direct avec eux, grâce à des capteurs
+              installés sur des satellites, des avions ou des drones.
+            </p>
+
+            <h3>5.2 Les plateformes de télédétection</h3>
+            <div class="m08-grid">
+              <article class="m08-card">
+                <h4>Satellites</h4>
+                <p>
+                  Permettent d'observer de vastes territoires et de suivre leur
+                  évolution.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Avions</h4>
+                <p>
+                  Peuvent embarquer des capteurs pour réaliser des acquisitions
+                  aériennes.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Drones</h4>
+                <p>
+                  Permettent des acquisitions à basse altitude sur des zones
+                  ciblées.
+                </p>
+              </article>
+            </div>
+
+            <h3>5.3 Télédétection passive et active</h3>
+            <p>
+              La télédétection passive utilise l'énergie naturelle provenant
+              principalement du Soleil ou émise par les objets observés. Les
+              capteurs enregistrent cette énergie après son interaction avec la
+              surface.
+            </p>
+            <p>
+              La télédétection active utilise un capteur qui émet lui-même un
+              signal et mesure son retour. Le radar et le LiDAR sont des
+              exemples de technologies de télédétection active.
+            </p>
+
+            <h3>5.4 Les images satellitaires</h3>
+            <p>
+              Une image satellitaire est composée de pixels. Chaque pixel
+              contient une ou plusieurs valeurs correspondant à la mesure
+              enregistrée dans une bande spectrale.
+            </p>
+            <p>
+              Selon le capteur, une image peut fournir des informations dans
+              différentes régions du spectre électromagnétique : visible,
+              infrarouge ou micro-ondes.
+            </p>
+
+            <h3>5.5 Les caractéristiques d'une image</h3>
+            <ul>
+              <li>
+                <strong>Résolution spatiale :</strong> niveau de détail spatial
+                représenté par les pixels.
+              </li>
+              <li>
+                <strong>Résolution spectrale :</strong> capacité du capteur à
+                distinguer différentes bandes du spectre.
+              </li>
+              <li>
+                <strong>Résolution radiométrique :</strong> capacité à
+                distinguer différents niveaux d'intensité du signal.
+              </li>
+              <li>
+                <strong>Résolution temporelle :</strong> fréquence à laquelle
+                une zone peut être observée à nouveau.
+              </li>
+            </ul>
+
+            <h3>5.6 Applications en topographie et en aménagement</h3>
+            <ul>
+              <li>Observation de l'évolution de l'occupation du sol.</li>
+              <li>Préparation et suivi de projets d'aménagement.</li>
+              <li>
+                Production de modèles numériques de terrain selon la méthode
+                d'acquisition.
+              </li>
+              <li>Cartographie de zones naturelles ou urbanisées.</li>
+              <li>Suivi de phénomènes environnementaux.</li>
+            </ul>
+
+            <div class="m08-example">
+              <strong>Exemple :</strong>
+              Une commune peut comparer des images satellitaires prises à
+              différentes dates pour observer l'évolution de l'urbanisation et
+              l'apparition de nouvelles constructions.
+            </div>
+
+            <div class="m08-vigilance">
+              <strong>Attention :</strong>
+              Une image satellitaire ne constitue pas automatiquement un plan
+              topographique. Son utilisation métrique nécessite notamment de
+              connaître sa géométrie, son géoréférencement, sa résolution et ses
+              limites.
+            </div>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                La télédétection permet d'observer la surface terrestre à
+                distance et fournit des données utiles à la cartographie et à
+                l'analyse du territoire.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 6 -->
+          <section class="m08-chapter" id="chapitre-6">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 06</span>
+              <h2>Les outils et logiciels de géomatique</h2>
+            </div>
+
+            <h3>6.1 Les outils matériels</h3>
+            <p>
+              La géomatique utilise différents équipements pour acquérir et
+              traiter l'information géographique.
+            </p>
+            <div class="m08-grid">
+              <article class="m08-card">
+                <h4>Récepteur GNSS</h4>
+                <p>
+                  Acquisition de positions géographiques à partir des signaux
+                  satellitaires.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Station totale</h4>
+                <p>
+                  Mesure d'angles et de distances pour les travaux
+                  topographiques.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Drone</h4>
+                <p>
+                  Acquisition d'images aériennes et réalisation de missions de
+                  photogrammétrie.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Scanner 3D</h4>
+                <p>
+                  Acquisition de données tridimensionnelles sous forme de nuages
+                  de points.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Ordinateur</h4>
+                <p>
+                  Traitement, organisation, analyse et représentation des
+                  données.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Serveur et stockage</h4>
+                <p>
+                  Conservation, partage et gestion des données géographiques.
+                </p>
+              </article>
+            </div>
+
+            <h3>6.2 Les logiciels de SIG</h3>
+            <div class="m08-software">
+              <div>
+                <h4>QGIS</h4>
+                <p>
+                  Logiciel SIG libre et open source permettant de visualiser,
+                  gérer, analyser et représenter des données géographiques.
+                </p>
+                <a
+                  href="https://qgis.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Site officiel de QGIS ↗</a
+                >
+              </div>
+              <div>
+                <h4>ArcGIS</h4>
+                <p>
+                  Ensemble de logiciels et de services SIG développé par Esri
+                  pour la gestion et l'analyse des informations géographiques.
+                </p>
+                <a
+                  href="https://www.esri.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Site officiel d'Esri ↗</a
+                >
+              </div>
+            </div>
+
+            <h3>6.3 Les logiciels de traitement et de conception</h3>
+            <div class="m08-software">
+              <div>
+                <h4>AutoCAD</h4>
+                <p>
+                  Logiciel de conception assistée par ordinateur utilisé
+                  notamment pour le dessin technique et la production de plans.
+                </p>
+                <a
+                  href="https://www.autodesk.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Site officiel d'Autodesk ↗</a
+                >
+              </div>
+              <div>
+                <h4>Covadis</h4>
+                <p>
+                  Solution métier destinée aux professionnels de la topographie,
+                  de l'aménagement et des travaux publics, utilisée avec
+                  AutoCAD.
+                </p>
+                <a
+                  href="https://www.geo-media.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Site de l'éditeur ↗</a
+                >
+              </div>
+            </div>
+
+            <h3>6.4 Les logiciels de photogrammétrie</h3>
+            <p>
+              Les logiciels de photogrammétrie permettent de traiter des
+              photographies prises depuis différents points de vue afin de
+              produire des informations tridimensionnelles, selon les données
+              disponibles et les méthodes utilisées.
+            </p>
+            <p>
+              Ils peuvent notamment servir à générer des nuages de points, des
+              modèles 3D, des orthophotographies et des produits
+              cartographiques.
+            </p>
+
+            <h3>6.5 Choisir un outil adapté</h3>
+            <p>
+              Le choix d'un logiciel dépend du type de données, des objectifs du
+              projet, du niveau de précision recherché, du budget, des formats
+              disponibles et des compétences des utilisateurs.
+            </p>
+
+            <div class="m08-vigilance">
+              <strong>Point de vigilance :</strong>
+              Un logiciel ne garantit pas à lui seul la qualité d'un résultat.
+              La fiabilité dépend aussi des données, des méthodes de travail et
+              des contrôles réalisés.
+            </div>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                La géomatique repose sur des équipements et des logiciels
+                complémentaires pour acquérir, traiter, analyser et représenter
+                les données géographiques.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 7 -->
+          <section class="m08-chapter" id="chapitre-7">
+            <div class="m08-chapter-heading">
+              <span>CHAPITRE 07</span>
+              <h2>Applications de la géomatique en topographie</h2>
+            </div>
+
+            <h3>7.1 La géomatique dans les travaux topographiques</h3>
+            <p>
+              La géomatique complète les méthodes classiques de topographie en
+              facilitant l'acquisition, le traitement, la gestion et la
+              représentation des données mesurées sur le terrain.
+            </p>
+
+            <h3>7.2 Les principales applications</h3>
+            <div class="m08-grid">
+              <article class="m08-card">
+                <h4>Levé topographique</h4>
+                <p>
+                  Collecte de points et de détails du terrain à l'aide
+                  d'instruments adaptés.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Cartographie</h4>
+                <p>
+                  Production de cartes et de plans à partir de données
+                  géographiques.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Aménagement urbain</h4>
+                <p>
+                  Étude des bâtiments, des routes, des réseaux et des
+                  équipements.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Travaux publics</h4>
+                <p>
+                  Suivi des infrastructures et exploitation des données de
+                  terrain.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Environnement</h4>
+                <p>
+                  Observation et analyse des changements affectant les
+                  territoires.
+                </p>
+              </article>
+              <article class="m08-card">
+                <h4>Gestion foncière</h4>
+                <p>
+                  Organisation et consultation d'informations relatives aux
+                  parcelles et aux limites.
+                </p>
+              </article>
+            </div>
+
+            <h3>7.3 Exemple d'une chaîne de travail géomatique</h3>
+            <p>
+              Prenons l'exemple d'un projet d'aménagement d'une zone urbaine.
+            </p>
+            <div class="m08-process">
+              <div class="m08-process-step">
+                <span>01</span>
+                <div>
+                  <h4>Acquisition sur le terrain</h4>
+                  <p>
+                    Réalisation de levés à l'aide d'une station totale ou d'un
+                    récepteur GNSS.
+                  </p>
+                </div>
+              </div>
+              <div class="m08-process-step">
+                <span>02</span>
+                <div>
+                  <h4>Traitement des données</h4>
+                  <p>
+                    Organisation, vérification et préparation des observations.
+                  </p>
+                </div>
+              </div>
+              <div class="m08-process-step">
+                <span>03</span>
+                <div>
+                  <h4>Intégration dans un SIG</h4>
+                  <p>
+                    Importation des données et association aux autres couches
+                    géographiques.
+                  </p>
+                </div>
+              </div>
+              <div class="m08-process-step">
+                <span>04</span>
+                <div>
+                  <h4>Analyse spatiale</h4>
+                  <p>
+                    Étude des relations entre les routes, les bâtiments, les
+                    parcelles et les réseaux.
+                  </p>
+                </div>
+              </div>
+              <div class="m08-process-step">
+                <span>05</span>
+                <div>
+                  <h4>Production cartographique</h4>
+                  <p>
+                    Réalisation de cartes et de documents utiles à la
+                    préparation du projet.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h3>7.4 Les avantages de la géomatique</h3>
+            <ul>
+              <li>
+                Centralisation et organisation des informations géographiques.
+              </li>
+              <li>Facilité de consultation et de mise à jour des données.</li>
+              <li>Possibilité de croiser plusieurs sources d'information.</li>
+              <li>Meilleure compréhension des phénomènes spatiaux.</li>
+              <li>
+                Production de documents adaptés à différents utilisateurs.
+              </li>
+            </ul>
+
+            <h3>7.5 Les limites et précautions</h3>
+            <p>
+              Les résultats géomatiques doivent être interprétés avec prudence.
+              Des données anciennes, imprécises, mal géoréférencées ou
+              incompatibles peuvent conduire à des analyses incorrectes.
+            </p>
+            <p>
+              Il est donc indispensable de vérifier les sources, les systèmes de
+              coordonnées, les dates, les unités et la qualité des données
+              utilisées.
+            </p>
+
+            <div class="m08-summary">
+              <h4>Résumé du chapitre</h4>
+              <p>
+                La géomatique apporte des outils puissants aux travaux
+                topographiques et à la gestion des territoires, à condition de
+                contrôler la qualité des données.
+              </p>
+            </div>
+          </section>
+
+          <!-- ÉVALUATION -->
+          <section class="m08-evaluation" id="evaluation">
+            <div class="m08-chapter-heading">
+              <span>ÉVALUATION</span>
+              <h2>Exercices de révision du module</h2>
+            </div>
+
+            <p>
+              Vérifiez votre compréhension des notions essentielles abordées
+              dans ce module. Essayez de répondre avant d'afficher les
+              corrections.
+            </p>
+
+            <article class="m08-question">
+              <h3>Exercice 1 — Définition</h3>
+              <p>
+                Définissez la géomatique et citez quatre disciplines ou
+                technologies qui lui sont associées.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  La géomatique regroupe les méthodes et technologies permettant
+                  de collecter, stocker, traiter, analyser et représenter des
+                  informations géographiques. Exemples : topographie, géodésie,
+                  cartographie et SIG.
+                </p>
+              </details>
+            </article>
+
+            <article class="m08-question">
+              <h3>Exercice 2 — SIG</h3>
+              <p>
+                Que signifie le sigle SIG ? Donnez trois fonctions principales
+                d'un SIG.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  SIG signifie Système d'Information Géographique. Ses fonctions
+                  comprennent l'acquisition, le stockage, la consultation,
+                  l'analyse et la représentation des données géographiques.
+                </p>
+              </details>
+            </article>
+
+            <article class="m08-question">
+              <h3>Exercice 3 — Données spatiales</h3>
+              <p>
+                Quelle est la différence entre une donnée vectorielle et une
+                donnée raster ? Donnez un exemple de chacune.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  Une donnée vectorielle représente les objets avec des points,
+                  des lignes ou des polygones. Exemple : une route représentée
+                  par une ligne. Une donnée raster représente l'espace sous
+                  forme de pixels. Exemple : une image satellitaire.
+                </p>
+              </details>
+            </article>
+
+            <article class="m08-question">
+              <h3>Exercice 4 — GNSS</h3>
+              <p>
+                Citez quatre constellations GNSS et expliquez brièvement le rôle
+                d'un récepteur GNSS.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  Les quatre constellations sont GPS, GLONASS, Galileo et
+                  BeiDou. Le récepteur capte les signaux satellitaires et
+                  utilise les informations reçues pour calculer sa position.
+                </p>
+              </details>
+            </article>
+
+            <article class="m08-question">
+              <h3>Exercice 5 — Télédétection</h3>
+              <p>
+                Expliquez la différence entre la télédétection passive et la
+                télédétection active.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  La télédétection passive mesure une énergie naturelle
+                  réfléchie ou émise par les objets. La télédétection active
+                  émet un signal et mesure son retour, comme dans le cas du
+                  radar ou du LiDAR.
+                </p>
+              </details>
+            </article>
+
+            <article class="m08-question">
+              <h3>Exercice 6 — Applications</h3>
+              <p>
+                Présentez trois applications de la géomatique dans les travaux
+                topographiques ou l'aménagement du territoire.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  Exemples : production de cartes topographiques, gestion des
+                  informations parcellaires, suivi des infrastructures, analyse
+                  des réseaux et observation de l'évolution urbaine.
+                </p>
+              </details>
+            </article>
+
+            <div class="m08-final-message">
+              <h3>Félicitations !</h3>
+              <p>
+                Vous avez parcouru les sept chapitres du module d'introduction à
+                la géomatique. Vous disposez maintenant d'une première base pour
+                comprendre les outils et les méthodes utilisés dans la gestion
+                de l'information géographique.
+              </p>
+              <a href="../EXERCICES.HTML" class="m08-button"
+                >Continuer vers les exercices</a
+              >
+            </div>
+          </section>
+
+          <div class="m08-navigation">
+            <a href="module-07.html" class="m08-prev">
+              <span>Module précédent</span>
+              <strong>← Module 07</strong>
+            </a>
+            <a href="../COURS.HTML" class="m08-next">
+              <span>Catalogue des cours</span>
+              <strong>Retour aux modules →</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="m08-footer">
+      <p>© TOPOMONDE — La topographie, comprendre le monde autrement.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entraînez-vous en topographie avec TOPOMONDE : QCM, calculs topographiques et exercices corrigés."
+    />
+    <title>Exercices | TOPOMONDE</title>
+    <link rel="stylesheet" href="../CSS/STYLE.CSS" />
+  </head>
+
+  <body class="exercices-page">
+    <header class="ex-header">
+      <div class="ex-nav">
+        <a href="../INDEX.HTML" class="ex-logo">TOPO<span>MONDE</span></a>
+
+        <nav>
+          <a href="../INDEX.HTML">Accueil</a>
+          <a href="COURS.HTML">Cours</a>
+          <a href="INSTRUMENTS.HTML">Instruments</a>
+          <a href="METHODES.HTML">Méthodes</a>
+          <a href="EXERCICES.HTML" class="active">Exercices</a>
+          <a href="APROPOS.HTML">À propos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="ex-hero">
+        <div class="ex-hero-content">
+          <span class="ex-eyebrow">APPRENDRE • PRATIQUER • PROGRESSER</span>
+          <h1>Entraînez-vous à la <span>topographie</span></h1>
+          <p>
+            Mettez vos connaissances à l'épreuve grâce à des exercices
+            progressifs, des calculs pratiques et des corrections détaillées.
+          </p>
+          <a href="#bibliotheque" class="ex-main-button"
+            >Commencer les exercices</a
+          >
+        </div>
+
+        <div class="ex-hero-visual">
+          <div class="ex-visual-circle">
+            <span class="ex-visual-icon">⌖</span>
+            <strong>TOPOMONDE</strong>
+            <small>ESPACE D'ENTRAÎNEMENT</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATISTIQUES -->
+      <section class="ex-stats">
+        <div class="ex-stat">
+          <strong>08</strong>
+          <span>Domaines d'entraînement</span>
+        </div>
+        <div class="ex-stat">
+          <strong>03</strong>
+          <span>Niveaux de difficulté</span>
+        </div>
+        <div class="ex-stat">
+          <strong>QCM</strong>
+          <span>Correction automatique</span>
+        </div>
+        <div class="ex-stat">
+          <strong>100%</strong>
+          <span>Apprentissage progressif</span>
+        </div>
+      </section>
+
+      <!-- INTRODUCTION -->
+      <section class="ex-intro" id="bibliotheque">
+        <div class="ex-section-heading">
+          <span class="ex-eyebrow">BIBLIOTHÈQUE D'EXERCICES</span>
+          <h2>Choisissez votre domaine</h2>
+          <p>
+            Sélectionnez une catégorie et un niveau pour commencer votre
+            entraînement.
+          </p>
+        </div>
+
+        <div class="ex-filters">
+          <div class="ex-filter-group">
+            <label for="ex-category">Domaine</label>
+            <select id="ex-category">
+              <option value="all">Tous les domaines</option>
+              <option value="fondamentaux">Notions fondamentales</option>
+              <option value="geodesie">Géodésie et coordonnées</option>
+              <option value="mesures">Mesures topographiques</option>
+              <option value="nivellement">Nivellement et altimétrie</option>
+              <option value="calculs">Calculs topographiques</option>
+              <option value="cartographie">Cartographie</option>
+              <option value="geomatique">Géomatique</option>
+              <option value="instruments">Instruments et méthodes</option>
+            </select>
+          </div>
+
+          <div class="ex-filter-group">
+            <label for="ex-level">Niveau</label>
+            <select id="ex-level">
+              <option value="all">Tous les niveaux</option>
+              <option value="debutant">Débutant</option>
+              <option value="intermediaire">Intermédiaire</option>
+              <option value="avance">Avancé</option>
+            </select>
+          </div>
+
+          <button type="button" id="ex-reset-filters" class="ex-reset-button">
+            Réinitialiser
+          </button>
+        </div>
+      </section>
+
+      <!-- CATÉGORIES -->
+      <section class="ex-categories">
+        <article class="ex-category-card" data-category="fondamentaux">
+          <div class="ex-card-icon">⌖</div>
+          <span class="ex-card-number">01</span>
+          <h3>Notions fondamentales</h3>
+          <p>Unités, distances, angles, coordonnées et échelles.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et calculs</span>
+          </div>
+          <button
+            type="button"
+            class="ex-start-button"
+            data-open="fondamentaux"
+          >
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="geodesie">
+          <div class="ex-card-icon">🌐</div>
+          <span class="ex-card-number">02</span>
+          <h3>Géodésie et coordonnées</h3>
+          <p>Coordonnées géographiques, projections et références.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et notions</span>
+          </div>
+          <button type="button" class="ex-start-button" data-open="geodesie">
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="mesures">
+          <div class="ex-card-icon">📏</div>
+          <span class="ex-card-number">03</span>
+          <h3>Mesures topographiques</h3>
+          <p>Distances, angles, précision et erreurs de mesure.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et calculs</span>
+          </div>
+          <button type="button" class="ex-start-button" data-open="mesures">
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="nivellement">
+          <div class="ex-card-icon">↕</div>
+          <span class="ex-card-number">04</span>
+          <h3>Nivellement et altimétrie</h3>
+          <p>Lectures, dénivelées, altitudes et contrôles.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et calculs</span>
+          </div>
+          <button type="button" class="ex-start-button" data-open="nivellement">
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="calculs">
+          <div class="ex-card-icon">∑</div>
+          <span class="ex-card-number">05</span>
+          <h3>Calculs topographiques</h3>
+          <p>Gisements, coordonnées, surfaces et cheminements.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et calculs</span>
+          </div>
+          <button type="button" class="ex-start-button" data-open="calculs">
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="cartographie">
+          <div class="ex-card-icon">🗺</div>
+          <span class="ex-card-number">06</span>
+          <h3>Cartographie</h3>
+          <p>Échelles, courbes de niveau et représentation du terrain.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et lecture</span>
+          </div>
+          <button
+            type="button"
+            class="ex-start-button"
+            data-open="cartographie"
+          >
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="geomatique">
+          <div class="ex-card-icon">🛰</div>
+          <span class="ex-card-number">07</span>
+          <h3>Géomatique</h3>
+          <p>SIG, données géographiques, GNSS et télédétection.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et notions</span>
+          </div>
+          <button type="button" class="ex-start-button" data-open="geomatique">
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+
+        <article class="ex-category-card" data-category="instruments">
+          <div class="ex-card-icon">🔭</div>
+          <span class="ex-card-number">08</span>
+          <h3>Instruments et méthodes</h3>
+          <p>Appareils, mise en station, levés et implantation.</p>
+          <div class="ex-card-meta">
+            <span>3 niveaux</span>
+            <span>QCM et pratique</span>
+          </div>
+          <button type="button" class="ex-start-button" data-open="instruments">
+            S'entraîner <span>→</span>
+          </button>
+        </article>
+      </section>
+
+      <p id="ex-no-results" class="ex-no-results" hidden>
+        Aucun domaine ne correspond à vos filtres.
+      </p>
+
+      <!-- ESPACE QCM -->
+      <section class="ex-quiz-section" id="espace-quiz">
+        <div class="ex-section-heading">
+          <span class="ex-eyebrow">ÉVALUATION INTERACTIVE</span>
+          <h2>Testez vos connaissances</h2>
+          <p>
+            Répondez aux questions et découvrez votre résultat immédiatement.
+          </p>
+        </div>
+
+        <div class="ex-quiz-box">
+          <div class="ex-quiz-top">
+            <div>
+              <span class="ex-quiz-label">SÉANCE D'ENTRAÎNEMENT</span>
+              <h3 id="ex-quiz-title">Quiz général de topographie</h3>
+            </div>
+            <span class="ex-level-tag" id="ex-quiz-level">Débutant</span>
+          </div>
+
+          <div class="ex-quiz-progress">
+            <div class="ex-progress-track">
+              <div id="ex-progress-bar"></div>
+            </div>
+            <span id="ex-progress-text">Question 1 / 8</span>
+          </div>
+
+          <div id="ex-question-area">
+            <h3 id="ex-question">Chargement de la question...</h3>
+            <div id="ex-options" class="ex-options"></div>
+            <p id="ex-feedback" class="ex-feedback" aria-live="polite"></p>
+          </div>
+
+          <div class="ex-quiz-actions">
+            <button type="button" id="ex-next" class="ex-next-button" disabled>
+              Question suivante →
+            </button>
+            <button type="button" id="ex-restart" class="ex-restart-button">
+              Recommencer
+            </button>
+          </div>
+
+          <div id="ex-result" class="ex-result" hidden aria-live="polite">
+            <span class="ex-result-icon">✓</span>
+            <h3>Entraînement terminé !</h3>
+            <p id="ex-result-score"></p>
+            <p id="ex-result-message"></p>
+            <button type="button" id="ex-result-restart" class="ex-next-button">
+              Refaire le quiz
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXERCICES DE CALCUL -->
+      <section class="ex-practice-section">
+        <div class="ex-section-heading">
+          <span class="ex-eyebrow">APPLICATION PRATIQUE</span>
+          <h2>Exercices de calcul corrigés</h2>
+          <p>Travaillez les calculs essentiels de la topographie.</p>
+        </div>
+
+        <div class="ex-practice-grid">
+          <article class="ex-practice-card">
+            <span class="ex-practice-tag">NIVEAU DÉBUTANT</span>
+            <h3>Calcul d'une distance horizontale</h3>
+            <p>
+              Une distance inclinée de 50 m est mesurée avec un angle de pente
+              de 30° par rapport à l'horizontale. Calculer sa projection
+              horizontale.
+            </p>
+            <div class="ex-formula">D = L × cos(α)</div>
+            <details>
+              <summary>Voir la correction détaillée</summary>
+              <div class="ex-solution">
+                <p><strong>Données :</strong> L = 50 m ; α = 30°.</p>
+                <p><strong>Formule :</strong> D = L × cos(α).</p>
+                <p><strong>Application :</strong> D = 50 × cos(30°).</p>
+                <p><strong>Résultat :</strong> D ≈ 43,30 m.</p>
+                <p>La projection horizontale est d'environ 43,30 m.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="ex-practice-card">
+            <span class="ex-practice-tag">NIVEAU DÉBUTANT</span>
+            <h3>Calcul d'une dénivelée</h3>
+            <p>
+              Une lecture arrière de 1,450 m et une lecture avant de 1,125 m
+              sont relevées. Calculer la dénivelée.
+            </p>
+            <div class="ex-formula">ΔH = Lecture arrière − Lecture avant</div>
+            <details>
+              <summary>Voir la correction détaillée</summary>
+              <div class="ex-solution">
+                <p><strong>Données :</strong> LA = 1,450 m ; LV = 1,125 m.</p>
+                <p><strong>Formule :</strong> ΔH = LA − LV.</p>
+                <p><strong>Application :</strong> ΔH = 1,450 − 1,125.</p>
+                <p><strong>Résultat :</strong> ΔH = +0,325 m.</p>
+                <p>
+                  Le point avant est situé 0,325 m plus haut que le point
+                  arrière, selon cette convention de calcul.
+                </p>
+              </div>
+            </details>
+          </article>
+
+          <article class="ex-practice-card">
+            <span class="ex-practice-tag">NIVEAU INTERMÉDIAIRE</span>
+            <h3>Calcul d'une surface rectangulaire</h3>
+            <p>
+              Un terrain rectangulaire mesure 35 m de longueur et 20 m de
+              largeur. Calculer sa superficie.
+            </p>
+            <div class="ex-formula">S = L × l</div>
+            <details>
+              <summary>Voir la correction détaillée</summary>
+              <div class="ex-solution">
+                <p><strong>Données :</strong> L = 35 m ; l = 20 m.</p>
+                <p><strong>Formule :</strong> S = L × l.</p>
+                <p><strong>Application :</strong> S = 35 × 20.</p>
+                <p><strong>Résultat :</strong> S = 700 m².</p>
+                <p>La superficie du terrain est de 700 m².</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="ex-practice-card">
+            <span class="ex-practice-tag">NIVEAU INTERMÉDIAIRE</span>
+            <h3>Calcul d'une distance sur plan</h3>
+            <p>
+              Sur un plan à l'échelle 1/2 000, une distance mesurée est de 4 cm.
+              Déterminer la distance réelle.
+            </p>
+            <div class="ex-formula">D réelle = D plan × 2 000</div>
+            <details>
+              <summary>Voir la correction détaillée</summary>
+              <div class="ex-solution">
+                <p><strong>Données :</strong> 4 cm ; échelle 1/2 000.</p>
+                <p><strong>Application :</strong> 4 × 2 000 = 8 000 cm.</p>
+                <p><strong>Conversion :</strong> 8 000 cm = 80 m.</p>
+                <p><strong>Résultat :</strong> 80 m.</p>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONSEILS -->
+      <section class="ex-tips">
+        <div class="ex-tips-content">
+          <span class="ex-eyebrow">CONSEILS POUR PROGRESSER</span>
+          <h2>La maîtrise vient avec la pratique.</h2>
+          <p>
+            Prenez le temps de comprendre chaque question. Notez les formules,
+            vérifiez les unités et comparez vos résultats avec les corrections.
+          </p>
+        </div>
+        <a href="COURS.HTML" class="ex-tips-button">Revoir les cours →</a>
+      </section>
+    </main>
+
+    <footer class="ex-footer">
+      <div class="ex-footer-content">
+        <a href="../INDEX.HTML" class="ex-logo">TOPO<span>MONDE</span></a>
+        <p>La topographie, comprendre le monde autrement.</p>
+        <div class="ex-footer-links">
+          <a href="COURS.HTML">Cours</a>
+          <a href="INSTRUMENTS.HTML">Instruments</a>
+          <a href="METHODES.HTML">Méthodes</a>
+          <a href="EXERCICES.HTML">Exercices</a>
+          <a href="APROPOS.HTML">À propos</a>
+        </div>
+        <small>© 2026 TOPOMONDE — Apprendre la topographie.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        /* FILTRAGE DES CATÉGORIES */
+
+        const categoryFilter = document.getElementById("ex-category");
+        const levelFilter = document.getElementById("ex-level");
+        const categoryCards = document.querySelectorAll(".ex-category-card");
+        const noResults = document.getElementById("ex-no-results");
+
+        function filterCategories() {
+          let visibleCount = 0;
+
+          categoryCards.forEach((card) => {
+            const categoryMatch =
+              categoryFilter.value === "all" ||
+              card.dataset.category === categoryFilter.value;
+
+            const levelMatch = true;
+
+            const visible = categoryMatch && levelMatch;
+            card.hidden = !visible;
+
+            if (visible) visibleCount++;
+          });
+
+          noResults.hidden = visibleCount !== 0;
+        }
+
+        categoryFilter.addEventListener("change", filterCategories);
+
+        document
+          .getElementById("ex-reset-filters")
+          .addEventListener("click", function () {
+            categoryFilter.value = "all";
+            levelFilter.value = "all";
+            filterCategories();
+          });
+
+        levelFilter.addEventListener("change", function () {
+          // Les niveaux sont sélectionnables pour préparer les prochaines séries.
+          // Les exercices actuellement affichés sont des exemples de niveaux différents.
+        });
+
+        /* BANQUE DE QUESTIONS */
+
+        const questions = [
+          {
+            category: "fondamentaux",
+            level: "debutant",
+            question:
+              "Quelle est l'unité de base de longueur dans le système international ?",
+            options: [
+              "Le kilomètre",
+              "Le mètre",
+              "Le centimètre",
+              "Le millimètre",
+            ],
+            answer: 1,
+            explanation:
+              "Le mètre (m) est l'unité de base de longueur du système international.",
+          },
+          {
+            category: "fondamentaux",
+            level: "debutant",
+            question: "Combien de degrés contient un angle droit ?",
+            options: ["45°", "90°", "180°", "360°"],
+            answer: 1,
+            explanation: "Un angle droit mesure 90 degrés, soit 100 gon.",
+          },
+          {
+            category: "fondamentaux",
+            level: "intermediaire",
+            question: "À l'échelle 1/1 000, 1 cm sur le plan représente :",
+            options: [
+              "1 m sur le terrain",
+              "10 m sur le terrain",
+              "100 m sur le terrain",
+              "1 km sur le terrain",
+            ],
+            answer: 1,
+            explanation: "1 cm × 1 000 = 1 000 cm, soit 10 m.",
+          },
+          {
+            category: "geodesie",
+            level: "debutant",
+            question:
+              "Combien de coordonnées composent généralement une position géographique ?",
+            options: ["Une", "Deux : latitude et longitude", "Quatre", "Six"],
+            answer: 1,
+            explanation:
+              "La position géographique est définie par la latitude et la longitude. Une altitude peut être ajoutée pour la composante verticale.",
+          },
+          {
+            category: "geodesie",
+            level: "intermediaire",
+            question: "À quoi sert une projection cartographique ?",
+            options: [
+              "À mesurer directement une altitude",
+              "À représenter une surface courbe sur un plan",
+              "À remplacer le GNSS",
+              "À supprimer les erreurs de mesure",
+            ],
+            answer: 1,
+            explanation:
+              "Une projection cartographique permet de représenter une surface courbe, comme la Terre, sur un plan. Elle entraîne nécessairement des déformations.",
+          },
+          {
+            category: "mesures",
+            level: "debutant",
+            question:
+              "Quel instrument permet de mesurer une distance avec un ruban gradué ?",
+            options: [
+              "Un niveau",
+              "Un ruban métrique",
+              "Un théodolite",
+              "Un récepteur GNSS",
+            ],
+            answer: 1,
+            explanation:
+              "Le ruban métrique sert à mesurer des distances directement sur le terrain.",
+          },
+          {
+            category: "mesures",
+            level: "intermediaire",
+            question:
+              "Quelle est la différence entre précision et exactitude ?",
+            options: [
+              "Ce sont toujours des synonymes",
+              "La précision concerne la dispersion ; l'exactitude concerne la proximité de la valeur de référence",
+              "La précision concerne uniquement les angles",
+              "L'exactitude concerne uniquement les distances",
+            ],
+            answer: 1,
+            explanation:
+              "La précision décrit la proximité entre mesures répétées ; l'exactitude décrit la proximité d'un résultat par rapport à une valeur de référence.",
+          },
+          {
+            category: "nivellement",
+            level: "debutant",
+            question:
+              "Quelle formule permet de calculer la dénivelée avec une lecture arrière et une lecture avant ?",
+            options: [
+              "ΔH = LV − LA",
+              "ΔH = LA − LV",
+              "ΔH = LA + LV",
+              "ΔH = LA × LV",
+            ],
+            answer: 1,
+            explanation:
+              "Avec cette convention, la dénivelée est égale à la lecture arrière moins la lecture avant.",
+          },
+          {
+            category: "nivellement",
+            level: "intermediaire",
+            question:
+              "Une lecture arrière vaut 1,600 m et une lecture avant 1,200 m. Quelle est la dénivelée ?",
+            options: ["−0,400 m", "+0,400 m", "+2,800 m", "0,800 m"],
+            answer: 1,
+            explanation:
+              "ΔH = 1,600 − 1,200 = +0,400 m. Le point avant est plus haut de 0,400 m que le point arrière.",
+          },
+          {
+            category: "calculs",
+            level: "debutant",
+            question: "Quelle est la surface d'un rectangle de 10 m sur 5 m ?",
+            options: ["15 m²", "30 m²", "50 m²", "100 m²"],
+            answer: 2,
+            explanation: "S = longueur × largeur = 10 × 5 = 50 m².",
+          },
+          {
+            category: "calculs",
+            level: "intermediaire",
+            question:
+              "Deux points ont ΔX = 30 m et ΔY = 40 m. Quelle est leur distance horizontale ?",
+            options: ["50 m", "60 m", "70 m", "10 m"],
+            answer: 0,
+            explanation: "D = √(ΔX² + ΔY²) = √(900 + 1 600) = √2 500 = 50 m.",
+          },
+          {
+            category: "cartographie",
+            level: "debutant",
+            question:
+              "Que relient les courbes de niveau sur une carte topographique ?",
+            options: [
+              "Les points de même altitude",
+              "Les points de même longitude",
+              "Les points de même distance",
+              "Les limites des parcelles uniquement",
+            ],
+            answer: 0,
+            explanation:
+              "Une courbe de niveau relie les points ayant la même altitude.",
+          },
+          {
+            category: "cartographie",
+            level: "intermediaire",
+            question: "Que signifie une échelle de 1/5 000 ?",
+            options: [
+              "1 cm représente 5 m",
+              "1 cm représente 50 m",
+              "1 cm représente 500 m",
+              "1 cm représente 5 km",
+            ],
+            answer: 1,
+            explanation: "1 cm × 5 000 = 5 000 cm, soit 50 m.",
+          },
+          {
+            category: "geomatique",
+            level: "debutant",
+            question: "Que signifie le sigle SIG ?",
+            options: [
+              "Système d'Information Géographique",
+              "Service d'Installation Géométrique",
+              "Système Instrumental de Géodésie",
+              "Structure d'Information Générale",
+            ],
+            answer: 0,
+            explanation: "SIG signifie Système d'Information Géographique.",
+          },
+          {
+            category: "geomatique",
+            level: "intermediaire",
+            question: "Quel est le rôle principal d'un récepteur GNSS ?",
+            options: [
+              "Mesurer la température",
+              "Déterminer une position à partir de signaux satellitaires",
+              "Produire une carte automatiquement",
+              "Mesurer directement une surface",
+            ],
+            answer: 1,
+            explanation:
+              "Un récepteur GNSS utilise des signaux de systèmes satellitaires pour déterminer une position.",
+          },
+          {
+            category: "instruments",
+            level: "debutant",
+            question:
+              "Quel instrument permet de mesurer des angles horizontaux et verticaux ?",
+            options: [
+              "Un niveau à bulle",
+              "Un théodolite",
+              "Un décamètre",
+              "Une mire",
+            ],
+            answer: 1,
+            explanation:
+              "Le théodolite est conçu pour mesurer des angles horizontaux et verticaux.",
+          },
+          {
+            category: "instruments",
+            level: "intermediaire",
+            question: "Quel est le rôle du trépied en topographie ?",
+            options: [
+              "Mesurer les distances",
+              "Soutenir et stabiliser l'instrument",
+              "Calculer les coordonnées",
+              "Enregistrer les données GNSS",
+            ],
+            answer: 1,
+            explanation:
+              "Le trépied supporte l'instrument et contribue à sa stabilité pendant les opérations.",
+          },
+          {
+            category: "calculs",
+            level: "avance",
+            question:
+              "Dans un repère plan, quelle formule calcule la distance entre deux points A et B ?",
+            options: [
+              "D = ΔX + ΔY",
+              "D = √(ΔX² + ΔY²)",
+              "D = ΔX × ΔY",
+              "D = ΔX² − ΔY²",
+            ],
+            answer: 1,
+            explanation:
+              "La distance plane se calcule avec le théorème de Pythagore : D = √(ΔX² + ΔY²).",
+          },
+        ];
+
+        /* FONCTIONNEMENT DU QUIZ */
+
+        const questionElement = document.getElementById("ex-question");
+        const optionsElement = document.getElementById("ex-options");
+        const feedbackElement = document.getElementById("ex-feedback");
+        const nextButton = document.getElementById("ex-next");
+        const restartButton = document.getElementById("ex-restart");
+        const progressBar = document.getElementById("ex-progress-bar");
+        const progressText = document.getElementById("ex-progress-text");
+        const resultBox = document.getElementById("ex-result");
+        const resultScore = document.getElementById("ex-result-score");
+        const resultMessage = document.getElementById("ex-result-message");
+        const quizTitle = document.getElementById("ex-quiz-title");
+        const quizLevel = document.getElementById("ex-quiz-level");
+
+        let quizQuestions = [];
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+        let selectedCategory = "all";
+        let selectedLevel = "all";
+
+        function prepareQuiz(category = "all", level = "all") {
+          selectedCategory = category;
+          selectedLevel = level;
+
+          quizQuestions = questions.filter((q) => {
+            const categoryMatch = category === "all" || q.category === category;
+            const levelMatch = level === "all" || q.level === level;
+            return categoryMatch && levelMatch;
+          });
+
+          // Le quiz général sélectionne huit questions variées.
+          if (category === "all" && level === "all") {
+            quizQuestions = questions.slice(0, 8);
+          }
+
+          if (quizQuestions.length === 0) {
+            quizQuestions = questions.filter((q) => {
+              return category === "all" || q.category === category;
+            });
+          }
+
+          currentQuestion = 0;
+          score = 0;
+          answered = false;
+
+          quizTitle.textContent =
+            category === "all"
+              ? "Quiz général de topographie"
+              : "Quiz : " +
+                document.querySelector('[data-category="' + category + '"] h3')
+                  .textContent;
+
+          const levelNames = {
+            debutant: "Débutant",
+            intermediaire: "Intermédiaire",
+            avance: "Avancé",
+            all: "Tous niveaux",
+          };
+
+          quizLevel.textContent = levelNames[level];
+          resultBox.hidden = true;
+          document.getElementById("ex-question-area").hidden = false;
+          document.querySelector(".ex-quiz-progress").hidden = false;
+          nextButton.hidden = false;
+          restartButton.hidden = false;
+
+          showQuestion();
+        }
+
+        function showQuestion() {
+          const q = quizQuestions[currentQuestion];
+
+          answered = false;
+          feedbackElement.textContent = "";
+          feedbackElement.className = "ex-feedback";
+          nextButton.disabled = true;
+          nextButton.textContent =
+            currentQuestion === quizQuestions.length - 1
+              ? "Voir mon résultat"
+              : "Question suivante →";
+
+          questionElement.textContent = q.question;
+          optionsElement.innerHTML = "";
+
+          q.options.forEach((option, index) => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "ex-option";
+            button.textContent = option;
+
+            button.addEventListener("click", function () {
+              selectAnswer(index);
+            });
+
+            optionsElement.appendChild(button);
+          });
+
+          progressText.textContent =
+            "Question " + (currentQuestion + 1) + " / " + quizQuestions.length;
+
+          progressBar.style.width =
+            ((currentQuestion + 1) / quizQuestions.length) * 100 + "%";
+        }
+
+        function selectAnswer(index) {
+          if (answered) return;
+
+          answered = true;
+          const q = quizQuestions[currentQuestion];
+          const optionButtons = optionsElement.querySelectorAll(".ex-option");
+
+          optionButtons.forEach((button, i) => {
+            button.disabled = true;
+
+            if (i === q.answer) {
+              button.classList.add("correct");
+            }
+
+            if (i === index && i !== q.answer) {
+              button.classList.add("incorrect");
+            }
+          });
+
+          if (index === q.answer) {
+            score++;
+            feedbackElement.textContent = "Bonne réponse ! " + q.explanation;
+            feedbackElement.classList.add("success");
+          } else {
+            feedbackElement.textContent =
+              "Réponse incorrecte. " + q.explanation;
+            feedbackElement.classList.add("error");
+          }
+
+          nextButton.disabled = false;
+        }
+
+        function showResult() {
+          document.getElementById("ex-question-area").hidden = true;
+          document.querySelector(".ex-quiz-progress").hidden = true;
+          nextButton.hidden = true;
+          restartButton.hidden = true;
+          resultBox.hidden = false;
+
+          const percentage = Math.round((score / quizQuestions.length) * 100);
+
+          resultScore.textContent =
+            score +
+            " bonne(s) réponse(s) sur " +
+            quizQuestions.length +
+            " — " +
+            percentage +
+            " %.";
+
+          if (percentage >= 80) {
+            resultMessage.textContent =
+              "Excellent travail ! Vous maîtrisez bien ces notions.";
+          } else if (percentage >= 50) {
+            resultMessage.textContent =
+              "Bon effort ! Revoyez les explications des questions manquées.";
+          } else {
+            resultMessage.textContent =
+              "Continuez à apprendre : relisez les cours et recommencez l'entraînement.";
+          }
+        }
+
+        nextButton.addEventListener("click", function () {
+          if (!answered) return;
+
+          if (currentQuestion < quizQuestions.length - 1) {
+            currentQuestion++;
+            showQuestion();
+          } else {
+            showResult();
+          }
+        });
+
+        function restartQuiz() {
+          prepareQuiz(selectedCategory, selectedLevel);
+        }
+
+        restartButton.addEventListener("click", restartQuiz);
+        document
+          .getElementById("ex-result-restart")
+          .addEventListener("click", restartQuiz);
+
+        /* OUVERTURE D'UN QUIZ PAR CATÉGORIE */
+
+        document.querySelectorAll(".ex-start-button").forEach((button) => {
+          button.addEventListener("click", function () {
+            const category = button.dataset.open;
+            prepareQuiz(category, "all");
+
+            document.getElementById("espace-quiz").scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+
+        /* DÉMARRAGE */
+
+        prepareQuiz("all", "all");
+      });
+    </script>
+  </body>
+</html>

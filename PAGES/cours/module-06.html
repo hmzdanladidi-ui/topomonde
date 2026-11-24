@@ -1,0 +1,1454 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cours complet sur les calculs topographiques : distances, gisements, coordonnées, surfaces et cheminements."
+    />
+    <title>Module 06 - Calculs topographiques | TOPOMONDE</title>
+    <link rel="stylesheet" href="../../CSS/STYLE.CSS" />
+  </head>
+
+  <body class="module-06-page">
+    <header class="m06-header">
+      <div class="m06-header-inner">
+        <a href="../../INDEX.HTML" class="m06-logo">TOPO<span>MONDE</span></a>
+        <nav class="m06-nav">
+          <a href="../../INDEX.HTML">Accueil</a>
+          <a href="../COURS.HTML" class="active">Cours</a>
+          <a href="../INSTRUMENTS.HTML">Instruments</a>
+          <a href="../METHODES.HTML">Méthodes</a>
+          <a href="../EXERCICES.HTML">Exercices</a>
+          <a href="../APROPOS.HTML">À propos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="m06-container">
+      <div class="m06-breadcrumb">
+        <a href="../../INDEX.HTML">Accueil</a> /
+        <a href="../COURS.HTML">Cours</a> /
+        <span>Module 06</span>
+      </div>
+
+      <section class="m06-hero">
+        <span class="m06-eyebrow">FORMATION EN TOPOGRAPHIE</span>
+        <h1>Module 06 : <span>Calculs topographiques</span></h1>
+        <p>
+          Maîtriser les calculs de distances, d'angles, de gisements, de
+          coordonnées, de surfaces et de cheminements afin de transformer les
+          observations de terrain en résultats topographiques exploitables.
+        </p>
+        <div class="m06-hero-meta">
+          <span>7 chapitres</span>
+          <span>•</span>
+          <span>Théorie et pratique</span>
+          <span>•</span>
+          <span>Exercices corrigés</span>
+        </div>
+      </section>
+
+      <div class="m06-layout">
+        <aside class="m06-sidebar">
+          <div class="m06-sidebar-title">CONTENU DU MODULE</div>
+          <a href="#chapitre1">01. Introduction</a>
+          <a href="#chapitre2">02. Distances et dénivelées</a>
+          <a href="#chapitre3">03. Angles et gisements</a>
+          <a href="#chapitre4">04. Coordonnées rectangulaires</a>
+          <a href="#chapitre5">05. Calculs de surfaces</a>
+          <a href="#chapitre6">06. Cheminements topographiques</a>
+          <a href="#chapitre7">07. Applications et contrôles</a>
+          <a href="#bilan">Bilan du module</a>
+        </aside>
+
+        <div class="m06-content">
+          <!-- CHAPITRE 1 -->
+          <section class="m06-chapter" id="chapitre1">
+            <div class="m06-chapter-number">CHAPITRE 01</div>
+            <h2>Introduction aux calculs topographiques</h2>
+
+            <h3>1.1. Définition</h3>
+            <p>
+              Les calculs topographiques regroupent les opérations mathématiques
+              permettant d'exploiter les mesures réalisées sur le terrain. Ils
+              servent à déterminer les distances, les angles, les coordonnées,
+              les dénivelées, les surfaces et les autres éléments nécessaires à
+              la représentation du terrain.
+            </p>
+
+            <h3>1.2. Pourquoi effectuer des calculs topographiques ?</h3>
+            <p>
+              Les observations effectuées avec les instruments topographiques ne
+              constituent pas toujours directement les résultats recherchés. Des
+              calculs sont nécessaires pour transformer ces observations en
+              informations utilisables dans les plans et les projets.
+            </p>
+
+            <ul>
+              <li>Déterminer les coordonnées des points levés.</li>
+              <li>Calculer les distances et les orientations.</li>
+              <li>Calculer les surfaces des terrains.</li>
+              <li>Déterminer les altitudes et les dénivelées.</li>
+              <li>Contrôler les résultats d'un cheminement.</li>
+              <li>Préparer les opérations d'implantation.</li>
+            </ul>
+
+            <h3>1.3. Les données utilisées</h3>
+            <p>
+              Les calculs topographiques peuvent utiliser différentes données
+              selon l'opération réalisée :
+            </p>
+
+            <ul>
+              <li>Les distances mesurées sur le terrain.</li>
+              <li>Les angles horizontaux et verticaux.</li>
+              <li>Les gisements ou orientations.</li>
+              <li>Les coordonnées des points connus.</li>
+              <li>Les lectures de nivellement.</li>
+              <li>Les références géodésiques et cartographiques.</li>
+            </ul>
+
+            <h3>1.4. Les unités et conventions</h3>
+            <p>
+              Les unités doivent être cohérentes dans un calcul. En topographie,
+              les distances et coordonnées sont généralement exprimées en
+              mètres. Les angles peuvent être exprimés en degrés sexagésimaux ou
+              en grades (gon).
+            </p>
+
+            <div class="m06-formula">
+              <span>400 gon = 360° = 2π radians</span>
+              <small>Équivalence entre les principales unités angulaires</small>
+            </div>
+
+            <div class="m06-info">
+              <strong>Convention importante :</strong>
+              Dans ce module, les coordonnées rectangulaires sont notées X et Y.
+              Le gisement G est mesuré dans le sens horaire à partir du Nord, de
+              0 à 400 gon. Les formules sont présentées selon cette convention.
+            </div>
+
+            <h3>1.5. La démarche générale</h3>
+            <ol>
+              <li>Identifier les données disponibles.</li>
+              <li>Vérifier les unités et les conventions utilisées.</li>
+              <li>Choisir la formule adaptée à l'opération.</li>
+              <li>Effectuer les calculs.</li>
+              <li>Contrôler la cohérence des résultats.</li>
+              <li>Présenter les résultats avec leurs unités.</li>
+            </ol>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              Les calculs topographiques permettent d'exploiter les observations
+              de terrain. La maîtrise des unités, des conventions et des
+              contrôles est indispensable pour obtenir des résultats cohérents.
+            </p>
+          </section>
+
+          <!-- CHAPITRE 2 -->
+          <section class="m06-chapter" id="chapitre2">
+            <div class="m06-chapter-number">CHAPITRE 02</div>
+            <h2>Les calculs de distances et de dénivelées</h2>
+
+            <h3>2.1. Les différents types de distances</h3>
+            <p>
+              En topographie, il faut distinguer plusieurs types de distances :
+            </p>
+
+            <ul>
+              <li>
+                <strong>Distance horizontale :</strong> distance entre deux
+                points projetés sur un plan horizontal.
+              </li>
+              <li>
+                <strong>Distance inclinée :</strong> distance mesurée suivant la
+                pente entre deux points.
+              </li>
+              <li>
+                <strong>Distance verticale :</strong> différence de hauteur
+                entre deux points.
+              </li>
+            </ul>
+
+            <div class="m06-diagram">
+              <div class="m06-diagram-title">
+                Relation entre distance horizontale, distance inclinée et
+                dénivelée
+              </div>
+              <svg
+                viewBox="0 0 620 310"
+                role="img"
+                aria-label="Triangle représentant les distances horizontale, inclinée et verticale"
+              >
+                <line
+                  x1="90"
+                  y1="235"
+                  x2="520"
+                  y2="235"
+                  stroke="#9AA9B7"
+                  stroke-width="3"
+                />
+                <line
+                  x1="130"
+                  y1="235"
+                  x2="450"
+                  y2="95"
+                  stroke="#12B8B0"
+                  stroke-width="4"
+                />
+                <line
+                  x1="450"
+                  y1="95"
+                  x2="450"
+                  y2="235"
+                  stroke="#E8B44A"
+                  stroke-width="3"
+                />
+                <line
+                  x1="130"
+                  y1="235"
+                  x2="450"
+                  y2="235"
+                  stroke="#173D5C"
+                  stroke-width="3"
+                />
+                <path
+                  d="M430 235 L430 215 L450 215"
+                  fill="none"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                />
+                <circle cx="130" cy="235" r="5" fill="#173D5C" />
+                <circle cx="450" cy="95" r="5" fill="#173D5C" />
+                <text x="115" y="260" fill="#173D5C" font-size="14">A</text>
+                <text x="458" y="90" fill="#173D5C" font-size="14">B</text>
+                <text x="260" y="218" fill="#173D5C" font-size="14">Dh</text>
+                <text x="465" y="170" fill="#8A641A" font-size="14">ΔH</text>
+                <text x="245" y="140" fill="#078E89" font-size="14">Di</text>
+                <text x="280" y="285" fill="#647586" font-size="12">
+                  Schéma de principe
+                </text>
+              </svg>
+            </div>
+
+            <h3>
+              2.2. Relation entre distance inclinée et distance horizontale
+            </h3>
+            <p>
+              Lorsque la distance inclinée Di et la différence d'altitude ΔH
+              sont connues, la distance horizontale Dh peut être calculée à
+              l'aide du théorème de Pythagore.
+            </p>
+
+            <div class="m06-formula">
+              <span>Di² = Dh² + ΔH²</span>
+              <small>Relation géométrique entre les trois grandeurs</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>Dh = √(Di² − ΔH²)</span>
+              <small>Calcul de la distance horizontale</small>
+            </div>
+
+            <h3>2.3. Exemple de calcul</h3>
+            <div class="m06-example">
+              <strong>Données :</strong>
+              <p>Distance inclinée : Di = 50,00 m</p>
+              <p>Dénivelée : ΔH = 3,00 m</p>
+
+              <strong>Calcul :</strong>
+              <p>Dh = √(50² − 3²)</p>
+              <p>Dh = √(2500 − 9)</p>
+              <p>Dh = √2491</p>
+
+              <strong>Résultat :</strong>
+              <p>Dh ≈ 49,91 m</p>
+            </div>
+
+            <h3>2.4. Calcul de la dénivelée</h3>
+            <p>
+              Lorsque la distance inclinée et la distance horizontale sont
+              connues, la valeur absolue de la dénivelée peut être calculée par
+              :
+            </p>
+
+            <div class="m06-formula">
+              <span>|ΔH| = √(Di² − Dh²)</span>
+              <small
+                >Le signe dépend du sens de montée ou de descente entre les
+                points</small
+              >
+            </div>
+
+            <h3>2.5. Calcul d'une pente</h3>
+            <p>
+              La pente exprime le rapport entre la dénivelée et la distance
+              horizontale. Elle est souvent exprimée en pourcentage.
+            </p>
+
+            <div class="m06-formula">
+              <span>P(%) = (ΔH / Dh) × 100</span>
+              <small>Formule de la pente signée entre deux points</small>
+            </div>
+
+            <div class="m06-example">
+              <strong>Exemple :</strong>
+              <p>ΔH = +2,00 m</p>
+              <p>Dh = 40,00 m</p>
+              <p>P = (2 / 40) × 100</p>
+              <p><strong>P = +5 %</strong></p>
+              <p>
+                Le point d'arrivée est 5 % plus haut que le point de départ.
+              </p>
+            </div>
+
+            <h3>2.6. Calcul de la distance horizontale à partir d'un angle</h3>
+            <p>
+              Si la distance inclinée Di et l'angle vertical v mesuré depuis
+              l'horizontale sont connus, on peut utiliser les relations
+              trigonométriques suivantes :
+            </p>
+
+            <div class="m06-formula">
+              <span>Dh = Di × cos(v)</span>
+              <small>Composante horizontale</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>ΔH = Di × sin(v)</span>
+              <small>Composante verticale signée selon l'angle choisi</small>
+            </div>
+
+            <div class="m06-warning">
+              <strong>Attention :</strong>
+              Vérifier la convention angulaire de l'instrument. Ces formules
+              supposent un angle vertical mesuré depuis l'horizontale et une
+              distance inclinée correspondant au même segment.
+            </div>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              Les distances horizontales et inclinées ne sont pas identiques sur
+              un terrain en pente. Le théorème de Pythagore et la trigonométrie
+              permettent de calculer les grandeurs recherchées.
+            </p>
+          </section>
+
+          <!-- CHAPITRE 3 -->
+          <section class="m06-chapter" id="chapitre3">
+            <div class="m06-chapter-number">CHAPITRE 03</div>
+            <h2>Les calculs d'angles et de gisements</h2>
+
+            <h3>3.1. Rappel sur les angles</h3>
+            <p>
+              Un angle permet de mesurer l'ouverture entre deux directions. En
+              topographie, les angles horizontaux servent notamment à déterminer
+              les orientations des côtés d'un cheminement.
+            </p>
+
+            <h3>3.2. Les unités angulaires</h3>
+            <p>
+              Deux systèmes sont couramment utilisés : le système sexagésimal,
+              exprimé en degrés, minutes et secondes, et le système centésimal,
+              exprimé en grades ou gon.
+            </p>
+
+            <div class="m06-formula">
+              <span>360° = 400 gon</span>
+              <small>Un tour complet</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>1° = 10/9 gon</span>
+              <small>Conversion des degrés vers les gon</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>1 gon = 0,9°</span>
+              <small>Conversion des gon vers les degrés</small>
+            </div>
+
+            <h3>3.3. Conversion des angles</h3>
+            <div class="m06-example">
+              <strong>Exemple 1 : degrés vers gon</strong>
+              <p>Angle = 90°</p>
+              <p>90 × 10/9 = 100 gon</p>
+
+              <strong>Exemple 2 : gon vers degrés</strong>
+              <p>Angle = 200 gon</p>
+              <p>200 × 0,9 = 180°</p>
+            </div>
+
+            <h3>3.4. Définition du gisement</h3>
+            <p>
+              Le gisement est un angle horizontal orienté permettant de définir
+              la direction d'une ligne. Dans la convention utilisée ici, il est
+              mesuré dans le sens horaire à partir du Nord et varie de 0 à 400
+              gon.
+            </p>
+
+            <div class="m06-diagram">
+              <div class="m06-diagram-title">Orientation des gisements</div>
+              <svg
+                viewBox="0 0 500 370"
+                role="img"
+                aria-label="Rose des directions avec les gisements Nord Est Sud Ouest"
+              >
+                <circle
+                  cx="250"
+                  cy="180"
+                  r="115"
+                  fill="#F7FAFC"
+                  stroke="#DCE5ED"
+                  stroke-width="2"
+                />
+                <line
+                  x1="250"
+                  y1="45"
+                  x2="250"
+                  y2="315"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                />
+                <line
+                  x1="115"
+                  y1="180"
+                  x2="385"
+                  y2="180"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                />
+                <line
+                  x1="250"
+                  y1="180"
+                  x2="330"
+                  y2="100"
+                  stroke="#12B8B0"
+                  stroke-width="4"
+                />
+                <polygon points="330,100 316,105 325,115" fill="#12B8B0" />
+                <circle cx="250" cy="180" r="5" fill="#173D5C" />
+                <text
+                  x="250"
+                  y="30"
+                  text-anchor="middle"
+                  fill="#173D5C"
+                  font-size="16"
+                  font-weight="bold"
+                >
+                  NORD
+                </text>
+                <text x="405" y="185" fill="#173D5C" font-size="15">EST</text>
+                <text
+                  x="250"
+                  y="345"
+                  text-anchor="middle"
+                  fill="#173D5C"
+                  font-size="15"
+                >
+                  SUD
+                </text>
+                <text x="55" y="185" fill="#173D5C" font-size="15">OUEST</text>
+                <text x="335" y="90" fill="#078E89" font-size="14">
+                  Direction
+                </text>
+                <text
+                  x="250"
+                  y="200"
+                  text-anchor="middle"
+                  fill="#647586"
+                  font-size="12"
+                >
+                  Point
+                </text>
+                <text
+                  x="250"
+                  y="225"
+                  text-anchor="middle"
+                  fill="#647586"
+                  font-size="12"
+                >
+                  de départ
+                </text>
+              </svg>
+              <p class="m06-diagram-note">
+                Nord : 0 gon ; Est : 100 gon ; Sud : 200 gon ; Ouest : 300 gon.
+              </p>
+            </div>
+
+            <h3>3.5. Calcul du gisement à partir des coordonnées</h3>
+            <p>
+              Pour deux points A et B, on calcule d'abord les différences de
+              coordonnées :
+            </p>
+
+            <div class="m06-formula">
+              <span>ΔX = X<sub>B</sub> − X<sub>A</sub></span>
+              <small>Différence suivant l'axe X</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>ΔY = Y<sub>B</sub> − Y<sub>A</sub></span>
+              <small>Différence suivant l'axe Y</small>
+            </div>
+
+            <p>
+              Le gisement, mesuré depuis le Nord dans le sens horaire, peut être
+              calculé à l'aide de la fonction atan2 :
+            </p>
+
+            <div class="m06-formula">
+              <span>G = atan2(ΔX, ΔY)</span>
+              <small>Résultat à ramener dans l'intervalle 0 à 400 gon</small>
+            </div>
+
+            <p>
+              La fonction atan2 prend en compte les signes de ΔX et ΔY pour
+              déterminer le bon quadrant. Si les angles sont calculés en
+              radians, la conversion en gon est :
+            </p>
+
+            <div class="m06-formula">
+              <span>G(gon) = G(rad) × 200 / π</span>
+              <small>Conversion des radians vers les gon</small>
+            </div>
+
+            <h3>3.6. Exemple de calcul du gisement</h3>
+            <div class="m06-example">
+              <strong>Coordonnées :</strong>
+              <p>A : X = 100,000 m ; Y = 200,000 m</p>
+              <p>B : X = 130,000 m ; Y = 240,000 m</p>
+
+              <strong>Différences :</strong>
+              <p>ΔX = 130 − 100 = +30 m</p>
+              <p>ΔY = 240 − 200 = +40 m</p>
+
+              <strong>Calcul :</strong>
+              <p>G = atan2(30, 40)</p>
+              <p>G ≈ 58,023 gon</p>
+
+              <strong>Résultat :</strong>
+              <p>Le gisement de A vers B est approximativement 58,023 gon.</p>
+            </div>
+
+            <h3>3.7. Calcul d'un gisement inverse</h3>
+            <p>
+              Le gisement inverse correspond à la direction opposée sur la même
+              ligne. Il diffère de 200 gon.
+            </p>
+
+            <div class="m06-formula">
+              <span>G<sub>BA</sub> = (G<sub>AB</sub> + 200) modulo 400</span>
+              <small>Calcul du gisement inverse</small>
+            </div>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              Le gisement définit l'orientation d'une direction. Sa
+              détermination exige une convention angulaire claire et la prise en
+              compte des signes des différences de coordonnées.
+            </p>
+          </section>
+
+          <!-- CHAPITRE 4 -->
+          <section class="m06-chapter" id="chapitre4">
+            <div class="m06-chapter-number">CHAPITRE 04</div>
+            <h2>Les coordonnées rectangulaires</h2>
+
+            <h3>4.1. Définition</h3>
+            <p>
+              Les coordonnées rectangulaires permettent de définir la position
+              d'un point dans un système de coordonnées à deux axes
+              perpendiculaires. En topographie, elles sont utilisées pour
+              localiser les points sur un plan.
+            </p>
+
+            <h3>4.2. Les axes X et Y</h3>
+            <p>
+              Dans la convention de ce module, l'axe X est orienté vers l'Est et
+              l'axe Y vers le Nord. Les coordonnées d'un point sont notées (X,
+              Y).
+            </p>
+
+            <div class="m06-diagram">
+              <div class="m06-diagram-title">
+                Repère rectangulaire et position d'un point
+              </div>
+              <svg
+                viewBox="0 0 540 340"
+                role="img"
+                aria-label="Repère cartésien avec point A"
+              >
+                <defs>
+                  <marker
+                    id="m06-arrow"
+                    markerWidth="8"
+                    markerHeight="8"
+                    refX="5"
+                    refY="3"
+                    orient="auto"
+                  >
+                    <path d="M0,0 L0,6 L6,3 z" fill="#173D5C" />
+                  </marker>
+                </defs>
+                <line
+                  x1="75"
+                  y1="280"
+                  x2="465"
+                  y2="280"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                  marker-end="url(#m06-arrow)"
+                />
+                <line
+                  x1="75"
+                  y1="280"
+                  x2="75"
+                  y2="35"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                  marker-end="url(#m06-arrow)"
+                />
+                <line
+                  x1="300"
+                  y1="130"
+                  x2="300"
+                  y2="280"
+                  stroke="#E8B44A"
+                  stroke-width="2"
+                  stroke-dasharray="6 4"
+                />
+                <line
+                  x1="75"
+                  y1="130"
+                  x2="300"
+                  y2="130"
+                  stroke="#E8B44A"
+                  stroke-width="2"
+                  stroke-dasharray="6 4"
+                />
+                <circle
+                  cx="300"
+                  cy="130"
+                  r="7"
+                  fill="#12B8B0"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                />
+                <text x="310" y="120" fill="#173D5C" font-size="15">
+                  A (X, Y)
+                </text>
+                <text x="315" y="300" fill="#173D5C" font-size="13">X</text>
+                <text x="50" y="35" fill="#173D5C" font-size="13">Y</text>
+                <text x="62" y="300" fill="#173D5C" font-size="13">O</text>
+                <text x="180" y="300" fill="#647586" font-size="12">Est</text>
+                <text x="85" y="85" fill="#647586" font-size="12">Nord</text>
+              </svg>
+            </div>
+
+            <h3>4.3. Calcul des accroissements de coordonnées</h3>
+            <p>
+              Pour passer d'un point A à un point B, il faut calculer les
+              différences entre leurs coordonnées.
+            </p>
+
+            <div class="m06-formula">
+              <span>ΔX = X<sub>B</sub> − X<sub>A</sub></span>
+              <small>Accroissement suivant X</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>ΔY = Y<sub>B</sub> − Y<sub>A</sub></span>
+              <small>Accroissement suivant Y</small>
+            </div>
+
+            <h3>
+              4.4. Calcul des coordonnées à partir d'une distance et d'un
+              gisement
+            </h3>
+            <p>
+              Si les coordonnées du point de départ A, la distance horizontale
+              Dh et le gisement G de A vers B sont connus, les coordonnées du
+              point B sont calculées par :
+            </p>
+
+            <div class="m06-formula">
+              <span>ΔX = Dh × sin(G)</span>
+              <small>Accroissement en X</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>ΔY = Dh × cos(G)</span>
+              <small>Accroissement en Y</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>X<sub>B</sub> = X<sub>A</sub> + ΔX</span>
+              <small>Coordonnée X du point d'arrivée</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>Y<sub>B</sub> = Y<sub>A</sub> + ΔY</span>
+              <small>Coordonnée Y du point d'arrivée</small>
+            </div>
+
+            <div class="m06-warning">
+              <strong>Attention :</strong>
+              Les angles doivent être utilisés dans la même unité que celle
+              attendue par la calculatrice ou le logiciel. Les fonctions
+              trigonométriques des calculatrices utilisent généralement les
+              radians ou les degrés, selon le mode sélectionné.
+            </div>
+
+            <h3>4.5. Exemple de calcul des coordonnées</h3>
+            <div class="m06-example">
+              <strong>Données :</strong>
+              <p>A : X = 500,000 m ; Y = 1000,000 m</p>
+              <p>Distance horizontale : Dh = 100,000 m</p>
+              <p>Gisement : G = 100 gon</p>
+
+              <strong>Calcul des accroissements :</strong>
+              <p>ΔX = 100 × sin(100 gon) = 100,000 m</p>
+              <p>ΔY = 100 × cos(100 gon) = 0,000 m</p>
+
+              <strong>Coordonnées de B :</strong>
+              <p>X(B) = 500 + 100 = 600,000 m</p>
+              <p>Y(B) = 1000 + 0 = 1000,000 m</p>
+
+              <strong>Résultat :</strong>
+              <p>B : X = 600,000 m ; Y = 1000,000 m.</p>
+            </div>
+
+            <h3>4.6. Calcul de la distance entre deux points</h3>
+            <p>
+              Lorsque les coordonnées de deux points sont connues, leur distance
+              horizontale peut être calculée avec le théorème de Pythagore.
+            </p>
+
+            <div class="m06-formula">
+              <span>D = √(ΔX² + ΔY²)</span>
+              <small>Distance horizontale entre deux points</small>
+            </div>
+
+            <h3>4.7. Exemple de calcul d'une distance</h3>
+            <div class="m06-example">
+              <strong>Données :</strong>
+              <p>A : X = 100 m ; Y = 200 m</p>
+              <p>B : X = 130 m ; Y = 240 m</p>
+
+              <strong>Calcul :</strong>
+              <p>ΔX = 30 m ; ΔY = 40 m</p>
+              <p>D = √(30² + 40²)</p>
+              <p>D = √(900 + 1600)</p>
+
+              <strong>Résultat :</strong>
+              <p>D = 50,00 m</p>
+            </div>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              Les coordonnées rectangulaires permettent de localiser les points.
+              À partir d'un gisement et d'une distance, on peut calculer les
+              accroissements et les coordonnées du point d'arrivée.
+            </p>
+          </section>
+
+          <!-- CHAPITRE 5 -->
+          <section class="m06-chapter" id="chapitre5">
+            <div class="m06-chapter-number">CHAPITRE 05</div>
+            <h2>Les calculs de surfaces</h2>
+
+            <h3>5.1. Définition d'une surface</h3>
+            <p>
+              La surface est la mesure de l'étendue d'une figure plane. En
+              topographie, son calcul permet notamment de déterminer la
+              superficie d'une parcelle, d'un terrain ou d'une emprise de
+              projet.
+            </p>
+
+            <h3>5.2. Les unités de surface</h3>
+            <p>
+              Les surfaces sont généralement exprimées en mètres carrés (m²),
+              hectares (ha) ou kilomètres carrés (km²).
+            </p>
+
+            <div class="m06-formula">
+              <span>1 ha = 10 000 m²</span>
+              <small>Un hectare correspond à 10 000 mètres carrés</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>1 km² = 1 000 000 m²</span>
+              <small
+                >Un kilomètre carré correspond à un million de mètres
+                carrés</small
+              >
+            </div>
+
+            <h3>5.3. Surface d'un rectangle</h3>
+            <div class="m06-formula">
+              <span>S = L × l</span>
+              <small>Longueur multipliée par largeur</small>
+            </div>
+
+            <div class="m06-example">
+              <strong>Exemple :</strong>
+              <p>Longueur = 40 m</p>
+              <p>Largeur = 25 m</p>
+              <p>S = 40 × 25</p>
+              <p><strong>S = 1 000 m²</strong></p>
+            </div>
+
+            <h3>5.4. Surface d'un triangle</h3>
+            <div class="m06-formula">
+              <span>S = (b × h) / 2</span>
+              <small>Base multipliée par hauteur, divisée par deux</small>
+            </div>
+
+            <h3>5.5. Surface d'un trapèze</h3>
+            <div class="m06-formula">
+              <span>S = ((B + b) × h) / 2</span>
+              <small
+                >Somme des deux bases parallèles multipliée par la hauteur,
+                divisée par deux</small
+              >
+            </div>
+
+            <h3>5.6. Calcul de surface par les coordonnées</h3>
+            <p>
+              Lorsqu'une parcelle est représentée par un polygone dont les
+              sommets sont connus en coordonnées rectangulaires, sa surface peut
+              être calculée à l'aide de la formule des coordonnées, appelée
+              également formule de Gauss ou méthode du lacet.
+            </p>
+
+            <div class="m06-formula">
+              <span
+                >S = ½ × |Σ(X<sub>i</sub>Y<sub>i+1</sub> −
+                Y<sub>i</sub>X<sub>i+1</sub>)|</span
+              >
+              <small
+                >Formule de calcul de la surface d'un polygone ordonné</small
+              >
+            </div>
+
+            <p>
+              Les sommets doivent être rangés dans leur ordre de parcours autour
+              du polygone. Pour le dernier sommet, le point suivant est le
+              premier sommet.
+            </p>
+
+            <div class="m06-diagram">
+              <div class="m06-diagram-title">
+                Exemple de parcelle polygonale
+              </div>
+              <svg
+                viewBox="0 0 540 320"
+                role="img"
+                aria-label="Polygone à quatre sommets"
+              >
+                <polygon
+                  points="100,240 400,240 360,75 160,105"
+                  fill="#EAF8F7"
+                  stroke="#12B8B0"
+                  stroke-width="3"
+                />
+                <circle cx="100" cy="240" r="5" fill="#173D5C" />
+                <circle cx="400" cy="240" r="5" fill="#173D5C" />
+                <circle cx="360" cy="75" r="5" fill="#173D5C" />
+                <circle cx="160" cy="105" r="5" fill="#173D5C" />
+                <text x="80" y="260" fill="#173D5C" font-size="14">A</text>
+                <text x="410" y="260" fill="#173D5C" font-size="14">B</text>
+                <text x="365" y="65" fill="#173D5C" font-size="14">C</text>
+                <text x="135" y="95" fill="#173D5C" font-size="14">D</text>
+                <text
+                  x="260"
+                  y="180"
+                  text-anchor="middle"
+                  fill="#078E89"
+                  font-size="15"
+                >
+                  Parcelle
+                </text>
+              </svg>
+            </div>
+
+            <h3>5.7. Exemple complet avec les coordonnées</h3>
+            <p>
+              Considérons un rectangle défini par les quatre sommets suivants :
+            </p>
+
+            <div class="m06-table-wrap">
+              <table class="m06-table">
+                <thead>
+                  <tr>
+                    <th>Point</th>
+                    <th>X (m)</th>
+                    <th>Y (m)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>40</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>40</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td>0</td>
+                    <td>25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="m06-example">
+              <strong>Calcul :</strong>
+              <p>Surface = longueur × largeur</p>
+              <p>S = 40 × 25</p>
+              <strong>Résultat :</strong>
+              <p>S = 1 000 m² = 0,10 ha.</p>
+            </div>
+
+            <h3>5.8. Contrôle des surfaces</h3>
+            <ul>
+              <li>Vérifier l'ordre des sommets du polygone.</li>
+              <li>Contrôler les coordonnées utilisées.</li>
+              <li>Vérifier les unités.</li>
+              <li>
+                Comparer avec une méthode géométrique lorsque cela est possible.
+              </li>
+              <li>
+                Vérifier que le polygone ne présente pas de croisement de côtés
+                non prévu.
+              </li>
+            </ul>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              La surface d'un terrain peut être calculée à partir de ses
+              dimensions géométriques ou des coordonnées de ses sommets. Le
+              choix de la méthode dépend de la forme et des données disponibles.
+            </p>
+          </section>
+
+          <!-- CHAPITRE 6 -->
+          <section class="m06-chapter" id="chapitre6">
+            <div class="m06-chapter-number">CHAPITRE 06</div>
+            <h2>Les calculs de cheminements topographiques</h2>
+
+            <h3>6.1. Définition d'un cheminement</h3>
+            <p>
+              Un cheminement topographique est une succession de segments
+              reliant plusieurs points. Les mesures d'angles et de distances
+              permettent de déterminer les coordonnées des points successifs.
+            </p>
+
+            <h3>6.2. Les différents types de cheminements</h3>
+            <ul>
+              <li>
+                <strong>Cheminement ouvert :</strong> il commence sur un point
+                connu et se termine sur un point dont les coordonnées ne
+                permettent pas nécessairement un contrôle indépendant.
+              </li>
+              <li>
+                <strong>Cheminement encadré :</strong> il relie deux points
+                connus, ce qui permet de contrôler les résultats à l'arrivée.
+              </li>
+              <li>
+                <strong>Cheminement fermé :</strong> il revient à son point de
+                départ et permet un contrôle de fermeture.
+              </li>
+            </ul>
+
+            <div class="m06-diagram">
+              <div class="m06-diagram-title">
+                Exemples de configurations de cheminement
+              </div>
+              <svg
+                viewBox="0 0 620 300"
+                role="img"
+                aria-label="Cheminement ouvert, encadré et fermé"
+              >
+                <g fill="none" stroke="#12B8B0" stroke-width="3">
+                  <polyline points="35,85 85,45 135,85 185,45" />
+                  <polyline points="245,85 295,45 345,85 395,45" />
+                  <polyline points="475,85 525,45 565,85 525,125 475,85" />
+                </g>
+                <g fill="#173D5C">
+                  <circle cx="35" cy="85" r="5" />
+                  <circle cx="185" cy="45" r="5" />
+                  <circle cx="245" cy="85" r="5" />
+                  <circle cx="395" cy="45" r="5" />
+                  <circle cx="475" cy="85" r="5" />
+                </g>
+                <g fill="#173D5C" font-size="13" text-anchor="middle">
+                  <text x="110" y="160">Ouvert</text>
+                  <text x="320" y="160">Encadré</text>
+                  <text x="520" y="185">Fermé</text>
+                </g>
+                <g fill="#647586" font-size="11" text-anchor="middle">
+                  <text x="110" y="180">Arrivée non contrôlée</text>
+                  <text x="320" y="180">Deux points connus</text>
+                  <text x="520" y="205">Retour au départ</text>
+                </g>
+              </svg>
+            </div>
+
+            <h3>6.3. Calcul des accroissements</h3>
+            <p>
+              Pour chaque côté du cheminement, les accroissements de coordonnées
+              sont calculés à partir de la distance horizontale et du gisement :
+            </p>
+
+            <div class="m06-formula">
+              <span>ΔX = D × sin(G)</span>
+              <small>Accroissement en X</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>ΔY = D × cos(G)</span>
+              <small>Accroissement en Y</small>
+            </div>
+
+            <h3>6.4. Calcul des coordonnées successives</h3>
+            <div class="m06-formula">
+              <span>X<sub>i+1</sub> = X<sub>i</sub> + ΔX<sub>i</sub></span>
+              <small>Coordonnée X du point suivant</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>Y<sub>i+1</sub> = Y<sub>i</sub> + ΔY<sub>i</sub></span>
+              <small>Coordonnée Y du point suivant</small>
+            </div>
+
+            <h3>6.5. Les erreurs de fermeture</h3>
+            <p>
+              Dans un cheminement fermé, la somme théorique des accroissements
+              en X et en Y doit être nulle. En pratique, les mesures comportent
+              des écarts. On calcule alors les composantes de l'erreur de
+              fermeture.
+            </p>
+
+            <div class="m06-formula">
+              <span>f<sub>X</sub> = ΣΔX</span>
+              <small>Erreur de fermeture en X pour un cheminement fermé</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>f<sub>Y</sub> = ΣΔY</span>
+              <small>Erreur de fermeture en Y pour un cheminement fermé</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>f = √(f<sub>X</sub>² + f<sub>Y</sub>²)</span>
+              <small>Erreur de fermeture planimétrique</small>
+            </div>
+
+            <h3>6.6. Exemple de calcul de fermeture</h3>
+            <div class="m06-example">
+              <strong>Résultats des accroissements :</strong>
+              <p>ΣΔX = +0,030 m</p>
+              <p>ΣΔY = −0,040 m</p>
+
+              <strong>Calcul :</strong>
+              <p>f = √(0,030² + (−0,040)²)</p>
+              <p>f = √(0,0009 + 0,0016)</p>
+              <p>f = √0,0025</p>
+
+              <strong>Résultat :</strong>
+              <p>f = 0,050 m, soit 5 cm.</p>
+            </div>
+
+            <h3>6.7. Ajustement des accroissements</h3>
+            <p>
+              Lorsque le contrôle montre que la fermeture est acceptable selon
+              les exigences du travail, une compensation peut être appliquée.
+              Une méthode courante est la répartition proportionnelle aux
+              longueurs, appelée méthode de Bowditch.
+            </p>
+
+            <div class="m06-formula">
+              <span
+                >c<sub>Xi</sub> = −f<sub>X</sub> × (D<sub>i</sub> / ΣD)</span
+              >
+              <small>Correction de l'accroissement X du côté i</small>
+            </div>
+
+            <div class="m06-formula">
+              <span
+                >c<sub>Yi</sub> = −f<sub>Y</sub> × (D<sub>i</sub> / ΣD)</span
+              >
+              <small>Correction de l'accroissement Y du côté i</small>
+            </div>
+
+            <p>
+              Les accroissements corrigés sont obtenus en ajoutant les
+              corrections aux accroissements observés.
+            </p>
+
+            <div class="m06-formula">
+              <span>ΔX<sub>corrigé</sub> = ΔX + c<sub>X</sub></span>
+              <small>Accroissement X corrigé</small>
+            </div>
+
+            <div class="m06-formula">
+              <span>ΔY<sub>corrigé</sub> = ΔY + c<sub>Y</sub></span>
+              <small>Accroissement Y corrigé</small>
+            </div>
+
+            <div class="m06-warning">
+              <strong>Important :</strong>
+              La compensation de Bowditch est une méthode de répartition des
+              écarts, utilisable lorsque les conditions du levé et les
+              spécifications du projet le permettent. Elle ne remplace pas le
+              contrôle de la qualité des mesures. Une fermeture excessive doit
+              conduire à rechercher les causes de l'erreur avant toute
+              compensation.
+            </div>
+
+            <h3>6.8. Cheminement encadré</h3>
+            <p>
+              Un cheminement encadré relie deux points dont les coordonnées sont
+              connues. Les accroissements calculés peuvent être comparés aux
+              différences de coordonnées entre les points de départ et
+              d'arrivée.
+            </p>
+
+            <div class="m06-formula">
+              <span
+                >f<sub>X</sub> = ΣΔX − (X<sub>fin</sub> −
+                X<sub>départ</sub>)</span
+              >
+              <small>Écart de fermeture en X pour un cheminement encadré</small>
+            </div>
+
+            <div class="m06-formula">
+              <span
+                >f<sub>Y</sub> = ΣΔY − (Y<sub>fin</sub> −
+                Y<sub>départ</sub>)</span
+              >
+              <small>Écart de fermeture en Y pour un cheminement encadré</small>
+            </div>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              Le calcul d'un cheminement consiste à déterminer les
+              accroissements, les coordonnées successives et les erreurs de
+              fermeture. Les contrôles permettent de juger la cohérence des
+              résultats.
+            </p>
+          </section>
+
+          <!-- CHAPITRE 7 -->
+          <section class="m06-chapter" id="chapitre7">
+            <div class="m06-chapter-number">CHAPITRE 07</div>
+            <h2>Les applications pratiques et les contrôles</h2>
+
+            <h3>
+              7.1. Utilisation des calculs dans les travaux topographiques
+            </h3>
+            <p>
+              Les calculs topographiques interviennent dans de nombreuses
+              opérations réalisées sur le terrain et au bureau. Ils permettent
+              de préparer les plans, de vérifier les mesures et de déterminer
+              les positions des points nécessaires aux projets.
+            </p>
+
+            <h3>7.2. Calculs utilisés pour un levé topographique</h3>
+            <ul>
+              <li>Calcul des coordonnées des points levés.</li>
+              <li>Calcul des distances entre les détails.</li>
+              <li>Calcul des surfaces des parcelles.</li>
+              <li>Détermination des altitudes.</li>
+              <li>Vérification des cheminements.</li>
+            </ul>
+
+            <h3>7.3. Calculs utilisés pour l'implantation</h3>
+            <p>
+              L'implantation consiste à matérialiser sur le terrain des points
+              dont la position est définie par un projet. Les coordonnées des
+              points projetés peuvent être utilisées pour calculer les éléments
+              nécessaires à leur implantation.
+            </p>
+
+            <p>
+              Les différences de coordonnées entre une station et un point à
+              implanter permettent notamment de calculer la distance horizontale
+              et le gisement de la direction.
+            </p>
+
+            <div class="m06-formula">
+              <span>D = √(ΔX² + ΔY²)</span>
+              <small>Distance horizontale à implanter</small>
+            </div>
+
+            <h3>
+              7.4. Exemple pratique : détermination d'une distance et d'un
+              gisement
+            </h3>
+            <div class="m06-example">
+              <strong>Coordonnées de la station S :</strong>
+              <p>X(S) = 200,000 m ; Y(S) = 300,000 m</p>
+
+              <strong>Coordonnées du point P :</strong>
+              <p>X(P) = 240,000 m ; Y(P) = 330,000 m</p>
+
+              <strong>Différences :</strong>
+              <p>ΔX = 40 m</p>
+              <p>ΔY = 30 m</p>
+
+              <strong>Distance :</strong>
+              <p>D = √(40² + 30²) = 50,000 m</p>
+
+              <strong>Gisement :</strong>
+              <p>G = atan2(40, 30)</p>
+              <p>G ≈ 59,034 gon</p>
+
+              <strong>Résultat :</strong>
+              <p>Distance horizontale : 50,000 m.</p>
+              <p>Gisement de S vers P : environ 59,034 gon.</p>
+            </div>
+
+            <h3>7.5. Les contrôles indispensables</h3>
+            <ul>
+              <li>Vérifier les coordonnées de départ et d'arrivée.</li>
+              <li>Contrôler les unités angulaires.</li>
+              <li>Vérifier les signes des accroissements.</li>
+              <li>Contrôler les distances calculées.</li>
+              <li>Vérifier les fermetures planimétriques et altimétriques.</li>
+              <li>Conserver les observations originales.</li>
+              <li>Comparer les résultats avec les tolérances du projet.</li>
+            </ul>
+
+            <h3>7.6. Les erreurs fréquentes</h3>
+            <ul>
+              <li>Confondre degrés et gon.</li>
+              <li>Utiliser un gisement avec une convention différente.</li>
+              <li>Inverser ΔX et ΔY dans une formule.</li>
+              <li>Oublier de contrôler le quadrant du gisement.</li>
+              <li>
+                Utiliser une distance inclinée à la place d'une distance
+                horizontale.
+              </li>
+              <li>Confondre une erreur de fermeture et une correction.</li>
+              <li>Arrondir les valeurs trop tôt dans les calculs.</li>
+            </ul>
+
+            <div class="m06-info">
+              <strong>Bonne pratique :</strong>
+              Conserver plusieurs décimales pendant les calculs intermédiaires
+              et effectuer l'arrondi uniquement lors de la présentation du
+              résultat final, selon la précision demandée.
+            </div>
+
+            <h3>7.7. Les logiciels de calcul topographique</h3>
+            <p>
+              Des logiciels spécialisés facilitent le traitement des
+              observations et les calculs topographiques. Ils permettent
+              notamment de calculer les coordonnées, de contrôler les
+              cheminements, de calculer les surfaces et de produire des plans.
+            </p>
+
+            <p>
+              Les logiciels ne remplacent pas la compréhension des méthodes de
+              calcul. Le technicien doit être capable de vérifier les données,
+              les conventions et la cohérence des résultats.
+            </p>
+
+            <h3>Résumé du chapitre</h3>
+            <p>
+              Les calculs topographiques sont utilisés pour le levé,
+              l'implantation, le calcul des surfaces et le contrôle des mesures.
+              La vérification des résultats reste indispensable, même avec un
+              logiciel.
+            </p>
+          </section>
+
+          <!-- BILAN -->
+          <section class="m06-chapter m06-final" id="bilan">
+            <div class="m06-chapter-number">BILAN DU MODULE</div>
+            <h2>Ce qu'il faut retenir</h2>
+
+            <p>
+              Les calculs topographiques permettent de transformer les
+              observations réalisées sur le terrain en résultats numériques. Ils
+              constituent une base essentielle pour le levé, le traitement des
+              données, le calcul des surfaces et l'implantation.
+            </p>
+
+            <div class="m06-key-points">
+              <div>
+                <strong>01</strong>
+                <span
+                  >Les distances doivent être identifiées et utilisées avec
+                  leurs unités.</span
+                >
+              </div>
+              <div>
+                <strong>02</strong>
+                <span
+                  >Les angles doivent respecter une convention clairement
+                  définie.</span
+                >
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>Le gisement définit l'orientation d'une direction.</span>
+              </div>
+              <div>
+                <strong>04</strong>
+                <span
+                  >Les coordonnées permettent de déterminer la position des
+                  points.</span
+                >
+              </div>
+              <div>
+                <strong>05</strong>
+                <span
+                  >Les surfaces peuvent être calculées à partir des dimensions
+                  ou des coordonnées.</span
+                >
+              </div>
+              <div>
+                <strong>06</strong>
+                <span
+                  >Les cheminements doivent faire l'objet de contrôles de
+                  fermeture.</span
+                >
+              </div>
+            </div>
+
+            <h3>Formules essentielles</h3>
+            <div class="m06-formula-list">
+              <p>Di² = Dh² + ΔH²</p>
+              <p>P(%) = (ΔH / Dh) × 100</p>
+              <p>ΔX = X<sub>B</sub> − X<sub>A</sub></p>
+              <p>ΔY = Y<sub>B</sub> − Y<sub>A</sub></p>
+              <p>ΔX = D × sin(G)</p>
+              <p>ΔY = D × cos(G)</p>
+              <p>D = √(ΔX² + ΔY²)</p>
+              <p>f = √(f<sub>X</sub>² + f<sub>Y</sub>²)</p>
+            </div>
+
+            <div class="m06-quiz">
+              <h3>Exercices d'application</h3>
+              <p>
+                Mets en pratique les formules étudiées dans ce module. Essaie de
+                résoudre chaque exercice avant d'afficher sa correction.
+              </p>
+
+              <details>
+                <summary>
+                  Exercice 1 : Calcul d'une distance horizontale
+                </summary>
+                <p>
+                  Une distance inclinée est de 30,00 m. La dénivelée entre les
+                  deux points est de 4,00 m. Calcule la distance horizontale.
+                </p>
+                <div class="m06-correction">
+                  Dh = √(Di² − ΔH²)<br />
+                  Dh = √(30² − 4²)<br />
+                  Dh = √884<br />
+                  Dh ≈ 29,73 m.
+                </div>
+              </details>
+
+              <details>
+                <summary>Exercice 2 : Calcul d'une pente</summary>
+                <p>
+                  Deux points sont séparés par une distance horizontale de 80 m.
+                  La dénivelée est de +4 m. Calcule la pente en pourcentage.
+                </p>
+                <div class="m06-correction">
+                  P = (ΔH / Dh) × 100<br />
+                  P = (4 / 80) × 100<br />
+                  P = +5 %.
+                </div>
+              </details>
+
+              <details>
+                <summary>Exercice 3 : Conversion angulaire</summary>
+                <p>Convertis 135° en gon.</p>
+                <div class="m06-correction">
+                  G = 135 × 10/9<br />
+                  G = 150 gon.
+                </div>
+              </details>
+
+              <details>
+                <summary>Exercice 4 : Calcul des coordonnées</summary>
+                <p>
+                  Le point A possède les coordonnées X = 100 m et Y = 200 m. Une
+                  distance horizontale de 50 m est parcourue suivant un gisement
+                  de 100 gon. Détermine les coordonnées du point B.
+                </p>
+                <div class="m06-correction">
+                  ΔX = 50 × sin(100 gon) = 50 m<br />
+                  ΔY = 50 × cos(100 gon) = 0 m<br />
+                  X(B) = 100 + 50 = 150 m<br />
+                  Y(B) = 200 + 0 = 200 m.
+                </div>
+              </details>
+
+              <details>
+                <summary>Exercice 5 : Calcul d'une surface</summary>
+                <p>
+                  Une parcelle rectangulaire mesure 60 m de longueur et 35 m de
+                  largeur. Calcule sa surface en m² puis en hectares.
+                </p>
+                <div class="m06-correction">
+                  S = 60 × 35 = 2 100 m²<br />
+                  S = 2 100 / 10 000<br />
+                  S = 0,21 ha.
+                </div>
+              </details>
+
+              <details>
+                <summary>Exercice 6 : Erreur de fermeture</summary>
+                <p>
+                  Un cheminement fermé présente les erreurs suivantes : fX =
+                  +0,06 m et fY = −0,08 m. Calcule l'erreur de fermeture
+                  planimétrique.
+                </p>
+                <div class="m06-correction">
+                  f = √(fX² + fY²)<br />
+                  f = √(0,06² + (−0,08)²)<br />
+                  f = √(0,0036 + 0,0064)<br />
+                  f = √0,01 = 0,10 m, soit 10 cm.
+                </div>
+              </details>
+            </div>
+          </section>
+
+          <div class="m06-navigation">
+            <a href="module-05.html" class="m06-prev">← Module précédent</a>
+            <a href="module-07.html" class="m06-next">Module suivant →</a>
+          </div>
+
+          <a href="../COURS.HTML" class="m06-back"
+            >← Retour au catalogue des cours</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="m06-footer">
+      <p>TOPOMONDE — La topographie, comprendre le monde autrement.</p>
+      <p>Formation et apprentissage en topographie et géomatique.</p>
+    </footer>
+  </body>
+</html>

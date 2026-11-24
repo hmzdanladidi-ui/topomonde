@@ -1,0 +1,1292 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Module 07 TOPOMONDE : cartographie et représentation du terrain. Cours complet avec notions, exemples et exercices."
+    />
+    <title>
+      Module 07 — Cartographie et représentation du terrain | TOPOMONDE
+    </title>
+    <link rel="stylesheet" href="../../CSS/STYLE.CSS" />
+  </head>
+
+  <body class="module-07-page">
+    <header class="m07-header">
+      <div class="m07-header-inner">
+        <a href="../../INDEX.HTML" class="m07-logo">TOPO<span>MONDE</span></a>
+        <nav class="m07-nav">
+          <a href="../../INDEX.HTML">Accueil</a>
+          <a href="../COURS.HTML" class="active">Cours</a>
+          <a href="../INSTRUMENTS.HTML">Instruments</a>
+          <a href="../METHODES.HTML">Méthodes</a>
+          <a href="../EXERCICES.HTML">Exercices</a>
+          <a href="../APROPOS.HTML">À propos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="m07-main">
+      <div class="m07-breadcrumb">
+        <a href="../../INDEX.HTML">Accueil</a>
+        <span>›</span>
+        <a href="../COURS.HTML">Cours</a>
+        <span>›</span>
+        <span>Module 07</span>
+      </div>
+
+      <section class="m07-hero">
+        <div class="m07-hero-content">
+          <span class="m07-label">FORMATION EN TOPOGRAPHIE</span>
+          <h1>Cartographie et représentation du terrain</h1>
+          <p>
+            Apprendre à représenter, lire et interpréter le terrain à travers
+            les cartes, les plans topographiques et les différents procédés de
+            représentation cartographique.
+          </p>
+          <div class="m07-hero-meta">
+            <span>07 chapitres</span>
+            <span>•</span>
+            <span>Théorie et pratique</span>
+            <span>•</span>
+            <span>Exercices corrigés</span>
+          </div>
+        </div>
+        <div class="m07-hero-number">07</div>
+      </section>
+
+      <div class="m07-layout">
+        <aside class="m07-sidebar">
+          <h2>Sommaire du module</h2>
+          <p class="m07-sidebar-subtitle">Les chapitres du cours</p>
+          <nav class="m07-toc">
+            <a href="#chapitre1">01. Introduction à la cartographie</a>
+            <a href="#chapitre2">02. Cartes et plans topographiques</a>
+            <a href="#chapitre3">03. Les échelles cartographiques</a>
+            <a href="#chapitre4">04. Signes conventionnels et légende</a>
+            <a href="#chapitre5">05. Représentation du relief</a>
+            <a href="#chapitre6">06. Réalisation et lecture des documents</a>
+            <a href="#chapitre7">07. Applications de la cartographie</a>
+            <a href="#exercices">Exercices d'application</a>
+          </nav>
+          <div class="m07-sidebar-note">
+            <strong>Conseil d'apprentissage</strong>
+            <p>
+              Étudie les chapitres dans l'ordre et réalise les exercices pour
+              vérifier ta compréhension.
+            </p>
+          </div>
+        </aside>
+
+        <div class="m07-content">
+          <section class="m07-intro">
+            <h2>Présentation du module</h2>
+            <p>
+              La cartographie est un domaine essentiel de la topographie. Elle
+              permet de représenter les informations géographiques et les
+              caractéristiques du terrain sur un document généralement plan.
+            </p>
+            <p>
+              Dans ce module, nous allons découvrir les principes de
+              représentation cartographique, les échelles, les signes
+              conventionnels, les courbes de niveau et les méthodes de lecture
+              des documents cartographiques.
+            </p>
+            <div class="m07-objectives">
+              <h3>Objectifs pédagogiques</h3>
+              <ul>
+                <li>
+                  Comprendre les principes fondamentaux de la cartographie.
+                </li>
+                <li>Identifier les différents types de cartes et de plans.</li>
+                <li>Effectuer des calculs simples d'échelle.</li>
+                <li>Lire les signes conventionnels et les légendes.</li>
+                <li>Interpréter les courbes de niveau et le relief.</li>
+                <li>Lire et exploiter un document cartographique.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 1 -->
+          <section class="m07-chapter" id="chapitre1">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">01</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 1</span>
+                <h2>Introduction à la cartographie</h2>
+              </div>
+            </div>
+
+            <h3>1.1. Définition de la cartographie</h3>
+            <p>
+              La cartographie est l'ensemble des connaissances, des méthodes et
+              des techniques utilisées pour concevoir, réaliser, représenter et
+              interpréter des cartes.
+            </p>
+            <p>
+              Elle permet de représenter sur un support plan des informations
+              relatives à un espace géographique. Ces informations peuvent
+              concerner les routes, les cours d'eau, les constructions, le
+              relief, les limites administratives ou encore l'occupation du sol.
+            </p>
+
+            <h3>1.2. Le rôle de la cartographie</h3>
+            <p>La cartographie permet notamment de :</p>
+            <ul>
+              <li>Localiser des lieux et des objets géographiques.</li>
+              <li>Représenter les caractéristiques d'un territoire.</li>
+              <li>Faciliter la lecture et la compréhension de l'espace.</li>
+              <li>Préparer et accompagner les projets d'aménagement.</li>
+              <li>Communiquer des informations géographiques.</li>
+            </ul>
+
+            <h3>1.3. Les éléments représentés</h3>
+            <p>
+              Une carte peut représenter plusieurs catégories d'informations :
+            </p>
+            <div class="m07-grid">
+              <div class="m07-info-card">
+                <span class="m07-card-icon">🏔️</span>
+                <h4>Éléments naturels</h4>
+                <p>Relief, montagnes, vallées, rivières, lacs et végétation.</p>
+              </div>
+              <div class="m07-info-card">
+                <span class="m07-card-icon">🏘️</span>
+                <h4>Éléments artificiels</h4>
+                <p>Routes, bâtiments, ponts, voies ferrées et réseaux.</p>
+              </div>
+              <div class="m07-info-card">
+                <span class="m07-card-icon">📍</span>
+                <h4>Informations géographiques</h4>
+                <p>Limites, coordonnées, noms de lieux et repères.</p>
+              </div>
+            </div>
+
+            <h3>1.4. Cartographie et topographie</h3>
+            <p>
+              La topographie permet notamment de mesurer et de décrire les
+              caractéristiques d'une portion de terrain. Les résultats obtenus
+              peuvent ensuite être représentés sur un plan topographique ou
+              intégrés dans un document cartographique.
+            </p>
+
+            <div class="m07-example">
+              <h4>Exemple pratique</h4>
+              <p>
+                Après avoir réalisé le levé topographique d'un terrain, le
+                géomètre-topographe peut exploiter les coordonnées des points
+                mesurés pour produire un plan représentant les bâtiments, les
+                limites, les routes et les détails du terrain.
+              </p>
+            </div>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                La cartographie permet de transformer des informations
+                géographiques en représentations organisées et compréhensibles.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 2 -->
+          <section class="m07-chapter" id="chapitre2">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">02</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 2</span>
+                <h2>Les cartes et les plans topographiques</h2>
+              </div>
+            </div>
+
+            <h3>2.1. Définition d'une carte</h3>
+            <p>
+              Une carte est une représentation conventionnelle, généralement
+              plane et réduite, d'une partie ou de l'ensemble de la surface
+              terrestre.
+            </p>
+            <p>
+              Elle utilise une échelle, des symboles, une légende et un système
+              de référence pour présenter les informations géographiques.
+            </p>
+
+            <h3>2.2. Définition d'un plan topographique</h3>
+            <p>
+              Un plan topographique est un document graphique qui représente les
+              détails naturels et artificiels d'une portion de terrain, ainsi
+              que, selon le besoin, ses caractéristiques altimétriques.
+            </p>
+            <p>
+              Il peut représenter les limites de propriétés, les bâtiments, les
+              voies, les réseaux apparents, les points cotés et les courbes de
+              niveau.
+            </p>
+
+            <h3>2.3. Différence entre carte et plan</h3>
+            <div class="m07-table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Critère</th>
+                    <th>Carte</th>
+                    <th>Plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Zone représentée</td>
+                    <td>Souvent étendue</td>
+                    <td>Généralement limitée</td>
+                  </tr>
+                  <tr>
+                    <td>Échelle</td>
+                    <td>Souvent plus petite</td>
+                    <td>Souvent plus grande</td>
+                  </tr>
+                  <tr>
+                    <td>Niveau de détail</td>
+                    <td>Variable selon l'échelle</td>
+                    <td>Souvent plus détaillé</td>
+                  </tr>
+                  <tr>
+                    <td>Utilisation</td>
+                    <td>Étude et représentation d'un territoire</td>
+                    <td>Étude détaillée d'un terrain ou d'un projet</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="m07-warning">
+              <strong>Attention :</strong>
+              <p>
+                La distinction entre carte et plan dépend notamment de
+                l'échelle, de l'étendue représentée et de l'objectif du
+                document. Il ne faut pas retenir une frontière absolue entre les
+                deux.
+              </p>
+            </div>
+
+            <h3>2.4. Quelques types de cartes</h3>
+            <div class="m07-grid">
+              <div class="m07-info-card">
+                <h4>Carte topographique</h4>
+                <p>
+                  Représente le relief et les détails naturels et artificiels du
+                  terrain.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Carte géologique</h4>
+                <p>
+                  Présente la nature et la répartition des formations
+                  géologiques.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Carte routière</h4>
+                <p>
+                  Représente les routes et les principales voies de
+                  communication.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Carte thématique</h4>
+                <p>
+                  Présente un thème particulier : population, climat ou
+                  occupation du sol.
+                </p>
+              </div>
+            </div>
+
+            <h3>2.5. Les éléments constitutifs d'une carte</h3>
+            <p>Une carte peut comporter :</p>
+            <ul>
+              <li>Un titre qui précise le sujet représenté.</li>
+              <li>Une échelle qui indique le rapport de réduction.</li>
+              <li>Une légende qui explique les symboles.</li>
+              <li>Une orientation ou une indication du nord.</li>
+              <li>
+                Un système de coordonnées ou un quadrillage, selon le document.
+              </li>
+              <li>Une source et des informations de réalisation.</li>
+            </ul>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                La carte et le plan sont des documents de représentation
+                géographique. Leur contenu et leur niveau de détail dépendent de
+                leur objectif et de leur échelle.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 3 -->
+          <section class="m07-chapter" id="chapitre3">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">03</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 3</span>
+                <h2>Les échelles cartographiques</h2>
+              </div>
+            </div>
+
+            <h3>3.1. Définition de l'échelle</h3>
+            <p>
+              L'échelle est le rapport entre une distance mesurée sur une
+              représentation et la distance correspondante sur le terrain,
+              exprimées dans la même unité.
+            </p>
+
+            <div class="m07-formula">
+              <span class="m07-formula-label">FORMULE DE L'ÉCHELLE</span>
+              <div class="m07-equation">E = d / D</div>
+              <p>
+                <strong>E</strong> : échelle ; <strong>d</strong> : distance sur
+                le document ; <strong>D</strong> : distance réelle sur le
+                terrain.
+              </p>
+            </div>
+
+            <h3>3.2. L'échelle numérique</h3>
+            <p>
+              L'échelle numérique est exprimée sous la forme d'un rapport, par
+              exemple 1/1 000.
+            </p>
+            <p>
+              Une échelle de 1/1 000 signifie qu'une unité mesurée sur le
+              document représente 1 000 unités de même nature sur le terrain.
+            </p>
+
+            <div class="m07-example">
+              <h4>Exemple 1 : calcul d'une distance réelle</h4>
+              <p>
+                Sur un plan à l'échelle 1/2 000, une distance mesurée est de 5
+                cm.
+              </p>
+              <p>Distance réelle :</p>
+              <div class="m07-equation">D = 5 × 2 000 = 10 000 cm</div>
+              <div class="m07-equation">D = 100 m</div>
+              <p>La distance réelle est donc de 100 mètres.</p>
+            </div>
+
+            <h3>3.3. Calcul de la distance sur le document</h3>
+            <div class="m07-formula">
+              <div class="m07-equation">d = D / N</div>
+              <p>
+                Pour une échelle 1/N, les deux distances doivent être exprimées
+                dans la même unité.
+              </p>
+            </div>
+
+            <div class="m07-example">
+              <h4>Exemple 2 : distance sur le plan</h4>
+              <p>
+                Une distance réelle de 80 mètres doit être représentée à
+                l'échelle 1/2 000.
+              </p>
+              <p>Conversion : 80 m = 8 000 cm.</p>
+              <div class="m07-equation">d = 8 000 / 2 000 = 4 cm</div>
+              <p>La distance sur le plan sera de 4 cm.</p>
+            </div>
+
+            <h3>3.4. L'échelle graphique</h3>
+            <p>
+              L'échelle graphique est une représentation graduée qui permet de
+              comparer directement une distance mesurée sur le document avec une
+              distance réelle.
+            </p>
+            <figure class="m07-illustration">
+              <svg
+                viewBox="0 0 520 125"
+                role="img"
+                aria-label="Exemple d'une échelle graphique"
+              >
+                <text x="20" y="22" font-size="14" fill="#10243B">
+                  Échelle graphique illustrative
+                </text>
+                <rect x="25" y="42" width="140" height="24" fill="#173D5C" />
+                <rect
+                  x="165"
+                  y="42"
+                  width="140"
+                  height="24"
+                  fill="#FFFFFF"
+                  stroke="#173D5C"
+                  stroke-width="2"
+                />
+                <rect x="305" y="42" width="140" height="24" fill="#173D5C" />
+                <g fill="#10243B" font-size="13" text-anchor="middle">
+                  <text x="25" y="88">0</text>
+                  <text x="165" y="88">50</text>
+                  <text x="305" y="88">100</text>
+                  <text x="445" y="88">150 m</text>
+                </g>
+                <g stroke="#10243B" stroke-width="1.5">
+                  <path d="M25 38 V70 M165 38 V70 M305 38 V70 M445 38 V70" />
+                </g>
+              </svg>
+              <figcaption>
+                Schéma illustratif d'une échelle graphique graduée.
+              </figcaption>
+            </figure>
+
+            <h3>3.5. Grande et petite échelle</h3>
+            <p>
+              Une grande échelle correspond à un dénominateur relativement
+              petit. Elle permet généralement de représenter une zone plus
+              restreinte avec davantage de détails.
+            </p>
+            <p>
+              Une petite échelle correspond à un dénominateur relativement
+              grand. Elle permet de représenter une zone plus vaste avec moins
+              de détails.
+            </p>
+
+            <div class="m07-warning">
+              <strong>Point de vigilance</strong>
+              <p>
+                Avant tout calcul d'échelle, vérifie les unités. Il est
+                incorrect de diviser directement des mètres par des centimètres
+                sans conversion préalable.
+              </p>
+            </div>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                L'échelle établit le rapport entre les dimensions représentées
+                et les dimensions réelles. Les unités doivent toujours être
+                cohérentes.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 4 -->
+          <section class="m07-chapter" id="chapitre4">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">04</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 4</span>
+                <h2>Les signes conventionnels et la légende</h2>
+              </div>
+            </div>
+
+            <h3>4.1. Définition des signes conventionnels</h3>
+            <p>
+              Les signes conventionnels sont des symboles graphiques utilisés
+              pour représenter les objets et les phénomènes géographiques sur
+              une carte ou un plan.
+            </p>
+            <p>
+              Ils permettent de représenter des éléments qui ne peuvent pas être
+              dessinés à leurs dimensions réelles ou qui doivent être facilement
+              identifiés.
+            </p>
+
+            <h3>4.2. Les principales catégories de signes</h3>
+            <div class="m07-grid">
+              <div class="m07-info-card">
+                <h4>Signes ponctuels</h4>
+                <p>
+                  Représentent des objets localisés : certains repères, points
+                  ou équipements.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Signes linéaires</h4>
+                <p>
+                  Représentent des éléments allongés : routes, cours d'eau ou
+                  limites.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Signes surfaciques</h4>
+                <p>
+                  Représentent des zones : plans d'eau, espaces boisés ou
+                  surfaces bâties.
+                </p>
+              </div>
+            </div>
+
+            <h3>4.3. La légende cartographique</h3>
+            <p>
+              La légende est la partie d'un document cartographique qui explique
+              la signification des symboles, des couleurs et des figurés
+              utilisés.
+            </p>
+            <p>
+              Elle permet au lecteur de comprendre correctement les informations
+              représentées.
+            </p>
+
+            <h3>4.4. Exemple de légende illustrative</h3>
+            <div class="m07-legend">
+              <div class="m07-legend-item">
+                <span class="m07-symbol m07-symbol-road"></span>
+                <span>Route (symbole illustratif)</span>
+              </div>
+              <div class="m07-legend-item">
+                <span class="m07-symbol m07-symbol-water"></span>
+                <span>Cours d'eau (symbole illustratif)</span>
+              </div>
+              <div class="m07-legend-item">
+                <span class="m07-symbol m07-symbol-building"></span>
+                <span>Construction (symbole illustratif)</span>
+              </div>
+              <div class="m07-legend-item">
+                <span class="m07-symbol m07-symbol-vegetation"></span>
+                <span>Zone végétalisée (symbole illustratif)</span>
+              </div>
+              <div class="m07-legend-item">
+                <span class="m07-symbol m07-symbol-point"></span>
+                <span>Point repéré (symbole illustratif)</span>
+              </div>
+            </div>
+            <p class="m07-caption">
+              Ces symboles sont des exemples pédagogiques et ne constituent pas
+              une légende officielle universelle. Les conventions exactes
+              dépendent du document et de la norme ou du cahier des charges
+              utilisé.
+            </p>
+
+            <h3>4.5. L'importance de la légende</h3>
+            <ul>
+              <li>Elle facilite la lecture du document.</li>
+              <li>Elle évite les confusions entre les objets.</li>
+              <li>Elle assure une interprétation cohérente des symboles.</li>
+              <li>Elle facilite la communication entre les utilisateurs.</li>
+            </ul>
+
+            <div class="m07-warning">
+              <strong>Attention :</strong>
+              <p>
+                Ne suppose jamais qu'un symbole possède exactement la même
+                signification sur tous les documents. Consulte toujours la
+                légende du document utilisé.
+              </p>
+            </div>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                Les signes conventionnels représentent les objets géographiques.
+                La légende explique leur signification.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 5 -->
+          <section class="m07-chapter" id="chapitre5">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">05</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 5</span>
+                <h2>La représentation du relief</h2>
+              </div>
+            </div>
+
+            <h3>5.1. Définition du relief</h3>
+            <p>
+              Le relief désigne l'ensemble des formes et des irrégularités de la
+              surface terrestre : montagnes, collines, plateaux, vallées,
+              plaines et dépressions.
+            </p>
+            <p>
+              En cartographie topographique, le relief est représenté notamment
+              à l'aide de courbes de niveau, de points cotés et d'autres
+              procédés graphiques.
+            </p>
+
+            <h3>5.2. Les courbes de niveau</h3>
+            <p>
+              Une courbe de niveau est une ligne qui relie tous les points d'un
+              terrain ayant la même altitude, par rapport à une surface de
+              référence donnée.
+            </p>
+
+            <figure class="m07-illustration">
+              <svg
+                viewBox="0 0 560 330"
+                role="img"
+                aria-label="Illustration de courbes de niveau concentriques"
+              >
+                <rect
+                  x="5"
+                  y="5"
+                  width="550"
+                  height="320"
+                  rx="12"
+                  fill="#F4F8F5"
+                />
+                <path
+                  d="M65 170 C95 70 195 45 280 55 C390 65 485 115 485 190 C480 270 365 290 275 275 C175 265 80 250 65 170Z"
+                  fill="#D8EBDD"
+                  stroke="#4D9366"
+                  stroke-width="2"
+                />
+                <path
+                  d="M115 170 C135 100 210 85 280 90 C365 95 435 135 430 190 C425 245 345 255 280 250 C205 245 125 225 115 170Z"
+                  fill="#C3E1C8"
+                  stroke="#4D9366"
+                  stroke-width="2"
+                />
+                <path
+                  d="M165 170 C180 125 225 115 280 120 C345 125 385 145 380 190 C375 220 325 230 280 225 C225 220 170 210 165 170Z"
+                  fill="#A7D3B0"
+                  stroke="#367C51"
+                  stroke-width="2"
+                />
+                <path
+                  d="M210 170 C220 145 250 140 280 145 C320 145 345 160 340 190 C335 210 305 210 280 205 C245 205 215 195 210 170Z"
+                  fill="#85BE92"
+                  stroke="#367C51"
+                  stroke-width="2"
+                />
+                <path
+                  d="M250 170 C255 155 270 155 280 155 C300 155 315 165 310 185 C305 195 290 195 280 190 C265 190 250 185 250 170Z"
+                  fill="#65A978"
+                  stroke="#286D44"
+                  stroke-width="2"
+                />
+                <g fill="#173D5C" font-size="13" font-weight="bold">
+                  <text x="80" y="145">100 m</text>
+                  <text x="125" y="112">110 m</text>
+                  <text x="175" y="135">120 m</text>
+                  <text x="220" y="155">130 m</text>
+                  <text x="265" y="174" fill="#FFFFFF">140 m</text>
+                </g>
+                <text
+                  x="280"
+                  y="305"
+                  text-anchor="middle"
+                  font-size="12"
+                  fill="#526B5B"
+                >
+                  Schéma de principe : relief en courbes de niveau
+                </text>
+              </svg>
+              <figcaption>
+                Illustration pédagogique de courbes fermées représentant une
+                élévation. Les valeurs sont fictives.
+              </figcaption>
+            </figure>
+
+            <h3>5.3. L'équidistance</h3>
+            <p>
+              L'équidistance est la différence d'altitude constante entre deux
+              courbes de niveau successives, dans un document où cette
+              équidistance est régulière.
+            </p>
+
+            <div class="m07-formula">
+              <span class="m07-formula-label">DIFFÉRENCE D'ALTITUDE</span>
+              <div class="m07-equation">ΔH = H₂ − H₁</div>
+              <p>
+                H₁ et H₂ représentent les altitudes des deux courbes
+                considérées.
+              </p>
+            </div>
+
+            <div class="m07-example">
+              <h4>Exemple</h4>
+              <p>
+                Deux courbes de niveau successives portent respectivement les
+                altitudes 120 m et 125 m.
+              </p>
+              <div class="m07-equation">ΔH = 125 − 120 = 5 m</div>
+              <p>L'équidistance entre ces deux courbes est de 5 mètres.</p>
+            </div>
+
+            <h3>5.4. Interprétation de l'espacement des courbes</h3>
+            <ul>
+              <li>
+                Des courbes rapprochées indiquent généralement une pente forte.
+              </li>
+              <li>
+                Des courbes espacées indiquent généralement une pente douce.
+              </li>
+              <li>
+                Des courbes régulièrement espacées peuvent traduire une pente
+                relativement régulière.
+              </li>
+            </ul>
+
+            <figure class="m07-illustration">
+              <svg
+                viewBox="0 0 540 200"
+                role="img"
+                aria-label="Comparaison entre courbes rapprochées et espacées"
+              >
+                <rect
+                  x="5"
+                  y="5"
+                  width="530"
+                  height="190"
+                  rx="12"
+                  fill="#F4F8FB"
+                />
+                <g fill="none" stroke="#173D5C" stroke-width="2">
+                  <path d="M35 35 Q110 80 35 155" />
+                  <path d="M48 35 Q123 80 48 155" />
+                  <path d="M61 35 Q136 80 61 155" />
+                  <path d="M74 35 Q149 80 74 155" />
+                  <path d="M87 35 Q162 80 87 155" />
+                  <path d="M285 35 Q360 80 285 155" />
+                  <path d="M325 35 Q400 80 325 155" />
+                  <path d="M365 35 Q440 80 365 155" />
+                  <path d="M405 35 Q480 80 405 155" />
+                </g>
+                <g
+                  fill="#10243B"
+                  font-size="14"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  <text x="110" y="180">Pente forte</text>
+                  <text x="365" y="180">Pente douce</text>
+                </g>
+              </svg>
+              <figcaption>
+                Comparaison schématique de l'espacement des courbes.
+              </figcaption>
+            </figure>
+
+            <h3>5.5. Les points cotés</h3>
+            <p>
+              Un point coté est un point auquel est associée une altitude connue
+              ou déterminée. Il fournit une information altimétrique ponctuelle.
+            </p>
+            <p>
+              Les points cotés peuvent compléter les courbes de niveau pour
+              préciser la représentation du relief.
+            </p>
+
+            <h3>5.6. Quelques formes du relief</h3>
+            <div class="m07-grid">
+              <div class="m07-info-card">
+                <h4>Sommet</h4>
+                <p>
+                  Partie élevée du terrain par rapport aux zones environnantes.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Vallée</h4>
+                <p>
+                  Dépression allongée généralement située entre des reliefs plus
+                  élevés.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Colline</h4>
+                <p>
+                  Élévation naturelle du terrain, généralement moins importante
+                  qu'une montagne.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Dépression</h4>
+                <p>
+                  Zone du terrain située plus bas que les secteurs qui
+                  l'entourent.
+                </p>
+              </div>
+            </div>
+
+            <div class="m07-warning">
+              <strong>Point de vigilance</strong>
+              <p>
+                Les courbes de niveau ne donnent pas directement la forme exacte
+                du terrain entre deux courbes. Elles permettent d'interpréter le
+                relief à partir des altitudes et de leur organisation.
+              </p>
+            </div>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                Les courbes de niveau relient les points de même altitude. Leur
+                espacement fournit une indication importante sur la pente du
+                terrain.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 6 -->
+          <section class="m07-chapter" id="chapitre6">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">06</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 6</span>
+                <h2>
+                  La réalisation et la lecture des documents cartographiques
+                </h2>
+              </div>
+            </div>
+
+            <h3>6.1. Les données nécessaires</h3>
+            <p>
+              La réalisation d'un document cartographique nécessite des
+              informations fiables sur la zone à représenter. Selon le projet,
+              ces informations peuvent provenir :
+            </p>
+            <ul>
+              <li>De levés topographiques réalisés sur le terrain.</li>
+              <li>
+                De données GNSS et de coordonnées géographiques ou projetées.
+              </li>
+              <li>De photographies aériennes ou d'images satellitaires.</li>
+              <li>De documents cartographiques existants.</li>
+              <li>De bases de données géographiques.</li>
+            </ul>
+
+            <h3>6.2. Les grandes étapes de réalisation</h3>
+            <div class="m07-steps">
+              <div class="m07-step">
+                <span>01</span>
+                <div>
+                  <h4>Définition de l'objectif</h4>
+                  <p>
+                    Déterminer le territoire et les informations à représenter.
+                  </p>
+                </div>
+              </div>
+              <div class="m07-step">
+                <span>02</span>
+                <div>
+                  <h4>Collecte des données</h4>
+                  <p>
+                    Rassembler les mesures, les coordonnées et les informations
+                    nécessaires.
+                  </p>
+                </div>
+              </div>
+              <div class="m07-step">
+                <span>03</span>
+                <div>
+                  <h4>Traitement des données</h4>
+                  <p>
+                    Organiser, vérifier et préparer les informations
+                    recueillies.
+                  </p>
+                </div>
+              </div>
+              <div class="m07-step">
+                <span>04</span>
+                <div>
+                  <h4>Représentation graphique</h4>
+                  <p>
+                    Choisir l'échelle, les symboles, les couleurs et la mise en
+                    page.
+                  </p>
+                </div>
+              </div>
+              <div class="m07-step">
+                <span>05</span>
+                <div>
+                  <h4>Contrôle du document</h4>
+                  <p>
+                    Vérifier la cohérence, les références et la lisibilité du
+                    résultat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h3>6.3. L'orientation d'une carte</h3>
+            <p>
+              L'orientation permet de situer les directions sur un document. Une
+              carte comporte souvent une indication du nord, permettant au
+              lecteur de comprendre son orientation.
+            </p>
+            <figure class="m07-illustration">
+              <svg
+                viewBox="0 0 300 250"
+                role="img"
+                aria-label="Flèche indiquant le nord"
+              >
+                <circle
+                  cx="150"
+                  cy="120"
+                  r="85"
+                  fill="#F2F7FA"
+                  stroke="#D7E3EC"
+                  stroke-width="2"
+                />
+                <path d="M150 30 L122 130 L150 112 L178 130 Z" fill="#173D5C" />
+                <path
+                  d="M150 210 L122 130 L150 148 L178 130 Z"
+                  fill="#B7C8D5"
+                />
+                <circle cx="150" cy="130" r="5" fill="#12B8B0" />
+                <g
+                  fill="#10243B"
+                  font-size="17"
+                  font-weight="bold"
+                  text-anchor="middle"
+                >
+                  <text x="150" y="20">N</text>
+                  <text x="150" y="239">S</text>
+                  <text x="255" y="136">E</text>
+                  <text x="45" y="136">O</text>
+                </g>
+              </svg>
+              <figcaption>Schéma simplifié d'orientation.</figcaption>
+            </figure>
+
+            <h3>6.4. Le quadrillage et les coordonnées</h3>
+            <p>
+              Un quadrillage peut être utilisé pour faciliter la localisation
+              des points sur une carte. Il est associé à un système de
+              coordonnées défini.
+            </p>
+            <p>
+              Les coordonnées permettent d'identifier la position d'un point
+              dans le système de référence utilisé. Il faut toujours vérifier le
+              système de coordonnées indiqué sur le document.
+            </p>
+
+            <h3>6.5. Lire un document cartographique</h3>
+            <p>Pour lire correctement une carte ou un plan :</p>
+            <ol>
+              <li>Lire le titre et identifier la zone représentée.</li>
+              <li>Vérifier l'échelle du document.</li>
+              <li>Consulter la légende.</li>
+              <li>Repérer l'orientation et le nord.</li>
+              <li>Identifier le système de coordonnées, s'il est indiqué.</li>
+              <li>
+                Observer les informations planimétriques et altimétriques.
+              </li>
+              <li>Vérifier les sources et la date des données.</li>
+            </ol>
+
+            <div class="m07-example">
+              <h4>Exemple pratique</h4>
+              <p>
+                Un technicien reçoit un plan topographique d'un terrain. Avant
+                de l'utiliser, il vérifie son échelle, son système de
+                coordonnées, sa légende et les informations altimétriques. Il
+                peut ainsi interpréter correctement les éléments représentés.
+              </p>
+            </div>
+
+            <div class="m07-warning">
+              <strong>Point de vigilance</strong>
+              <p>
+                Un document graphique ne doit pas être exploité sans vérifier
+                son système de référence, son échelle, sa date et la qualité de
+                ses données.
+              </p>
+            </div>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                La réalisation d'un document cartographique repose sur la
+                collecte, le traitement, la représentation et le contrôle des
+                données géographiques.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPITRE 7 -->
+          <section class="m07-chapter" id="chapitre7">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">07</span>
+              <div>
+                <span class="m07-kicker">CHAPITRE 7</span>
+                <h2>Les applications de la cartographie en topographie</h2>
+              </div>
+            </div>
+
+            <h3>7.1. La cartographie dans les travaux publics</h3>
+            <p>
+              Les documents cartographiques sont utilisés pour représenter les
+              terrains, les routes, les ouvrages et les réseaux nécessaires à la
+              préparation et au suivi de nombreux projets de travaux publics.
+            </p>
+            <p>Ils peuvent servir à :</p>
+            <ul>
+              <li>Étudier l'environnement d'un projet routier.</li>
+              <li>Représenter les caractéristiques d'un terrain.</li>
+              <li>Préparer les études d'aménagement.</li>
+              <li>Localiser les infrastructures existantes.</li>
+            </ul>
+
+            <h3>7.2. L'urbanisme et l'aménagement du territoire</h3>
+            <p>
+              La cartographie aide les professionnels à représenter les zones
+              urbaines, les parcelles, les voies, les équipements et les espaces
+              naturels.
+            </p>
+            <p>
+              Ces documents contribuent à l'analyse de l'organisation de
+              l'espace et à la préparation des décisions d'aménagement.
+            </p>
+
+            <h3>7.3. La gestion des ressources naturelles</h3>
+            <p>
+              Les cartes peuvent également représenter les ressources en eau,
+              les espaces forestiers, les sols, les zones agricoles et les
+              espaces protégés.
+            </p>
+
+            <h3>7.4. La cartographie numérique et les SIG</h3>
+            <p>
+              Les systèmes d'information géographique (SIG) sont des outils
+              permettant de collecter, stocker, organiser, analyser et
+              représenter des données géographiques.
+            </p>
+            <p>
+              Ils facilitent notamment la superposition de plusieurs couches
+              d'informations et l'analyse spatiale.
+            </p>
+
+            <div class="m07-grid">
+              <div class="m07-info-card">
+                <h4>QGIS</h4>
+                <p>
+                  Logiciel SIG libre et open source utilisé pour traiter et
+                  représenter des données géographiques.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Cartographie numérique</h4>
+                <p>
+                  Production et exploitation de documents cartographiques sous
+                  forme numérique.
+                </p>
+              </div>
+              <div class="m07-info-card">
+                <h4>Données géographiques</h4>
+                <p>
+                  Informations associées à une position ou à une zone
+                  géographique.
+                </p>
+              </div>
+            </div>
+
+            <h3>7.5. Limites et précautions d'utilisation</h3>
+            <p>
+              Un document cartographique doit être interprété en tenant compte
+              de ses caractéristiques et de la qualité des données utilisées.
+            </p>
+            <ul>
+              <li>
+                Une échelle limitée peut empêcher de distinguer certains
+                détails.
+              </li>
+              <li>
+                Des données anciennes peuvent ne plus correspondre à la
+                situation actuelle.
+              </li>
+              <li>
+                Une erreur de référence peut entraîner une mauvaise
+                localisation.
+              </li>
+              <li>
+                Une représentation simplifiée ne montre pas tous les détails du
+                terrain.
+              </li>
+            </ul>
+
+            <div class="m07-warning">
+              <strong>Important :</strong>
+              <p>
+                Une carte est une représentation du territoire, et non le
+                territoire lui-même. Son utilisation doit toujours tenir compte
+                de son objectif, de sa précision et de ses limites.
+              </p>
+            </div>
+
+            <div class="m07-summary">
+              <strong>À retenir</strong>
+              <p>
+                La cartographie intervient dans les travaux publics,
+                l'urbanisme, l'environnement et la géomatique. Elle constitue un
+                outil essentiel d'analyse et de communication géographique.
+              </p>
+            </div>
+          </section>
+
+          <!-- EXERCICES -->
+          <section class="m07-exercises" id="exercices">
+            <div class="m07-chapter-heading">
+              <span class="m07-chapter-number">EX</span>
+              <div>
+                <span class="m07-kicker">ÉVALUATION</span>
+                <h2>Exercices d'application</h2>
+              </div>
+            </div>
+
+            <p>
+              Réponds aux questions avant d'ouvrir les corrections. Les
+              exercices permettent de vérifier les connaissances acquises dans
+              ce module.
+            </p>
+
+            <div class="m07-exercise">
+              <h3>Exercice 1 — Notions générales</h3>
+              <p>
+                <strong>Question 1 :</strong> Qu'est-ce que la cartographie ?
+              </p>
+              <p>
+                <strong>Question 2 :</strong> Quelle est la différence générale
+                entre une carte et un plan ?
+              </p>
+              <p>
+                <strong>Question 3 :</strong> Quel est le rôle de la légende ?
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  <strong>1.</strong> La cartographie regroupe les méthodes et
+                  techniques de conception, de réalisation et d'interprétation
+                  des cartes.
+                </p>
+                <p>
+                  <strong>2.</strong> Une carte représente généralement une zone
+                  plus étendue, tandis qu'un plan représente souvent une zone
+                  plus limitée avec davantage de détails.
+                </p>
+                <p>
+                  <strong>3.</strong> La légende explique la signification des
+                  symboles, des couleurs et des figurés du document.
+                </p>
+              </details>
+            </div>
+
+            <div class="m07-exercise">
+              <h3>Exercice 2 — Calcul d'échelle</h3>
+              <p>
+                Un plan est réalisé à l'échelle 1/5 000. Une distance mesurée
+                sur le plan est de 3 cm. Calcule la distance réelle en mètres.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>Formule : D = d × N.</p>
+                <p>D = 3 × 5 000 = 15 000 cm.</p>
+                <p>15 000 cm = 150 m.</p>
+                <p><strong>Réponse : 150 mètres.</strong></p>
+              </details>
+            </div>
+
+            <div class="m07-exercise">
+              <h3>Exercice 3 — Calcul de distance sur le plan</h3>
+              <p>
+                Une distance réelle est de 250 mètres. Elle doit être
+                représentée à l'échelle 1/5 000. Calcule sa longueur sur le plan
+                en centimètres.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>250 m = 25 000 cm.</p>
+                <p>d = D / N.</p>
+                <p>d = 25 000 / 5 000 = 5 cm.</p>
+                <p><strong>Réponse : 5 centimètres.</strong></p>
+              </details>
+            </div>
+
+            <div class="m07-exercise">
+              <h3>Exercice 4 — Courbes de niveau</h3>
+              <p>
+                Deux courbes de niveau successives indiquent respectivement 145
+                m et 150 m. Détermine leur différence d'altitude.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>ΔH = 150 − 145 = 5 m.</p>
+                <p><strong>Réponse : 5 mètres.</strong></p>
+              </details>
+            </div>
+
+            <div class="m07-exercise">
+              <h3>Exercice 5 — Lecture du relief</h3>
+              <p>
+                Sur une carte topographique, les courbes de niveau sont très
+                rapprochées. Que peut-on généralement en déduire concernant la
+                pente ?
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>
+                  Des courbes de niveau rapprochées indiquent généralement une
+                  pente forte, car l'altitude varie rapidement sur une faible
+                  distance horizontale.
+                </p>
+              </details>
+            </div>
+
+            <div class="m07-exercise">
+              <h3>Exercice 6 — Exploitation d'un document</h3>
+              <p>
+                Avant d'utiliser un plan topographique pour préparer un projet,
+                cite au moins quatre éléments que le technicien doit vérifier.
+              </p>
+              <details>
+                <summary>Afficher la correction</summary>
+                <p>Le technicien doit notamment vérifier :</p>
+                <ul>
+                  <li>Le titre et la zone représentée.</li>
+                  <li>L'échelle du document.</li>
+                  <li>La légende.</li>
+                  <li>L'orientation.</li>
+                  <li>Le système de coordonnées et de référence.</li>
+                  <li>La date et les sources des données.</li>
+                </ul>
+              </details>
+            </div>
+          </section>
+
+          <!-- BILAN -->
+          <section class="m07-final-summary">
+            <span class="m07-kicker">BILAN DU MODULE</span>
+            <h2>Ce qu'il faut retenir</h2>
+            <p>
+              La cartographie permet de représenter et d'interpréter les
+              informations géographiques. La maîtrise des échelles, des signes
+              conventionnels, des légendes et des courbes de niveau est
+              indispensable pour lire et exploiter correctement les documents
+              topographiques.
+            </p>
+            <ul>
+              <li>Comprendre les cartes et les plans.</li>
+              <li>Maîtriser les calculs d'échelle.</li>
+              <li>Identifier les signes conventionnels.</li>
+              <li>Interpréter les courbes de niveau.</li>
+              <li>Lire et contrôler un document cartographique.</li>
+            </ul>
+            <a href="../EXERCICES.HTML" class="m07-primary-button">
+              Continuer avec les exercices
+            </a>
+          </section>
+
+          <!-- NAVIGATION -->
+          <div class="m07-module-navigation">
+            <a href="module-06.html" class="m07-nav-button previous">
+              ← Module 06
+            </a>
+            <a href="module-08.html" class="m07-nav-button next">
+              Module 08 →
+            </a>
+          </div>
+
+          <div class="m07-back">
+            <a href="../COURS.HTML">← Retour au catalogue des cours</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="m07-footer">
+      <p>
+        <strong>TOPOMONDE</strong> — La topographie, comprendre le monde
+        autrement.
+      </p>
+      <p>Apprendre, comprendre et progresser en topographie.</p>
+    </footer>
+  </body>
+</html>
